@@ -1,5 +1,5 @@
-import axios from "axios";
 import "bootstrap";
+import "./axios-config";
+import { WindowResize } from "./win-resize";
 
-window.axios = axios;
-window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
+WindowResize();

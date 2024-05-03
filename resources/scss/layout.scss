@@ -1,0 +1,61 @@
+@mixin FlexDirection {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: $screen-breakpoint) {
+        flex-direction: column;
+    }
+
+    @media (min-width: $screen-breakpoint) {
+        flex-direction: row;
+    }
+}
+
+@mixin Bar {
+    @media (max-width: $screen-breakpoint) {
+        flex: 0;
+    }
+
+    @media (min-width: $screen-breakpoint) {
+        flex: 1;
+
+        nav {
+            display: none;
+        }
+
+        div.offcanvas {
+            display: none;
+        }
+    }
+}
+
+@mixin Content {
+    @media (max-width: $screen-breakpoint) {
+        flex: 1;
+    }
+
+    @media (min-width: $screen-breakpoint) {
+        flex: 3;
+    }
+}
+
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @include FlexDirection;
+
+    .bar {
+        @include Bar;
+        @extend .border-end;
+        @extend .bg-bar;
+    }
+
+    .content {
+        @include Content;
+        @extend .container-fluid;
+    }
+}

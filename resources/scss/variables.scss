@@ -1,0 +1,6 @@
+$bar-color: darken($gray-900, 3%);
+$screen-breakpoint: 768px;
+
+.bg-bar {
+    background-color: $bar-color !important;
+}

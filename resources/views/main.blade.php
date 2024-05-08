@@ -13,7 +13,7 @@
     <div id="app">
         @yield('render')
     </div>
-    @vite(['resources/js/app.js'])
+    @vite(['resources/scripts/app.ts'])
 </body>
 
 </html>

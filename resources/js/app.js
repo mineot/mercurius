@@ -1,5 +1,5 @@
 import "bootstrap";
-import "./axios-config";
-import { WindowResize } from "./win-resize";
 
-WindowResize();
+import "./configuration/axios";
+import "./configuration/vue";
+import "./helpers/resize.helper";

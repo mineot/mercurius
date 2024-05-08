@@ -10,14 +10,9 @@
 </head>
 
 <body>
-    <main class="app">
-        <div class="bar">
-            @include('layout/navbar')
-        </div>
-        <div class="content">
-            @yield('body')
-        </div>
-    </main>
+    <div id="app">
+        @yield('render')
+    </div>
     @vite(['resources/js/app.js'])
 </body>
 

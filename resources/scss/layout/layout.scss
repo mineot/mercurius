@@ -13,4 +13,12 @@ div.layout {
   @media screen and (max-width: $screenBreakpoint) {
     @include small-layout;
   }
+
+  .sidebar {
+    @extend .container-fluid;
+  }
+
+  .content {
+    @extend .container;
+  }
 }

@@ -1,0 +1,24 @@
+@mixin large-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+
+  .topbar {
+    display: none;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: $bar-color !important;
+  }
+
+  .content {
+    flex: 4;
+  }
+}

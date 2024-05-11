@@ -1,4 +1,4 @@
 <template>
   <h3>Sidebar</h3>
-  <div>...</div>
+  <menurouter></menurouter>
 </template>

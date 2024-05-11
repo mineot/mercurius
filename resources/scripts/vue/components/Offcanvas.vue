@@ -14,6 +14,8 @@
         aria-label="Close"
       ></button>
     </div>
-    <div class="offcanvas-body">...</div>
+    <div class="offcanvas-body">
+      <menurouter></menurouter>
+    </div>
   </div>
 </template>

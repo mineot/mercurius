@@ -6,13 +6,13 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
+    vue(),
+    vueJsx(),
+    tsconfigPaths(),
     laravel({
       input: ["resources/scss/app.scss", "resources/scripts/app.ts"],
       refresh: true,
     }),
-    vue(),
-    vueJsx(),
-    tsconfigPaths(),
   ],
   resolve: {
     alias: {

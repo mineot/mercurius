@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Topbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,7 +17,3 @@
   </nav>
   <offcanvas />
 </template>
-
-<script setup lang="ts">
-import offcanvas from "./Offcanvas.vue";
-</script>

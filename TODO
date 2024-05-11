@@ -1,3 +1,4 @@
-TODO add vue router (need integration with laravel router)
+TODO verify overflow in vue limits
+TODO make profile and configuration models
+TODO create first components
 TODO add vue Pinia
-

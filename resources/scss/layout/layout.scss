@@ -22,3 +22,16 @@ div.layout {
     @extend .container;
   }
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $gray-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $gray-800;
+}

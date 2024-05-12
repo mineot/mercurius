@@ -13,13 +13,18 @@
     display: none;
   }
 
+  .offcanvar-content {
+    overflow: auto;
+  }
+
   .topbar {
     flex: 0;
     background-color: $bar-color !important;
   }
 
   .content {
-    padding-top: 5px;
     flex: 4;
+    padding-top: 5px;
+    overflow: auto;
   }
 }

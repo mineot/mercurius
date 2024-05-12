@@ -15,10 +15,12 @@
 
   .sidebar {
     flex: 1;
+    overflow: auto;
     background-color: $bar-color !important;
   }
 
   .content {
     flex: 4;
+    overflow: auto;
   }
 }

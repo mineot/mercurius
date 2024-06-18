@@ -1,7 +1,6 @@
+@import "../variables.scss";
 @import "./small-layout.scss";
 @import "./large-layout.scss";
-
-$screenBreakpoint: 768px;
 
 div.layout {
   // LARGE

@@ -1,11 +1,17 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import laravel from "laravel-vite-plugin";
 import path from "path";
 import tsconfigPaths from "vite-tsconfig-paths";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
+const env = loadEnv(process.env.MODE, process.cwd());
+
 export default defineConfig({
+  define: {
+    process,
+    "process.env": env,
+  },
   plugins: [
     vue(),
     vueJsx(),

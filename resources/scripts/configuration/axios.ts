@@ -1,9 +1,8 @@
-// resources/scripts/plugins/axiosPlugin.ts
 import { App } from "vue";
 import axios from "axios";
 
 const axiosConfig = axios.create({
-  //   baseURL: "https://api.example.com", // Substitua pela sua URL base
+  baseURL: process.env.VITE_APP_URL,
   timeout: 1000,
   headers: { "Content-Type": "application/json" },
 });

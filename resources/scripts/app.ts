@@ -1,4 +1,3 @@
 import "bootstrap";
-import "./configuration/axios";
-import "./configuration/vue";
-import "./helpers/resize.helper";
+import "@config/vue";
+import "@helper/resize";

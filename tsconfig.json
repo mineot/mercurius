@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -11,7 +12,21 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "isolatedModules": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["resources/scripts/*"],
+      "@config/*": ["resources/scripts/configuration/*"],
+      "@helper/*": ["resources/scripts/helpers/*"],
+      "@component/*": ["resources/scripts/vue/components/*"],
+      "@adminPage/*": ["resources/scripts/vue/pages/admin/*"],
+      "@authPage/*": ["resources/scripts/vue/pages/auth/*"],
+      "@publicPage/*": ["resources/scripts/vue/pages/public/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "resources/scripts/**/*.ts",
+    "resources/scripts/**/*.d.ts",
+    "resources/scripts/**/*.tsx",
+    "resources/scripts/**/*.vue"
+  ]
 }

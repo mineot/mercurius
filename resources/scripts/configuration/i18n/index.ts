@@ -3,7 +3,7 @@ import { detectLanguage } from "./detect-language";
 import { enLanguage } from "./en";
 import { ptLanguage } from "./pt";
 
-export const i18n = createI18n({
+const i18nInstance = createI18n({
   locale: detectLanguage(),
   fallbackLocale: "en",
   messages: {
@@ -11,3 +11,5 @@ export const i18n = createI18n({
     pt: ptLanguage as any,
   },
 });
+
+export { i18nInstance };

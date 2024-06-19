@@ -1,17 +1,19 @@
 import { createApp } from "vue";
-import { i18n } from "./i18n";
-import router from "./router";
+import { axiosInstance } from "@config/axios";
+import { i18nInstance } from "@config/i18n";
+import { routerInstance } from "@config/router";
 
-import MenuRouter from "../vue/components/MenuRouter.vue";
-import Offcanvas from "../vue/components/Offcanvas.vue";
-import Sidebar from "../vue/components/Sidebar.vue";
-import Topbar from "../vue/components/Topbar.vue";
+import MenuRouter from "@component/MenuRouter.vue";
+import Offcanvas from "@component/Offcanvas.vue";
+import Sidebar from "@component/Sidebar.vue";
+import Topbar from "@component/Topbar.vue";
 
 const app = createApp({});
 app.component("menurouter", MenuRouter);
 app.component("offcanvas", Offcanvas);
 app.component("sidebar", Sidebar);
 app.component("topbar", Topbar);
-app.use(i18n);
-app.use(router);
+app.use(axiosInstance);
+app.use(i18nInstance);
+app.use(routerInstance);
 app.mount("#app");

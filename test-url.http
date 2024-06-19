@@ -1,0 +1,9 @@
+GET http://localhost:8000/api/public/test
+
+###
+
+GET http://localhost:8000/api/auth/test
+
+###
+
+GET http://localhost:8000/api/admin/test

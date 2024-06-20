@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Admin from "@adminPage/Admin.vue";
-import Home from "@publicPage/Home.vue";
-import Auth from "@authPage/Auth.vue";
+import AdminPage from "@/vue/pages/admin/AdminPage.vue";
+import HomePage from "@/vue/pages/public/HomePage.vue";
+import AuthPage from "@/vue/pages/auth/AuthPage.vue";
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/admin", component: Admin },
-  { path: "/auth", component: Auth },
+  { path: "/", component: HomePage },
+  { path: "/admin", component: AdminPage },
+  { path: "/auth", component: AuthPage },
 ];
 
 const routerInstance = createRouter({

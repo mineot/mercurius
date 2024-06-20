@@ -1,5 +1,6 @@
-import { createApp } from "vue";
 import { axiosInstance } from "@config/axios";
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 import { i18nInstance } from "@config/i18n";
 import { routerInstance } from "@config/router";
 
@@ -10,6 +11,8 @@ import Sidebar from "@component/Sidebar.vue";
 import Topbar from "@component/Topbar.vue";
 
 const app = createApp({});
+const pinia = createPinia();
+
 app.component("layout", Layout);
 app.component("menurouter", MenuRouter);
 app.component("offcanvas", Offcanvas);
@@ -17,5 +20,6 @@ app.component("sidebar", Sidebar);
 app.component("topbar", Topbar);
 app.use(axiosInstance);
 app.use(i18nInstance);
+app.use(pinia);
 app.use(routerInstance);
 app.mount("#app");

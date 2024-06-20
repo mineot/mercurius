@@ -1,0 +1,25 @@
+@import "~scss/variables.scss";
+@import "./sm.scss";
+@import "./lg.scss";
+
+div.layout {
+  &.public {
+    // LARGE
+    @media screen and (min-width: $screenBreakpoint) {
+      @include large-layout;
+    }
+
+    // SMALL
+    @media screen and (max-width: $screenBreakpoint) {
+      @include small-layout;
+    }
+
+    .sidebar {
+      @extend .container-fluid;
+    }
+
+    .content {
+      @extend .container;
+    }
+  }
+}

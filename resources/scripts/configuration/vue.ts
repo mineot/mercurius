@@ -4,20 +4,12 @@ import { createPinia } from "pinia";
 import { i18nInstance } from "@config/i18n";
 import { routerInstance } from "@config/router";
 
-import Layout from "@component/Layout.vue";
-import MenuRouter from "@component/MenuRouter.vue";
-import Offcanvas from "@component/Offcanvas.vue";
-import Sidebar from "@component/Sidebar.vue";
-import Topbar from "@component/Topbar.vue";
+import LayoutPublic from "@/vue/components/layout-public/LayoutPublic.vue";
 
 const app = createApp({});
 const pinia = createPinia();
 
-app.component("layout", Layout);
-app.component("menurouter", MenuRouter);
-app.component("offcanvas", Offcanvas);
-app.component("sidebar", Sidebar);
-app.component("topbar", Topbar);
+app.component("layout-public", LayoutPublic);
 app.use(axiosInstance);
 app.use(i18nInstance);
 app.use(pinia);

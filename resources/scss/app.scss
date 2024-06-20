@@ -1,3 +1,5 @@
-@import "./../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./variables.scss";
-@import "./layout/layout.scss";
+@import "~node/bootstrap/scss/bootstrap.scss";
+@import "~node/bootstrap-icons/font/bootstrap-icons.min.css";
+@import "~scss/variables.scss";
+@import "~scss/scrollbar.scss";
+@import "~scss/layout-public/layout.scss";

@@ -10,16 +10,8 @@
 </head>
 
 <body>
-    <div id="app" class="layout">
-        <nav class="topbar">
-            <topbar />
-        </nav>
-        <nav class="sidebar">
-            <sidebar />
-        </nav>
-        <div class="content">
-            <router-view />
-        </div>
+    <div id="app">
+        <router-view />
     </div>
     @vite(['resources/scripts/app.ts'])
 </body>

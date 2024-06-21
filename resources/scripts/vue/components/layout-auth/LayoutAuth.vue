@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <h1>Layout Auth</h1>
+  <div class="layout auth">
     <slot></slot>
   </div>
 </template>

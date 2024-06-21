@@ -1,12 +1,12 @@
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: $scrollbar-size;
+  height: $scrollbar-size;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $gray-700;
+  background-color: $scrollbar-color;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $gray-800;
+  background: $scrollbar-background;
 }

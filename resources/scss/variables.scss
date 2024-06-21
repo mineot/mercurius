@@ -1,5 +1,10 @@
 // xs < 576px | sm ≥ 576px | md ≥ 768px | lg ≥ 992px | xl ≥ 1200px | xxl ≥ 1400px
 $screenBreakpoint: 992px;
 
-// default bar backgroud color
+// Default bar backgroud color
 $bar-color: darken($gray-900, 3%);
+
+// Scrollbar
+$scrollbar-size: 5px;
+$scrollbar-color: $gray-700;
+$scrollbar-background: $gray-800;

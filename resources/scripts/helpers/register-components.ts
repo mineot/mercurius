@@ -1,4 +1,7 @@
 import AppButton from "@component/AppButton.vue";
+import AppCheckbox from "@component/AppCheckbox.vue";
+import AppFlexColumn from "@component/AppFlexColumn.vue";
+import AppFlexRow from "@component/AppFlexRow.vue";
 import AppPassword from "@component/AppPassword.vue";
 import AppPasswordConfirm from "@component/AppPasswordConfirm.vue";
 import AppText from "@component/AppText.vue";
@@ -16,6 +19,9 @@ import AdminLayout from "@adminPage/components/AdminLayout.vue";
 
 export function registerComponents(app: any) {
   app.component("app-btn", AppButton);
+  app.component("app-checkbox", AppCheckbox);
+  app.component("app-flex-column", AppFlexColumn);
+  app.component("app-flex-row", AppFlexRow);
   app.component("app-pswd-confirm", AppPasswordConfirm);
   app.component("app-pswd", AppPassword);
   app.component("app-text", AppText);

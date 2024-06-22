@@ -12,16 +12,11 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-
-interface Props {
-  id: string;
-  label: string;
-}
+import { Props } from "./constants";
 
 const props = defineProps<Props>();
 const model = defineModel();
 const show = ref(false);
-
 const icon = computed(() => `bi bi-${show.value ? "eye-slash-fill" : "eye-fill"}`);
 const type = computed(() => (show.value ? "text" : "password"));
 const setShow = () => (show.value = !show.value);

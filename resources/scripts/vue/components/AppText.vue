@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ id: string; label: string }>();
+import { Props } from "./constants";
+const props = defineProps<Props>();
 const model = defineModel();
 </script>

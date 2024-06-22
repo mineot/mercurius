@@ -15,11 +15,7 @@
       ></button>
     </div>
     <div class="offcanvas-body offcanvar-content">
-      <MenuRouter />
+      <public-menu />
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import MenuRouter from "./MenuRouter.vue";
-</script>

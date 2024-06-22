@@ -15,9 +15,5 @@
       </button>
     </div>
   </nav>
-  <Offcanvas />
+  <public-offcanvas />
 </template>
-
-<script setup lang="ts">
-import Offcanvas from "./Offcanvas.vue";
-</script>

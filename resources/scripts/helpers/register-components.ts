@@ -1,6 +1,7 @@
-import Btn from "@component/Btn.vue";
-import PasswordField from "@component/fields/PasswordField.vue";
-import TextField from "@component/fields/TextField.vue";
+import AppButton from "@component/AppButton.vue";
+import AppPassword from "@component/AppPassword.vue";
+import AppPasswordConfirm from "@component/AppPasswordConfirm.vue";
+import AppText from "@component/AppText.vue";
 
 import PublicLayout from "@publicPage/components/PublicLayout.vue";
 import PublicMenu from "@publicPage/components/PublicMenu.vue";
@@ -14,9 +15,10 @@ import AuthCard from "@authPage/components/AuthCard.vue";
 import AdminLayout from "@adminPage/components/AdminLayout.vue";
 
 export function registerComponents(app: any) {
-  app.component("btn", Btn);
-  app.component("pswdfield", PasswordField);
-  app.component("textfield", TextField);
+  app.component("app-btn", AppButton);
+  app.component("app-pswd-confirm", AppPasswordConfirm);
+  app.component("app-pswd", AppPassword);
+  app.component("app-text", AppText);
 
   app.component("public-layout", PublicLayout);
   app.component("public-menu", PublicMenu);

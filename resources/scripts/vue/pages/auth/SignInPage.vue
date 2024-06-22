@@ -1,12 +1,12 @@
 <template>
   <auth-card>
     <template #title>Sign In</template>
-    <textfield id="email" label="Email" />
-    <pswdfield id="password" label="Password" />
+    <app-text id="email" label="Email" />
+    <app-pswd id="password" label="Password" />
     <div>Conectado</div>
     <template #footer>
-      <btn label="Sign In" type="primary" />
-      <btn label="Sign Up" />
+      <app-btn label="Sign In" type="primary" />
+      <app-btn label="Sign Up" />
     </template>
   </auth-card>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <layout-auth>
-    <SignIn />
+    <!-- <SignIn /> -->
     <!-- <SignUp />
       <ForgotPswd />
       <RecoveryPswd />
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import SignIn from "@/vue/components/auth/SignIn.vue";
+// import SignIn from "@/vue/components/auth/SignIn.vue";
 // import SignUp from "@/vue/components/auth/SignUp.vue";
 // import ForgotPswd from "@/vue/components/auth/ForgotPswd.vue";
 // import RecoveryPswd from "@/vue/components/auth/RecoveryPswd.vue";

@@ -6,6 +6,6 @@
     <router-link to="/admin">Admin</router-link>
   </div>
   <div>
-    <router-link to="/Auth">Auth</router-link>
+    <router-link to="/auth">Auth</router-link>
   </div>
 </template>

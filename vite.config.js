@@ -30,7 +30,6 @@ export default defineConfig({
       "@config": path.resolve(__dirname, "./resources/scripts/configuration"),
       "@helper": path.resolve(__dirname, "./resources/scripts/helpers"),
       "@component": path.resolve(__dirname, "./resources/scripts/vue/components"),
-      "@widget": path.resolve(__dirname, "./resources/scripts/vue/widgets"),
       "@store": path.resolve(__dirname, "./resources/scripts/vue/stores"),
       "@adminPage": path.resolve(__dirname, "./resources/scripts/vue/pages/admin"),
       "@authPage": path.resolve(__dirname, "./resources/scripts/vue/pages/auth"),

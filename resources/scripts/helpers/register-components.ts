@@ -8,8 +8,8 @@ import PublicOffcanvas from "@publicPage/components/PublicOffcanvas.vue";
 import PublicSidebar from "@publicPage/components/PublicSidebar.vue";
 import PublicTopbar from "@publicPage/components/PublicTopbar.vue";
 
-import LayoutAuth from "@authPage/components/LayoutAuth.vue";
-import CardAuth from "@authPage/components/CardAuth.vue";
+import AuthLayout from "@authPage/components/AuthLayout.vue";
+import AuthCard from "@authPage/components/AuthCard.vue";
 
 import AdminLayout from "@adminPage/components/AdminLayout.vue";
 
@@ -24,8 +24,8 @@ export function registerComponents(app: any) {
   app.component("public-sidebar", PublicSidebar);
   app.component("public-topbar", PublicTopbar);
 
-  app.component("layout-auth", LayoutAuth);
-  app.component("card-auth", CardAuth);
+  app.component("auth-layout", AuthLayout);
+  app.component("auth-card", AuthCard);
 
   app.component("admin-layout", AdminLayout);
 }

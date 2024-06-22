@@ -26,7 +26,6 @@ export default defineConfig({
       vue: "vue/dist/vue.esm-bundler.js",
       "~scss": path.resolve(__dirname, "./resources/scss"),
       "~node": path.resolve(__dirname, "./node_modules"),
-      "@": path.resolve(__dirname, "./resources/scripts"),
       "@config": path.resolve(__dirname, "./resources/scripts/configuration"),
       "@helper": path.resolve(__dirname, "./resources/scripts/helpers"),
       "@component": path.resolve(__dirname, "./resources/scripts/vue/components"),

@@ -2,7 +2,7 @@ import { axiosInstance } from "@config/axios";
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import { i18nInstance } from "@config/i18n";
-import { registerComponents } from "@/helpers/register-components";
+import { registerComponents } from "@helper/register-components";
 import { routerInstance } from "@config/router";
 
 const app = createApp({});

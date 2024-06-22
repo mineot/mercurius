@@ -14,7 +14,6 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["resources/scripts/*"],
       "@config/*": ["resources/scripts/configuration/*"],
       "@helper/*": ["resources/scripts/helpers/*"],
       "@component/*": ["resources/scripts/vue/components/*"],

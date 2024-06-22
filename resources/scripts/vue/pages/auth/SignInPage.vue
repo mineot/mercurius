@@ -1,5 +1,5 @@
 <template>
-  <card-auth>
+  <auth-card>
     <template #title>Sign In</template>
     <textfield id="email" label="Email" />
     <pswdfield id="password" label="Password" />
@@ -8,5 +8,5 @@
       <btn label="Sign In" type="primary" />
       <btn label="Sign Up" />
     </template>
-  </card-auth>
+  </auth-card>
 </template>

@@ -13,6 +13,8 @@ export const ptLanguage: Language = {
     back_to_home: "Voltar para a página inicial",
     change_password: "Alterar senha",
     change: "Alterar",
+    code_validator: "Validar Código",
+    code: "Código",
     email: "E-mail",
     forgot_password: "Esqueceu sua senha?",
     generate_password: "Gerar uma senha",
@@ -23,5 +25,6 @@ export const ptLanguage: Language = {
     send_code: "Enviar código",
     sign_in: "Entrar",
     sign_up: "Criar Conta",
+    validate: "Validar",
   },
 };

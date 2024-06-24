@@ -13,6 +13,8 @@ export const enLanguage: Language = {
     back_to_home: "Back to home!",
     change_password: "Change password",
     change: "Change",
+    code_validator: "Validate code",
+    code: "Code",
     email: "Email",
     forgot_password: "Forgot your password?",
     generate_password: "Generate password",
@@ -23,5 +25,6 @@ export const enLanguage: Language = {
     send_code: "Send code",
     sign_in: "Sign In",
     sign_up: "Sign Up",
+    validate: "Validate",
   },
 };

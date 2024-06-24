@@ -11,6 +11,8 @@ export interface Language {
     back_to_home: string;
     change_password: string;
     change: string;
+    code_validator: string;
+    code: string;
     email: string;
     forgot_password: string;
     generate_password: string;
@@ -21,5 +23,6 @@ export interface Language {
     send_code: string;
     sign_in: string;
     sign_up: string;
+    validate: string;
   };
 }

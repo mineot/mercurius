@@ -1,5 +1,5 @@
 <template>
-  <app-flex-column>
+  <app-flex-grid type="column">
     <app-pswd id="password" label="term.password">
       <template #complement>
         <StrongPassword />
@@ -10,14 +10,14 @@
         <MatchPassword />
       </template>
     </app-pswd>
-  </app-flex-column>
+  </app-flex-grid>
 </template>
 
 <script setup lang="ts">
-import { Props } from "./constants";
+import { PasswordConfirmProps } from "./constants";
 import StrongPassword from "./util/StrongPassword.vue";
 import MatchPassword from "./util/MatchPassword.vue";
 
-const props = defineProps<Props>();
+const props = defineProps<PasswordConfirmProps>();
 const model = defineModel();
 </script>

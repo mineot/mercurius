@@ -11,9 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import { Props } from "./constants";
+import { InputProps } from "./constants";
 import FormText from "./util/FormText.vue";
-
-const props = defineProps<Props>();
+const props = defineProps<InputProps>();
 const model = defineModel();
 </script>

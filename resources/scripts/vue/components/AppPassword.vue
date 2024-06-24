@@ -17,10 +17,10 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { Props } from "./constants";
+import { InputProps } from "./constants";
 import FormText from "./util/FormText.vue";
 
-const props = defineProps<Props>();
+const props = defineProps<InputProps>();
 const model = defineModel();
 const show = ref(false);
 const icon = computed(() => `bi bi-${show.value ? "eye-slash-fill" : "eye-fill"}`);

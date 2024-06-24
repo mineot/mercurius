@@ -14,7 +14,9 @@ export interface Language {
     generate_password: string;
     password_confirmation: string;
     password: string;
+    recovery_password: string;
     remmember_me: string;
+    send_code: string;
     sign_in: string;
     sign_up: string;
   };

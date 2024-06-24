@@ -9,4 +9,13 @@ export const ptLanguage: Language = {
     D: "Até logo,",
     E: "Fabiano Pires",
   },
+  term: {
+    back_to_home: "Voltar para a página inicial",
+    email: "E-mail",
+    forgot_password: "Esqueceu sua senha?",
+    password: "Senha",
+    remmember_me: "Lembre-se de mim!",
+    sign_in: "Entrar",
+    sign_up: "Criar Conta",
+  },
 };

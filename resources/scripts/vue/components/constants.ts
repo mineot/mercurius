@@ -3,7 +3,8 @@ export interface Props {
   label: string;
 }
 
-export interface ButtonProps extends Props {
+export interface ButtonProps {
+  label: string;
   to?: string;
   type?:
     | "primary"

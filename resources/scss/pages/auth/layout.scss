@@ -3,5 +3,21 @@
     @extend .container;
     @extend .mt-5;
     max-width: 25em;
+
+    .card {
+      @extend .mb-3;
+      @extend .p-3;
+      @extend .border;
+      @extend .rounded;
+
+      h4 {
+        @extend .text-center;
+        @extend .mb-3;
+      }
+
+      #divFooter {
+        @extend .mt-3;
+      }
+    }
   }
 }

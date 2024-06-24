@@ -7,4 +7,13 @@ export interface Language {
     D: string;
     E: string;
   };
+  term: {
+    back_to_home: string;
+    email: string;
+    forgot_password: string;
+    password: string;
+    remmember_me: string;
+    sign_in: string;
+    sign_up: string;
+  };
 }

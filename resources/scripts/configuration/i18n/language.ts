@@ -11,6 +11,7 @@ export interface Language {
     back_to_home: string;
     email: string;
     forgot_password: string;
+    generate_password: string;
     password_confirmation: string;
     password: string;
     remmember_me: string;

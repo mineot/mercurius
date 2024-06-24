@@ -13,6 +13,7 @@ export const ptLanguage: Language = {
     back_to_home: "Voltar para a página inicial",
     email: "E-mail",
     forgot_password: "Esqueceu sua senha?",
+    generate_password: "Gerar uma senha",
     password_confirmation: "Confirme sua senha",
     password: "Senha",
     remmember_me: "Lembre-se de mim!",

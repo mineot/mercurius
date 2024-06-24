@@ -7,18 +7,18 @@
         <i :class="icon"></i>
       </button>
     </div>
-    <ExtraUtil :message="props.message">
+    <FormText :message="props.message">
       <template #complement>
         <slot name="complement"></slot>
       </template>
-    </ExtraUtil>
+    </FormText>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { Props } from "./constants";
-import ExtraUtil from "./util/ExtraUtil.vue";
+import FormText from "./util/FormText.vue";
 
 const props = defineProps<Props>();
 const model = defineModel();

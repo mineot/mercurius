@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3">
+  <div>
     <label :for="props.id" class="form-label">{{ $t(props.label) }}</label>
     <div class="input-group input-group-sm">
       <input :id="props.id" :type="type" class="form-control" v-model="model" />
@@ -7,12 +7,18 @@
         <i :class="icon"></i>
       </button>
     </div>
+    <ExtraUtil :message="props.message">
+      <template #complement>
+        <slot name="complement"></slot>
+      </template>
+    </ExtraUtil>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { Props } from "./constants";
+import ExtraUtil from "./util/ExtraUtil.vue";
 
 const props = defineProps<Props>();
 const model = defineModel();

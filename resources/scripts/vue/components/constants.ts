@@ -1,4 +1,8 @@
-export interface Props {
+export interface ExtraProps {
+  message?: string;
+}
+
+export interface Props extends ExtraProps {
   id: string;
   label: string;
 }

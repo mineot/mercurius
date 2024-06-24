@@ -3,6 +3,7 @@ import HomePage from "@publicPage/HomePage.vue";
 
 import AuthPage from "@authPage/AuthPage.vue";
 import SignInPage from "@authPage/SignInPage.vue";
+import SignUpPage from "@authPage/SignUpPage.vue";
 
 const registerRouters = [
   { path: "/", component: HomePage },
@@ -10,7 +11,10 @@ const registerRouters = [
   {
     path: "/auth",
     component: AuthPage,
-    children: [{ path: "signin", component: SignInPage }],
+    children: [
+      { path: "signin", component: SignInPage },
+      { path: "signup", component: SignUpPage },
+    ],
   },
 ];
 

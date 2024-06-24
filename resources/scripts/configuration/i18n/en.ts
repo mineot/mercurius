@@ -13,6 +13,7 @@ export const enLanguage: Language = {
     back_to_home: "Back to home!",
     email: "Email",
     forgot_password: "Forgot your password?",
+    password_confirmation: "Confirm your password",
     password: "Password",
     remmember_me: "Remember me!",
     sign_in: "Sign In",

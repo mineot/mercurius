@@ -1,9 +1,19 @@
 <template>
-  <h1>Password Confirm</h1>
-  <!-- <span class="input-group-text" v-if="props.validator">
-    <i class="bi bi-emoji-expressionless-fill"></i>
-    <i class="bi bi-emoji-frown-fill text-danger"></i>
-    <i class="bi bi-emoji-neutral-fill text-warning"></i>
-    <i class="bi bi-emoji-smile-fill text-success"></i>
-  </span> -->
+  <app-flex-column>
+    <app-pswd id="password" label="term.password">
+      <template #complement>
+        <StrongPassword />
+      </template>
+    </app-pswd>
+    <app-pswd id="password_confirm" label="term.password_confirmation">
+      <template #complement>
+        <MatchPassword />
+      </template>
+    </app-pswd>
+  </app-flex-column>
 </template>
+
+<script setup lang="ts">
+import StrongPassword from "./util/StrongPassword.vue";
+import MatchPassword from "./util/MatchPassword.vue";
+</script>

@@ -1,9 +1,10 @@
 <template>
-  <auth-card>
-    <template #title>Sign In</template>
-    <app-text id="email" label="term.email" />
-    <app-pswd id="password" label="term.password" />
-    <app-checkbox id="remember" label="term.remmember_me" />
+  <auth-card title="term.sign_in">
+    <app-flex-column>
+      <app-text id="email" label="term.email" />
+      <app-pswd id="password" label="term.password" />
+      <app-checkbox id="remember" label="term.remmember_me" />
+    </app-flex-column>
     <template #footer>
       <app-flex-column>
         <app-btn label="term.sign_in" type="primary" />

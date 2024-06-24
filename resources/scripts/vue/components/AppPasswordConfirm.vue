@@ -14,6 +14,10 @@
 </template>
 
 <script setup lang="ts">
+import { Props } from "./constants";
 import StrongPassword from "./util/StrongPassword.vue";
 import MatchPassword from "./util/MatchPassword.vue";
+
+const props = defineProps<Props>();
+const model = defineModel();
 </script>

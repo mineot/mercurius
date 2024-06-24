@@ -1,10 +1,7 @@
-export interface ExtraProps {
+export interface Props {
+  id?: string;
+  label?: string;
   message?: string;
-}
-
-export interface Props extends ExtraProps {
-  id: string;
-  label: string;
 }
 
 export interface ButtonProps {

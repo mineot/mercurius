@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import { ExtraProps } from "../constants";
-const props = defineProps<ExtraProps>();
+import { Props } from "../constants";
+const props = defineProps<Props>();
 </script>

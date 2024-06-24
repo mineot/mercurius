@@ -11,6 +11,8 @@ export const enLanguage: Language = {
   },
   term: {
     back_to_home: "Back to home!",
+    change_password: "Change password",
+    change: "Change",
     email: "Email",
     forgot_password: "Forgot your password?",
     generate_password: "Generate password",

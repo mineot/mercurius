@@ -9,6 +9,8 @@ export interface Language {
   };
   term: {
     back_to_home: string;
+    change_password: string;
+    change: string;
     email: string;
     forgot_password: string;
     generate_password: string;

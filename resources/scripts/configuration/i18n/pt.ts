@@ -11,6 +11,8 @@ export const ptLanguage: Language = {
   },
   term: {
     back_to_home: "Voltar para a página inicial",
+    change_password: "Alterar senha",
+    change: "Alterar",
     email: "E-mail",
     forgot_password: "Esqueceu sua senha?",
     generate_password: "Gerar uma senha",

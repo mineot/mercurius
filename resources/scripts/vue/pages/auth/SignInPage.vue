@@ -1,7 +1,7 @@
 <template>
   <auth-card title="term.sign_in">
     <app-flex-grid type="column">
-      <app-text id="email" label="term.email" />
+      <app-email id="email" label="term.email" />
       <app-pswd id="password" label="term.password" />
       <app-checkbox id="remember" label="term.remmember_me" />
     </app-flex-grid>

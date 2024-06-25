@@ -12,7 +12,9 @@ export interface PasswordConfirmProps {
 }
 
 export interface FlexProps {
-  type: "row" | "column";
+  type?: "row" | "column";
+  inline?: boolean;
+  wrap?: boolean;
 }
 
 export interface ButtonProps {

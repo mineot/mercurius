@@ -17,6 +17,7 @@ import AuthLayout from "@authPage/components/AuthLayout.vue";
 import AuthCard from "@authPage/components/AuthCard.vue";
 
 import AdminLayout from "@adminPage/components/AdminLayout.vue";
+import AdminMenu from "@adminPage/components/AdminMenu.vue";
 
 export function registerComponents(app: any) {
   app.component("app-btn", AppButton);
@@ -38,4 +39,5 @@ export function registerComponents(app: any) {
   app.component("auth-card", AuthCard);
 
   app.component("admin-layout", AdminLayout);
+  app.component("admin-menu", AdminMenu);
 }

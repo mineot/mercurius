@@ -8,7 +8,7 @@
     <template #footer>
       <app-flex-grid type="column">
         <app-btn label="term.sign_up" type="primary" />
-        <app-flex-grid type="row">
+        <app-flex-grid>
           <app-btn label="term.sign_in" />
           <app-btn label="term.forgot_password" />
         </app-flex-grid>

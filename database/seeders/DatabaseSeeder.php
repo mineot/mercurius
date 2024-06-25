@@ -18,5 +18,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin@123456'),
         ]);
+        $this->call(LanguageSeeder::class);
+        $this->call(TermPTSeeder::class);
+        $this->call(TermENSeeder::class);
     }
 }

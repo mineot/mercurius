@@ -8,6 +8,7 @@ export interface Language {
     E: string;
   };
   term: {
+    admin_area: string;
     back_to_home: string;
     change_password: string;
     change: string;

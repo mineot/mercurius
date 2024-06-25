@@ -10,6 +10,7 @@ export const enLanguage: Language = {
     E: "Fabiano Pires",
   },
   term: {
+    admin_area: "Administration area",
     back_to_home: "Back to home!",
     change_password: "Change password",
     change: "Change",

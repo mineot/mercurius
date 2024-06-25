@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1>Layout Admin</h1>
+  <div class="layout admin">
+    <h1>{{ $t("term.admin_area") }}</h1>
     <slot></slot>
   </div>
 </template>

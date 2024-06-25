@@ -10,6 +10,7 @@ export const ptLanguage: Language = {
     E: "Fabiano Pires",
   },
   term: {
+    admin_area: "Área de administração",
     back_to_home: "Voltar para a página inicial",
     change_password: "Alterar senha",
     change: "Alterar",

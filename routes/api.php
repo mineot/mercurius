@@ -1,17 +1,16 @@
 <?php
 
+use App\Http\Controllers\PublicProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('public')->group(function () {
 
-    Route::get('/test', function() {
-        return 'Public Test';
-    });
+    Route::get('/profile/{lang}', [PublicProfileController::class, 'getProfile']);
 
-    Route::get('/user', function (Request $request) {
-        return $request->user();
-    })->middleware('auth:sanctum');
+    // Route::get('/user', function (Request $request) {
+    //     return $request->user();
+    // })->middleware('auth:sanctum');
 
 });
 

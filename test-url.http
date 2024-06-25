@@ -1,5 +1,5 @@
 ### PUBLIC PROFILE WITH LANGUAGE: Exemple en-US to English
-GET http://localhost:8000/api/public/profile/en-US
+GET http://localhost:8000/api/public/profile/en
 
 ###
 

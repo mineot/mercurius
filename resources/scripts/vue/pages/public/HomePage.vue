@@ -9,3 +9,9 @@
     <div>{{ $t("comming_soon_message.E") }}</div>
   </public-layout>
 </template>
+
+<script setup lang="ts">
+import { publicProfileStore } from "@store/publicProfileStore";
+const profile = publicProfileStore();
+profile.fetchPublicProfile();
+</script>

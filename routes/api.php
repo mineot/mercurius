@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('public')->group(function () {
 
-    Route::get('/profile/{lang}', [PublicProfileController::class, 'getProfile']);
+    Route::get('/profile/{shortcode}', [PublicProfileController::class, 'getProfile']);
 
     // Route::get('/user', function (Request $request) {
     //     return $request->user();

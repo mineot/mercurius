@@ -10,6 +10,7 @@ import AppText from "@component/AppText.vue";
 import PublicLayout from "@publicPage/components/PublicLayout.vue";
 import PublicMenu from "@publicPage/components/PublicMenu.vue";
 import PublicOffcanvas from "@publicPage/components/PublicOffcanvas.vue";
+import PublicProfileSmall from "@publicPage/components/PublicProfileSmall.vue";
 import PublicSidebar from "@publicPage/components/PublicSidebar.vue";
 import PublicTopbar from "@publicPage/components/PublicTopbar.vue";
 
@@ -32,6 +33,7 @@ export function registerComponents(app: any) {
   app.component("public-layout", PublicLayout);
   app.component("public-menu", PublicMenu);
   app.component("public-offcanvas", PublicOffcanvas);
+  app.component("public-profile-sm", PublicProfileSmall);
   app.component("public-sidebar", PublicSidebar);
   app.component("public-topbar", PublicTopbar);
 

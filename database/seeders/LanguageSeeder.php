@@ -15,14 +15,14 @@ class LanguageSeeder extends Seeder
     {
         $language = new Language();
         $language->code = 'pt-BR';
-        $language->shortcode = 'br';
+        $language->shortcode = 'pt';
         $language->name = 'Português Brasil';
         $language->flag = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/800px-Flag_of_Brazil.svg.png';
         $language->save();
 
         $language = new Language();
         $language->code = 'en-US';
-        $language->shortcode = 'us';
+        $language->shortcode = 'en';
         $language->name = 'English USA';
         $language->flag = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png';
         $language->save();

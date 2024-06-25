@@ -11,6 +11,14 @@ export interface PasswordConfirmProps {
   id: string;
 }
 
+export interface ImageProps {
+  image: string;
+  alt: string;
+  size?: number;
+  thumbnail?: boolean;
+  responsive?: boolean;
+}
+
 export interface FlexProps {
   type?: "row" | "column";
   inline?: boolean;

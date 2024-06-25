@@ -12,4 +12,8 @@ class Language extends Model
     function terms() {
         return $this->hasMany(Term::class, 'language', 'id');
     }
+
+    function profiles() {
+        return $this->hasMany(Profile::class, 'language', 'id');
+    }
 }

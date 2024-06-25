@@ -13,7 +13,20 @@ return new class extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->uuid('id')->primary()->autoIncrement();
+            $table->string('name');
+            $table->string('job_title');
+            $table->string('summary');
+            $table->string('description');
+            $table->string('photo');
+            $table->string('image_card');
             $table->timestamps();
+
+            $table
+                ->foreignUuid('language')
+                ->references('id')
+                ->on('languages')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
         });
     }
 

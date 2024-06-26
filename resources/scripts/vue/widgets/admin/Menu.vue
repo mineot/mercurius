@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-const props = defineProps<{ icon: string; text: string }>();
-const icon = computed(() => `bi bi-${props.icon} fs-1`);
+import { MenuProps, getIcon } from "@widget/admin/contracts/menu.contract";
+const props = defineProps<MenuProps>();
+const icon = computed(() => getIcon(props));
 </script>

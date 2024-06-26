@@ -9,5 +9,6 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ title: string }>();
+import { CardProps } from "@widget/auth/contracts/card.contract";
+const props = defineProps<CardProps>();
 </script>

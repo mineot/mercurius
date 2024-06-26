@@ -12,11 +12,16 @@ export interface PasswordConfirmProps {
 }
 
 export interface ImageProps {
-  image: string;
-  alt: string;
-  size?: number;
+  image: string | undefined;
+  alt: string | undefined;
+  size?: number | string;
   thumbnail?: boolean;
   responsive?: boolean;
+}
+
+export interface LabelProps {
+  text: string | undefined;
+  translate?: boolean;
 }
 
 export interface FlexProps {

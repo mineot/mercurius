@@ -5,9 +5,9 @@
     size="120"
     thumbnail
   />
-  <div>{{ profile.publicProfile.name }}</div>
-  <div>{{ profile.publicProfile.job_title }}</div>
-  <div>{{ profile.publicProfile.summary }}</div>
+  <app-label :text="profile.publicProfile.name" />
+  <!-- <div>{{ profile.publicProfile.job_title }}</div> -->
+  <!-- <div>{{ profile.publicProfile.summary }}</div> -->
 </template>
 
 <script setup lang="ts">

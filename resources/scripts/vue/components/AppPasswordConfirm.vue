@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { PasswordConfirmProps } from "./constants";
+import { PasswordConfirmProps } from "./contracts/constants";
 import StrongPassword from "./util/StrongPassword.vue";
 import MatchPassword from "./util/MatchPassword.vue";
 

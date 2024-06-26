@@ -1,3 +1,5 @@
+export type Sizes = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
+
 export interface FormTextProps {
   message?: string;
 }
@@ -22,25 +24,11 @@ export interface ImageProps {
 export interface LabelProps {
   text: string | undefined;
   translate?: boolean;
+  fontSize?: Sizes;
 }
 
 export interface FlexProps {
   type?: "row" | "column";
   inline?: boolean;
   wrap?: boolean;
-}
-
-export interface ButtonProps {
-  label: string;
-  to?: string;
-  type?:
-    | "primary"
-    | "secondary"
-    | "success"
-    | "danger"
-    | "warning"
-    | "info"
-    | "light"
-    | "dark"
-    | "link";
 }

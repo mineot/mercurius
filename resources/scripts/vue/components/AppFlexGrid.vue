@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { FlexProps } from "./constants";
+import { FlexProps } from "./contracts/constants";
 
 const props = defineProps<FlexProps>();
 

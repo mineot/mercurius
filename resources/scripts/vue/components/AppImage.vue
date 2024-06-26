@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { ImageProps } from "./constants";
+import { ImageProps } from "./contracts/constants";
 
 const props = defineProps<ImageProps>();
 

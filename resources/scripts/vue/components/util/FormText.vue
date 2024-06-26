@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import { FormTextProps } from "../constants";
+import { FormTextProps } from "../contracts/constants";
 const props = defineProps<FormTextProps>();
 </script>

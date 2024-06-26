@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { InputProps } from "./constants";
+import { InputProps } from "./contracts/constants";
 import FormText from "./util/FormText.vue";
 
 const props = defineProps<InputProps>();

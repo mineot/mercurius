@@ -5,7 +5,7 @@
     size="120"
     thumbnail
   />
-  <app-label :text="profile.publicProfile.name" />
+  <app-label :text="profile.publicProfile.name" fontSize="xxl" />
   <!-- <div>{{ profile.publicProfile.job_title }}</div> -->
   <!-- <div>{{ profile.publicProfile.summary }}</div> -->
 </template>

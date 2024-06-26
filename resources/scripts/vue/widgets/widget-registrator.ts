@@ -1,10 +1,10 @@
-import AdminMenu from "@widget/admin/AdminMenu.vue";
-import AuthCard from "@widget/auth/AuthCard.vue";
-import PublicMenu from "@widget/public/PublicMenu.vue";
-import PublicOffcanvas from "@widget/public/PublicOffcanvas.vue";
-import PublicProfileSmall from "@widget/public/PublicProfileSmall.vue";
-import PublicSidebar from "@widget/public/PublicSidebar.vue";
-import PublicTopbar from "@widget/public/PublicTopbar.vue";
+import AdminMenu from "@widget/admin/Menu.vue";
+import AuthCard from "@widget/auth/Card.vue";
+import PublicMenu from "@widget/public/Menu.vue";
+import PublicOffcanvas from "@widget/public/OffCanvas.vue";
+import PublicProfileSmall from "@widget/public/ProfileSmall.vue";
+import PublicSidebar from "@widget/public/Sidebar.vue";
+import PublicTopbar from "@widget/public/Topbar.vue";
 
 export function widgetRegistrator(app: any) {
   app.component("wadm-menu", AdminMenu);

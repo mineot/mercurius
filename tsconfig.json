@@ -17,6 +17,8 @@
       "@config/*": ["resources/scripts/configuration/*"],
       "@helper/*": ["resources/scripts/helpers/*"],
       "@component/*": ["resources/scripts/vue/components/*"],
+      "@widget/*": ["resources/scripts/vue/widgets/*"],
+      "@layout/*": ["resources/scripts/vue/layouts/*"],
       "@store/*": ["resources/scripts/vue/stores/*"],
       "@adminPage/*": ["resources/scripts/vue/pages/admin/*"],
       "@authPage/*": ["resources/scripts/vue/pages/auth/*"],

@@ -15,7 +15,7 @@
       ></button>
     </div>
     <div class="offcanvas-body offcanvar-content">
-      <public-menu />
+      <wpub-menu />
     </div>
   </div>
 </template>

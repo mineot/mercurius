@@ -1,5 +1,5 @@
 <template>
-  <auth-card title="term.sign_in">
+  <wath-card title="term.sign_in">
     <app-flex-grid type="column">
       <app-email id="email" label="term.email" />
       <app-pswd id="password" label="term.password" />
@@ -15,5 +15,5 @@
         <app-btn label="term.back_to_home" type="link" to="/" />
       </app-flex-grid>
     </template>
-  </auth-card>
+  </wath-card>
 </template>

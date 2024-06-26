@@ -15,5 +15,5 @@
       </button>
     </div>
   </nav>
-  <public-offcanvas />
+  <wpub-offcanvas />
 </template>

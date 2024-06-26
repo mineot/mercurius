@@ -1,6 +1,6 @@
 <template>
   <div class="py-4 px-2">
-    <public-profile-sm />
-    <public-menu />
+    <wpub-profile-sm />
+    <wpub-menu />
   </div>
 </template>

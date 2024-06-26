@@ -6,7 +6,7 @@
     <router-link to="/auth/change_password">Change Password</router-link>
     <router-link to="/auth/code_validator">Code Validator</router-link>
   </div>
-  <auth-layout>
+  <layout-auth>
     <router-view></router-view>
-  </auth-layout>
+  </layout-auth>
 </template>

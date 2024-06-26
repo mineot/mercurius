@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { ButtonProps, getType } from "./contracts/app-button.contract";
+import { ButtonProps, getType } from "@component/contracts/app-button.contract";
 const props = defineProps<ButtonProps>();
 const type = computed(() => getType(props.type));
 </script>

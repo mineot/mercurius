@@ -14,10 +14,9 @@
 </template>
 
 <script setup lang="ts">
-import { PasswordConfirmProps } from "./contracts/constants";
+import { PasswordConfirmProps } from "@component/contracts/app-password-confirm.contract";
 import StrongPassword from "./util/StrongPassword.vue";
 import MatchPassword from "./util/MatchPassword.vue";
-
 const props = defineProps<PasswordConfirmProps>();
 const model = defineModel();
 </script>

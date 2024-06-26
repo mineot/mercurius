@@ -16,14 +16,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import { InputProps } from "./contracts/constants";
+import { ref, computed, Ref } from "vue";
+import { PasswordProps, getIcon, getType } from "@component/contracts/app-password.contract";
 import FormText from "./util/FormText.vue";
-
-const props = defineProps<InputProps>();
+const props = defineProps<PasswordProps>();
 const model = defineModel();
-const show = ref(false);
-const icon = computed(() => `bi bi-${show.value ? "eye-slash-fill" : "eye-fill"}`);
-const type = computed(() => (show.value ? "text" : "password"));
+const show: Ref<boolean> = ref(false);
+const icon = computed(() => getIcon(show));
+const type = computed(() => getType(show));
 const setShow = () => (show.value = !show.value);
 </script>

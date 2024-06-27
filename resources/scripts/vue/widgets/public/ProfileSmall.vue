@@ -1,16 +1,18 @@
 <template>
-  <app-img
-    :image="profile.publicProfile.photo"
-    :alt="profile.publicProfile.name"
-    size="120"
-    thumbnail
-  />
-  <app-label :text="profile.publicProfile.name" fontSize="xxl" />
-  <!-- <div>{{ profile.publicProfile.job_title }}</div> -->
-  <!-- <div>{{ profile.publicProfile.summary }}</div> -->
+  <app-flex-grid type="column" gap="2" mb="3">
+    <app-label :text="store.publicProfile.name" fontSize="lg" fontWeight="bold" center />
+    <app-img
+      :image="store.publicProfile.photo"
+      :alt="store.publicProfile.name"
+      size="140"
+      thumbnail
+      center
+    />
+    <app-label :text="store.publicProfile.summary" fontSize="xs" center />
+  </app-flex-grid>
 </template>
 
 <script setup lang="ts">
-import { publicProfileStore } from "@store/publicProfileStore";
-const profile = publicProfileStore();
+import { PublicProfile, publicProfileStore } from "@store/publicProfileStore";
+const store = publicProfileStore();
 </script>

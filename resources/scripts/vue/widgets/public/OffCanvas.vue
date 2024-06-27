@@ -1,15 +1,10 @@
 <template>
-  <div
-    class="offcanvas offcanvas-start"
-    tabindex="-1"
-    id="offcanvas"
-    aria-labelledby="offcanvasLabel"
-  >
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasLabel">OffCanvas</h5>
+      <wpub-profile-sm />
       <button
         type="button"
-        class="btn-close"
+        class="btn-close mb-auto"
         data-bs-dismiss="offcanvas"
         aria-label="Close"
       ></button>

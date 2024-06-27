@@ -54,6 +54,6 @@ export function getClasses(props: LabelProps): string {
   return classBuilder.join();
 }
 
-export function getCentered(props:LabelProps) {
-    return props.center ? "text-center" : "";
+export function getCentered(props: LabelProps) {
+  return props.center ? "text-center" : "";
 }

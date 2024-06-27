@@ -1,13 +1,15 @@
 <template>
   <layout-public>
     <wpub-profile-lg />
-    <!-- <h1>{{ $t("comming_soon") }}</h1>
     <hr />
-    <h3>{{ $t("comming_soon_message.A") }}</h3>
-    <p>{{ $t("comming_soon_message.B") }}</p>
-    <p>{{ $t("comming_soon_message.C") }}</p>
-    <div>{{ $t("comming_soon_message.D") }}</div>
-    <div>{{ $t("comming_soon_message.E") }}</div> -->
+    <app-flex-grid gap="1" type="column">
+      <app-label text="comming_soon" fontSize="lg" fontWeight="bold" translate />
+      <app-label text="comming_soon_message.A" translate />
+      <app-label text="comming_soon_message.B" translate />
+      <app-label text="comming_soon_message.C" translate />
+      <app-label text="comming_soon_message.D" translate />
+      <app-label text="comming_soon_message.E" translate />
+    </app-flex-grid>
   </layout-public>
 </template>
 

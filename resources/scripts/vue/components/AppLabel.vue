@@ -1,6 +1,7 @@
 <template>
   <div :class="centered">
-    <span :class="clazz">{{ props.text }}</span>
+    <span v-if="props.translate" :class="clazz">{{ $t(props.text || "") }}</span>
+    <span v-else :class="clazz">{{ props.text }}</span>
   </div>
 </template>
 

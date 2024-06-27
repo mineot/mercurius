@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
-// FIXME fix this problem
+// FIXME fix this problem, need get data from env by realtime
 const env = loadEnv(process.env.MODE, process.cwd());
 
 export default defineConfig({

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { publicProfileStore } from "@store/publicProfileStore";
-const profile = publicProfileStore();
-profile.fetchPublicProfile();
+import { pubProfileStore } from "@store/public/profile.store";
+const profile = pubProfileStore();
+profile.fetchProfile();
 </script>

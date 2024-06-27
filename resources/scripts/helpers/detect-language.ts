@@ -1,9 +1,17 @@
-export function detectLanguage(): string {
-  const lang = navigator.language.toLowerCase();
+/**
+ * Detects the user's preferred language.
+ *
+ * @returns {string} The language code ("pt" for Portuguese, "en" for English).
+ */
+export function detectLanguage(): "pt" | "en" {
+  const lang: string = navigator.language.toLowerCase();
 
-  if (["pt-br", "br", "pt"].includes(lang)) {
-    return "pt";
+  switch (lang) {
+    case "pt-br":
+    case "br":
+    case "pt":
+      return "pt";
+    default:
+      return "en";
   }
-
-  return "en";
 }

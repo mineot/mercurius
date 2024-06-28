@@ -1,5 +1,4 @@
-// xs < 576px | sm ≥ 576px | md ≥ 768px | lg ≥ 992px | xl ≥ 1200px | xxl ≥ 1400px
-$screenBreakpoint: 992px;
+$screenMaxSideBar: 280px;
 
 // Default bar backgroud color
 $bar-color: darken($gray-900, 3%);

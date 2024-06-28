@@ -9,7 +9,7 @@
         aria-label="Close"
       ></button>
     </div>
-    <div class="offcanvas-body offcanvar-content">
+    <div class="offcanvas-body offcanvas-content">
       <wpub-menu />
     </div>
   </div>

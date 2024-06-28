@@ -1,79 +1,44 @@
-@mixin Large {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: row;
-
-  .topbar {
-    display: none;
-  }
-
-  .sidebar {
-    flex: 1;
-    overflow: auto;
-    background-color: $bar-color !important;
-  }
-
-  .content {
-    flex: 4;
-    overflow: auto;
-  }
-}
-
-@mixin Small {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  .sidebar {
-    display: none;
-  }
-
-  .offcanvar-content {
-    overflow: auto;
-  }
-
-  .topbar {
-    flex: 0;
-    background-color: $bar-color !important;
-  }
-
-  .content {
-    flex: 4;
-    padding-top: 5px;
-    overflow: auto;
-  }
-}
-
 div.layout {
   &.public {
-    // LARGE
-    @media screen and (min-width: $screenBreakpoint) {
-      @include Large;
-    }
+    @extend .position-absolute;
+    @extend .h-100;
+    @extend .w-100;
+    @extend .d-flex;
+    @extend .gap-1;
 
-    // SMALL
-    @media screen and (max-width: $screenBreakpoint) {
-      @include Small;
+    @extend .flex-column;
+    @extend .flex-sm-column;
+    @extend .flex-md-column;
+    @extend .flex-lg-row;
+    @extend .flex-xl-row;
+    @extend .flex-xxl-row;
+
+    .topbar {
+      @extend .d-block;
+      @extend .d-sm-block;
+      @extend .d-md-block;
+      @extend .d-lg-none;
+      @extend .d-xl-none;
+      @extend .d-xxl-none;
+      background-color: $bar-color !important;
     }
 
     .sidebar {
-      @extend .container-fluid;
+      @extend .d-none;
+      @extend .d-sm-none;
+      @extend .d-md-none;
+      @extend .d-lg-block;
+      @extend .d-xl-block;
+      @extend .d-xxl-block;
+      @extend .px-3;
+      background-color: $bar-color !important;
+      max-width: $screenMaxSideBar !important;
     }
 
     .content {
-      @extend .container;
+      @extend .container-fluid;
+      @extend .container-sm;
+      @extend .flex-grow-1;
     }
   }
 }

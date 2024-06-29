@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PublicProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+Route::get('signed', [AuthController::class, 'signed']);
 
 Route::prefix('public')->group(function () {
 

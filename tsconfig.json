@@ -14,15 +14,17 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "paths": {
+      "@/*": ["resources/scripts/*"],
+      "@axios": ["resources/scripts/axios.ts"],
+      "@component/*": ["resources/scripts/components/*"],
       "@config/*": ["resources/scripts/configuration/*"],
+      "@constant/*": ["resources/scripts/constants/*"],
       "@helper/*": ["resources/scripts/helpers/*"],
-      "@component/*": ["resources/scripts/vue/components/*"],
-      "@widget/*": ["resources/scripts/vue/widgets/*"],
-      "@layout/*": ["resources/scripts/vue/layouts/*"],
-      "@store/*": ["resources/scripts/vue/stores/*"],
-      "@adminPage/*": ["resources/scripts/vue/pages/admin/*"],
-      "@authPage/*": ["resources/scripts/vue/pages/auth/*"],
-      "@publicPage/*": ["resources/scripts/vue/pages/public/*"]
+      "@layout/*": ["resources/scripts/layouts/*"],
+      "@model/*": ["resources/scripts/models/*"],
+      "@page/*": ["resources/scripts/pages/*"],
+      "@store/*": ["resources/scripts/stores/*"],
+      "@widget/*": ["resources/scripts/widgets/*"]
     }
   },
   "include": [

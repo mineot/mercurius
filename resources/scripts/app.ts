@@ -1,3 +1,3 @@
 import "bootstrap";
-import "@config/vue";
+import "@config/index";
 import "@helper/resize";

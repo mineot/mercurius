@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { pubProfileStore } from "@store/public/profile.store";
-const profile = pubProfileStore();
-profile.fetchProfile();
+import { profileStore } from "@store/profile.store";
+const store = profileStore();
+store.fetchProfile();
 </script>

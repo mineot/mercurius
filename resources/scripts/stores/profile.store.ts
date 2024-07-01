@@ -1,11 +1,11 @@
-import { API_PUBLIC_PROFILE } from "@store/contracts/profile.contract";
-import { Axios, getAxios } from "@store/utils/axios.util";
+import { API_PUBLIC_PROFILE } from "@constant/public.constants";
+import { Axios, getAxios } from "@axios";
 import { defineStore } from "pinia";
 import { detectLanguage } from "@helper/detect-language";
-import { Profile } from "@store/contracts/profile.contract";
+import { Profile } from "@model/profile.model";
 import { Ref, ref } from "vue";
 
-export const pubProfileStore = defineStore("pub-profile", () => {
+export const profileStore = defineStore("profile", () => {
   const profile: Ref<Profile> = ref({});
 
   async function fetchProfile(): Promise<void> {

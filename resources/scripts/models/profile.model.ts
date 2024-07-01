@@ -1,5 +1,3 @@
-export const API_PUBLIC_PROFILE = (lang: string) => `api/public/profile/${lang}`;
-
 export interface Profile {
   id?: string;
   name?: string;

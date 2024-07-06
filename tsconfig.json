@@ -15,7 +15,7 @@
     "skipLibCheck": true,
     "paths": {
       "@/*": ["resources/scripts/*"],
-      "@axios": ["resources/scripts/axios.ts"],
+      "@api": ["resources/scripts/api.ts"],
       "@component/*": ["resources/scripts/components/*"],
       "@config/*": ["resources/scripts/configuration/*"],
       "@constant/*": ["resources/scripts/constants/*"],

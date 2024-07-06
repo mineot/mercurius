@@ -28,7 +28,7 @@ export default defineConfig({
       "~scss": path.resolve(__dirname, "./resources/scss"),
       "~node": path.resolve(__dirname, "./node_modules"),
       "@": path.resolve(__dirname, "./resources/scripts"),
-      "@axios": path.resolve(__dirname, "./resources/scripts/axios.ts"),
+      "@api": path.resolve(__dirname, "./resources/scripts/api.ts"),
       "@component": path.resolve(__dirname, "./resources/scripts/components"),
       "@config": path.resolve(__dirname, "./resources/scripts/configuration"),
       "@constant": path.resolve(__dirname, "./resources/scripts/constants"),

@@ -1,4 +1,4 @@
-import { routes } from "@constant/routes.constants";
+import { routes } from "@config/routers/routes";
 import { createRouter, createWebHistory } from "vue-router";
 import { authGuard } from "./guards/auth.guard";
 

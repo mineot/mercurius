@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\AuthenticateMiddleware;
 use App\Http\Middleware\LanguageAutoSelector;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -14,6 +15,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->append(LanguageAutoSelector::class);
+        $middleware->alias([
+            'isAuth' => AuthenticateMiddleware::class
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

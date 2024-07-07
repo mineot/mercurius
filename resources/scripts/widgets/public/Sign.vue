@@ -6,6 +6,7 @@
     <div>
       <router-link to="auth/signup">Sign Up</router-link>
     </div>
+    <hr />
     <div>
       <router-link to="admin">Admin</router-link>
     </div>

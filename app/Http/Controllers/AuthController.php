@@ -12,4 +12,28 @@ class AuthController extends Controller
             'isAuthenticated' => Auth::check()
         ];
     }
+
+    function signin() {
+        dd('sign in');
+    }
+
+    function signup() {
+        dd('sign up');
+    }
+
+    function signout() {
+        Auth::logout();
+    }
+
+    function recovery() {
+        dd('recovery password');
+    }
+
+    function validate() {
+        dd('validate code');
+    }
+
+    function change() {
+        dd('change password');
+    }
 }

@@ -1,10 +1,2 @@
 ### PUBLIC PROFILE WITH LANGUAGE: Exemple en-US to English
 GET http://localhost:8000/api/public/profile/pt
-
-###
-
-GET http://localhost:8000/api/auth/signed
-
-###
-
-GET http://localhost:8000/api/admin/test

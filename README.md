@@ -26,7 +26,7 @@ php artisan generate:key
 # Routes and Cache
 php artisan route:cache
 
-# Run migrations
+# Run migrations and Seeds
 php artisan migrate:fresh --seed
 ```
 

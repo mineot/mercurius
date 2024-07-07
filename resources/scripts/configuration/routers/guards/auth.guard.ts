@@ -5,9 +5,7 @@ export async function authGuard(to: any, from: any, next: any) {
     return next();
   }
 
-  const store = authStore();
-
-  if (await store.isAuthenticated()) {
+  if (await authStore().signed()) {
     return next();
   }
 

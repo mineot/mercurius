@@ -1,0 +1,15 @@
+###
+GET http://localhost:8000/api/auth/signed
+
+###
+POST http://localhost:8000/api/auth/sign/in HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "admin@123456"
+}
+
+###
+POST http://localhost:8000/api/auth/sign/out HTTP/1.1
+content-type: application/json

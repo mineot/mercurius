@@ -23,6 +23,9 @@ mv .env.example .env
 # Generate project key
 php artisan generate:key
 
+# Routes and Cache
+php artisan route:cache
+
 # Run migrations
 php artisan migrate:fresh --seed
 ```
@@ -52,6 +55,11 @@ rm -rf node_modules public/build && npm install && npm run build
 
 # Update dependencies
 php composer update
+
+# Routes and Cache
+php artisan route:clear
+php artisan route:cache
+php artisan cache:clear
 
 # Run migrations
 php artisan migrate

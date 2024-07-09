@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
 use Throwable;
 
-class AuthController extends Controller
+// TODO code validation
+// TODO remmeber me
+class AuthController extends MessageController
 {
     function signed() {
-        if (Auth::check()) {
-            return response()->json([], 200);
+        try {
+            if (Auth::check()) return $this->success('signed', 'authorized');
+            return $this->unauthorized('signed');
+        } catch (Throwable $th) {
+            return $this->fail('signed', $th);
         }
-
-        return response()->json([], 401);
     }
 
     function signin(Request $request) {
@@ -25,17 +31,41 @@ class AuthController extends Controller
 
             if (Auth::attempt($credentials)) {
                 $request->session()->regenerate();
-                return response()->json(['message' => 'authorized'], 200);
+                return $this->success('signin', 'authorized');
             }
 
-            return response()->json(['error' => 'unauthorized'], 401);
+            return $this->unauthorized('signin');
         } catch (Throwable $th) {
-            return response()->json(['error' => $th->getMessage()], 500);
+            return $this->fail('signin', $th);
         }
     }
 
-    function signup() {
-        dd('sign up');
+    function signup(Request $request) {
+        try {
+            $create = $request->validate([
+                'email' => ['required', 'email'],
+                'name' => ['required'],
+                'password' => ['required', 'confirmed'],
+            ]);
+
+            $credentials = $request->only('email', 'password');
+
+            $user = new User();
+            $user->name = $create['name'];
+            $user->email = $create['email'];
+            $user->password = bcrypt($create['password']);
+            $user->save();
+
+            Auth::attempt($credentials);
+            $request->session()->regenerate();
+            return $this->created('signup');
+        } catch(ValidationException $ex) {
+            return $this->validationException('signup', $ex);
+        } catch(QueryException $ex) {
+            return $this->queryException('signup', $ex);
+        } catch (Throwable $th) {
+            return $this->fail('signup', $th);
+        }
     }
 
     function signout(Request $request) {
@@ -43,19 +73,19 @@ class AuthController extends Controller
             Auth::logout();
             $request->session()->regenerate();
         } catch (Throwable $th) {
-            return response()->json(['error' => $th->getMessage()], 500);
+            return $this->fail('signout', $th);
         }
     }
 
     function recovery() {
-        dd('recovery password');
+        return $this->success('recovery');
     }
 
     function validate() {
-        dd('validate code');
+        return $this->success('validate');
     }
 
     function change() {
-        dd('change password');
+        return $this->success('change');
     }
 }

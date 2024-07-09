@@ -11,5 +11,16 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:8000/api/auth/sign/up HTTP/1.1
+content-type: application/json
+
+{
+    "amail": "abc@admin.com",
+    "password": "123456789",
+    "password_confirmation": "123456789",
+    "name": "ABC"
+}
+
+###
 POST http://localhost:8000/api/auth/sign/out HTTP/1.1
 content-type: application/json

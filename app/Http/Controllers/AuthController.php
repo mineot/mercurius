@@ -15,10 +15,10 @@ class AuthController extends MessageController
 {
     function signed() {
         try {
-            if (Auth::check()) return $this->success('signed', 'authorized');
-            return $this->unauthorized('signed');
+            if (Auth::check()) return $this->success('auth/signed', 'authorized');
+            return $this->unauthorized('auth/signed');
         } catch (Throwable $th) {
-            return $this->fail('signed', $th);
+            return $this->fail('auth/signed', $th);
         }
     }
 
@@ -31,12 +31,12 @@ class AuthController extends MessageController
 
             if (Auth::attempt($credentials)) {
                 $request->session()->regenerate();
-                return $this->success('signin', 'authorized');
+                return $this->success('auth/signin', 'authorized');
             }
 
-            return $this->unauthorized('signin');
+            return $this->unauthorized('auth/signin');
         } catch (Throwable $th) {
-            return $this->fail('signin', $th);
+            return $this->fail('auth/signin', $th);
         }
     }
 
@@ -58,13 +58,13 @@ class AuthController extends MessageController
 
             Auth::attempt($credentials);
             $request->session()->regenerate();
-            return $this->created('signup');
+            return $this->created('auth/signup');
         } catch(ValidationException $ex) {
-            return $this->validationException('signup', $ex);
+            return $this->validationException('auth/signup', $ex);
         } catch(QueryException $ex) {
-            return $this->queryException('signup', $ex);
+            return $this->queryException('auth/signup', $ex);
         } catch (Throwable $th) {
-            return $this->fail('signup', $th);
+            return $this->fail('auth/signup', $th);
         }
     }
 
@@ -72,20 +72,21 @@ class AuthController extends MessageController
         try {
             Auth::logout();
             $request->session()->regenerate();
+            return $this->success('auth/signout');
         } catch (Throwable $th) {
-            return $this->fail('signout', $th);
+            return $this->fail('auth/signout', $th);
         }
     }
 
     function recovery() {
-        return $this->success('recovery');
+        return $this->success('auth/recovery');
     }
 
     function validate() {
-        return $this->success('validate');
+        return $this->success('auth/validate');
     }
 
     function change() {
-        return $this->success('change');
+        return $this->success('auth/change');
     }
 }

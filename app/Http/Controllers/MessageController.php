@@ -25,6 +25,14 @@ class MessageController extends Controller {
         ]);
     }
 
+    public function returnData($origin, $data, $message = null) {
+        return $this->message(200, [
+            'origin' => $origin,
+            'message' => $message ?? "data received",
+            'data' => $data
+        ]);
+    }
+
     public function unauthorized($origin, $message = null) {
         return $this->message(401, [
             'origin' => $origin,

@@ -14,17 +14,9 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["resources/scripts/*"],
-      "@api": ["resources/scripts/api.ts"],
-      "@component/*": ["resources/scripts/components/*"],
-      "@config/*": ["resources/scripts/configuration/*"],
-      "@constant/*": ["resources/scripts/constants/*"],
-      "@helper/*": ["resources/scripts/helpers/*"],
-      "@layout/*": ["resources/scripts/layouts/*"],
-      "@model/*": ["resources/scripts/models/*"],
-      "@page/*": ["resources/scripts/pages/*"],
-      "@store/*": ["resources/scripts/stores/*"],
-      "@widget/*": ["resources/scripts/widgets/*"]
+      "@scripts/*": ["resources/scripts/*"],
+      "@stores/*": ["resources/scripts/stores/*"],
+      "$api": ["resources/scripts/miscellaneous/api.ts"]
     }
   },
   "include": [

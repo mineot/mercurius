@@ -1,15 +1,15 @@
 <template>
   <app-flex-grid type="column">
-    <app-pswd id="password" label="term.password">
+    <app-password id="password" label="term.password">
       <template #complement>
         <StrongPassword />
       </template>
-    </app-pswd>
-    <app-pswd id="password_confirm" label="term.password_confirmation">
+    </app-password>
+    <app-password id="password_confirm" label="term.password_confirmation">
       <template #complement>
         <MatchPassword />
       </template>
-    </app-pswd>
+    </app-password>
   </app-flex-grid>
 </template>
 

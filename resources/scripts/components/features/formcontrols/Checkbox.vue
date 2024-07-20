@@ -4,17 +4,12 @@
       <input class="form-check-input" type="checkbox" :id="props.id" v-model="model" />
       <label class="form-check-label" :for="props.id">{{ $t(props.label) }}</label>
     </div>
-    <FormText :message="props.message">
-      <template #complement>
-        <slot name="complement"></slot>
-      </template>
-    </FormText>
+    <app-form-text :message="props.message" :messageType="props.messageType" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { InputProps } from "./contracts/input.contract";
-import FormText from "./utils/FormText.vue";
-const props = defineProps<InputProps>();
+import { CheckboxProps } from "./checkbox";
+const props = defineProps<CheckboxProps>();
 const model = defineModel();
 </script>

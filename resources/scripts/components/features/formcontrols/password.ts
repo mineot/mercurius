@@ -1,5 +1,5 @@
 import { Ref } from "vue";
-import { InputProps } from "./input.contract";
+import { InputProps } from "./input";
 
 export interface PasswordProps extends InputProps {}
 

@@ -1,4 +1,13 @@
 <template>
+  <div class="container">
+    <div>
+      <app-input id="text" label="Text" type="text" />
+      <app-input id="number" label="Number" type="Number" />
+      <app-input id="email" label="Email" type="email" />
+      <app-password id="password" label="Password" />
+      <app-checkbox id="checkbox" label="Checkbox" />
+    </div>
+  </div>
   <!-- <layout-public>
     <wpub-profile-lg />
     <hr />

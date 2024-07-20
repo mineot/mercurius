@@ -1,7 +1,7 @@
-import { gadgetsRegistration } from "./gadgets/gadgets-registration";
+import { featuresRegistration } from "./features/features-registration";
 import { widgetsRegistration } from "./widgets/widgets-registration";
 
 export function componentsRegistration(app: any) {
-  gadgetsRegistration(app);
+  featuresRegistration(app);
   widgetsRegistration(app);
 }

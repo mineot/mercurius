@@ -1,5 +1,5 @@
 import { createI18n } from "vue-i18n";
-import { detectLanguage } from "../helpers/detect-language";
+import { detectLanguage } from "../../shared/helpers/detect-language";
 import { enLanguage } from "./en";
 import { ptLanguage } from "./pt";
 

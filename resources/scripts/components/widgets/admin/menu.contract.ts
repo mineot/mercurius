@@ -1,4 +1,4 @@
-import { ClassBuilder } from "@scripts/miscellaneous/helpers/class-builder";
+import { ClassBuilder } from "@scripts/shared/helpers/class-builder";
 
 export interface MenuProps {
   icon: string;

@@ -16,7 +16,7 @@
     "paths": {
       "@scripts/*": ["resources/scripts/*"],
       "@stores/*": ["resources/scripts/stores/*"],
-      "$api": ["resources/scripts/miscellaneous/api.ts"]
+      "$api": ["resources/scripts/shared/api.ts"]
     }
   },
   "include": [

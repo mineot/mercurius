@@ -1,6 +1,6 @@
-import { AUTH_SIGNED } from "@scripts/miscellaneous/constants/api.endpoints";
+import { AUTH_SIGNED } from "@scripts/shared/constants/api.endpoints";
 import { defineStore } from "pinia";
-import { Get, Response } from "$api";
+import { Get, Response } from "@scripts/shared/api";
 
 export const authStore = defineStore("auth-store", () => {
   async function signed(): Promise<boolean> {

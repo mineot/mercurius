@@ -1,4 +1,4 @@
-import { ClassBuilder } from "@scripts/miscellaneous/helpers/class-builder";
+import { ClassBuilder } from "@scripts/shared/helpers/class-builder";
 
 type Size = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 

@@ -1,8 +1,8 @@
 import { defineStore } from "pinia";
-import { detectLanguage } from "@scripts/miscellaneous/helpers/detect-language";
-import { Get, Response } from "$api";
+import { detectLanguage } from "@scripts/shared/helpers/detect-language";
+import { Get, Response } from "@scripts/shared/api";
 import { Profile } from "@stores/models/profile.model";
-import { PUBLIC_PROFILE } from "@scripts/miscellaneous/constants/api.endpoints";
+import { PUBLIC_PROFILE } from "@scripts/shared/constants/api.endpoints";
 import { Ref, ref } from "vue";
 
 export const profileStore = defineStore("profile-store", () => {

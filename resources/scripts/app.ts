@@ -6,7 +6,7 @@ import { createPinia } from "pinia";
 import { createRouter, createWebHistory } from "vue-router";
 import { i18nInstance } from "@scripts/miscellaneous/i18n";
 import { routes } from "./pages/routes";
-import "@scripts/miscellaneous/helpers/resize";
+import "@scripts/shared/helpers/resize";
 
 const app = createApp({});
 const pinia = createPinia();

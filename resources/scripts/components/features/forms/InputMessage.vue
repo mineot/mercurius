@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { FormTextProps, getFormTextClass } from "./form-text";
-const props = defineProps<FormTextProps>();
-const clazz = computed(() => getFormTextClass(props));
+import { InputMessageProps, getInputMessageClass } from "./contracts";
+const props = defineProps<InputMessageProps>();
+const clazz = computed(() => getInputMessageClass(props));
 </script>

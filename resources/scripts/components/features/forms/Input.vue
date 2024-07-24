@@ -11,14 +11,15 @@
       </span>
       <slot name="btn"></slot>
     </div>
-    <app-form-text :message="props.message" :messageType="props.messageType" />
+    <app-input-message :message="props.message" :messageType="props.messageType" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { InputProps, getType } from "./input";
+import { InputProps, getInputType } from "./contracts";
+
 const props = defineProps<InputProps>();
 const model = defineModel();
-const type = computed(() => getType(props));
+const type = computed(() => getInputType(props));
 </script>

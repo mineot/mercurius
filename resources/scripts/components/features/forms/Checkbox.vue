@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckboxProps } from "./contracts";
-const props = defineProps<CheckboxProps>();
+import { Props } from "./controller";
+const props = defineProps<Props>();
 const model = defineModel();
 </script>

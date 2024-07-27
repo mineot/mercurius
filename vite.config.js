@@ -29,7 +29,7 @@ export default defineConfig({
       "~node": path.resolve(__dirname, "./node_modules"),
       "@scripts": path.resolve(__dirname, "./resources/scripts"),
       "@stores": path.resolve(__dirname, "./resources/scripts/stores"),
-      $api: path.resolve(__dirname, "./resources/scripts/miscellaneous/api.ts"),
+      "@shared": path.resolve(__dirname, "./resources/scripts/shared"),
     },
   },
 });

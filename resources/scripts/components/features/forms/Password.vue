@@ -17,11 +17,11 @@
 
 <script setup lang="ts">
 import { ref, computed, Ref } from "vue";
-import { PasswordProps, getPasswordIcon, getPasswordType } from "./contracts";
-const props = defineProps<PasswordProps>();
+import { Props, passwordIcon, passwordType } from "./controller";
+const props = defineProps<Props>();
 const model = defineModel();
 const show: Ref<boolean> = ref(false);
-const icon = computed(() => getPasswordIcon(show));
-const type = computed(() => getPasswordType(show));
+const icon = computed(() => passwordIcon(show));
+const type = computed(() => passwordType(show));
 const setShow = () => (show.value = !show.value);
 </script>

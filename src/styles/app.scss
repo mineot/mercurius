@@ -1,7 +1,29 @@
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-icons/font/bootstrap-icons.min';
 
-// body {
-//   background-color: #222;
-//   color: #aaa;
-// }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend .p-2;
+  @extend .p-md-3;
+  @extend .p-lg-3;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  overflow: hidden;
+
+  #app {
+    @extend .p-1;
+    @extend .bg-body;
+    @extend .border;
+    @extend .rounded;
+    flex: 1;
+    flex-wrap: nowrap;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px $body-tertiary-bg-dark;
+  }
+}

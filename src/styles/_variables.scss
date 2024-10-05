@@ -1,14 +1,3 @@
-@use 'sass:color';
-
-$background: black;
-$forecolor: #999;
-
-$primary: purple;
-$primary-dark: color.adjust($primary, $lightness: -10%);
-$primary-light: color.adjust($primary, $lightness: 10%);
-
-$border: 1px inset $primary;
-
 $gap-0: 0px;
 $gap-1: 5px;
 $gap-2: 10px;

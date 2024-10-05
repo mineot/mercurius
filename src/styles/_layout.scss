@@ -1,0 +1,67 @@
+@mixin layout-common-base {
+  color: $secondary-dark;
+  background-color: $background;
+  border: 1px inset $primary;
+  border-radius: 3px;
+  box-shadow: 0 0 16px -4px $secondary inset;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: $gap-3;
+
+  > .header {
+    @extend .background-texture;
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $gap-3 $gap-2;
+    box-shadow: 0 -30px 25px 25px $secondary;
+
+    > .title {
+      @include layout-common-base;
+      flex: 0;
+      margin: 0;
+      padding: $gap-1 $gap-3;
+    }
+
+    > .separator {
+      flex: 1;
+    }
+
+    > .items {
+      @include layout-common-base;
+      flex: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      > .item {
+        padding: $gap-1 $gap-3;
+        text-decoration: none;
+        color: $secondary;
+
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        &:active {
+          color: $secondary-dark;
+        }
+      }
+    }
+  }
+
+  > .body {
+    flex: 1;
+    padding: 0 $gap-3;
+    overflow: auto;
+  }
+}

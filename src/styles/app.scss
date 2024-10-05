@@ -1,6 +1,14 @@
 @import 'bootstrap-icons/font/bootstrap-icons.min';
+
+@import 'colors';
 @import 'variables';
 @import 'fonts';
+@import 'layout';
+
+@import './utils/background.util.scss';
+@import './utils/border.util.scss';
+@import './utils/icons.util.scss';
+@import './utils/scrollbar.util.scss';
 
 * {
   box-sizing: border-box;
@@ -17,9 +25,9 @@ body {
   overflow: hidden;
 
   #app {
+    flex: 1;
     display: flex;
     flex-wrap: nowrap;
-    flex: 1;
     overflow: hidden;
   }
 }

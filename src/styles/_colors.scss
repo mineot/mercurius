@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+$background: black;
+$forecolor: #999;
+$texture: url(./images/subtle-grey.png);
+
+$primary: #800080;
+$primary-dark: color.adjust($primary, $lightness: -10%);
+$primary-light: color.adjust($primary, $lightness: 10%);
+
+$secondary: #00ffff;
+$secondary-dark: color.adjust($secondary, $lightness: -10%);
+$secondary-light: color.adjust($secondary, $lightness: 10%);

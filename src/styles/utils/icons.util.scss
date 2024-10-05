@@ -1,0 +1,20 @@
+i {
+  @extend .bi;
+  &.icon-home {
+    @extend .bi-house-fill;
+  }
+
+  &.icon-help {
+    @extend .bi-info-square-fill;
+  }
+
+  &.hover {
+    &:hover {
+      color: $secondary-dark;
+    }
+
+    &:active {
+      color: $secondary-light;
+    }
+  }
+}

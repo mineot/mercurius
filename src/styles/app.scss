@@ -3,21 +3,19 @@
 @import 'colors';
 @import 'variables';
 @import 'fonts';
-@import 'layout';
 
-@import './utils/background.util.scss';
-@import './utils/border.util.scss';
 @import './utils/icons.util.scss';
 @import './utils/scrollbar.util.scss';
+@import './utils/layout/layout.util.scss';
 
 * {
   box-sizing: border-box;
   font-family: 'KodeMono', monospace, sans-serif;
+  color: $forecolor;
 }
 
 body {
   background-color: $background;
-  color: $forecolor;
   display: flex;
   flex-wrap: nowrap;
   height: 100vh;

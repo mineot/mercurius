@@ -11,6 +11,10 @@
       </router-link>
     </div>
     <div class="sidebar">
+      <div class="banner-widget">
+        <div>You Name</div>
+        <div>Figure</div>
+      </div>
       <router-link to="/">
         <i class="icon-home"></i>
         <span>Home</span>

@@ -3,6 +3,11 @@ $screen-large: 992px;
 
 $texture: unset; // url(./images/3px-tile.png);
 
+$boder-size: 1px;
+$boder-style: dashed;
+$boder-color: $primary-light;
+$border: $boder-size $boder-style $boder-color;
+
 $gap-0: 0px;
 $gap-1: 5px;
 $gap-2: 10px;

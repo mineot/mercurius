@@ -1,0 +1,28 @@
+@media (max-width: $screen-small) {
+  .layout {
+    @include layout-commons;
+    flex-direction: column;
+
+    > .sidebar,
+    > .floatbar {
+      display: none;
+    }
+
+    > .header {
+      flex-direction: row;
+      border-bottom: $border;
+
+      > .title {
+        flex: 0;
+      }
+
+      > .separator {
+        flex: 1;
+      }
+
+      > .icons {
+        flex: 0;
+      }
+    }
+  }
+}

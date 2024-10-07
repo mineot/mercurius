@@ -1,0 +1,15 @@
+@media (min-width: $screen-small) and (max-width: $screen-large) {
+  .layout {
+    @include layout-commons;
+    flex-direction: row;
+
+    > .header,
+    > .floatbar {
+      display: none;
+    }
+
+    > .sidebar {
+      border-right: $border;
+    }
+  }
+}

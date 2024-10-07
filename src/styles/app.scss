@@ -1,14 +1,9 @@
 @import 'bootstrap-icons/font/bootstrap-icons.min';
-
 @import 'colors';
 @import 'variables';
 @import 'fonts';
-
-@import './utils/icons.util.scss';
-@import './utils/scrollbar.util.scss';
-@import './utils/layout/layout.util.scss';
-
-@import './widgets/banner.widget.scss';
+@import 'utils/index.scss';
+@import 'layouts/index.scss';
 
 * {
   box-sizing: border-box;

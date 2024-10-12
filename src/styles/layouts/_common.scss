@@ -1,38 +1,41 @@
-@mixin flex-nowrap {
+$layout-commons-gap: $gap-3;
+$layout-commons-padding: $gap-3;
+
+@mixin layout-commons-flex-nowrap {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 
 @mixin layout-commons {
-  @include flex-nowrap;
+  @include layout-commons-flex-nowrap;
   flex: 1;
   overflow: hidden;
 
   > .header {
-    @include flex-nowrap;
+    @include layout-commons-flex-nowrap;
+    gap: $layout-commons-gap;
+    padding: $layout-commons-padding;
     flex: 0;
     flex-direction: row;
-    padding: $gap-3;
-    gap: $gap-3;
   }
 
   > .floatbar {
-    @include flex-nowrap;
+    @include layout-commons-flex-nowrap;
     flex: 0;
   }
 
   > .sidebar {
-    @include flex-nowrap;
+    @include layout-commons-flex-nowrap;
+    gap: $layout-commons-gap;
+    padding: $layout-commons-padding;
     flex: 0;
-    padding: $gap-3;
-    gap: $gap-3;
   }
 
   > .body {
-    @include flex-nowrap;
+    @include layout-commons-flex-nowrap;
+    gap: $layout-commons-gap;
+    padding: $layout-commons-padding;
     flex: 1;
-    padding: $gap-3;
-    gap: $gap-3;
   }
 }

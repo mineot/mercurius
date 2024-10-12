@@ -1,18 +1,13 @@
+@import 'bootstrap/dist/css/bootstrap.min';
 @import 'bootstrap-icons/font/bootstrap-icons.min';
-@import 'colors';
 @import 'variables';
-@import 'fonts';
-@import 'utils/index.scss';
 @import 'layouts/index.scss';
 
 * {
   box-sizing: border-box;
-  font-family: 'KodeMono', monospace, sans-serif;
-  color: $forecolor;
 }
 
 body {
-  background-color: $background;
   display: flex;
   flex-wrap: nowrap;
   height: 100vh;
@@ -26,3 +21,13 @@ body {
     overflow: hidden;
   }
 }
+
+// @import 'colors';
+// @import 'fonts';
+// @import 'utils/index.scss';
+
+// * {
+//   box-sizing: border-box;
+//   font-family: 'KodeMono', monospace, sans-serif;
+//   color: $forecolor;
+// }

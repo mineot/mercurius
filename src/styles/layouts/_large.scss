@@ -1,18 +1,12 @@
-@media (min-width: $screen-large) {
-  $padding: 12vw;
+// @media (min-width: $screen-large) {
+//   .layout {
+//     @include layout-commons;
+//     padding: 0 12vw;
+//     flex-direction: row;
 
-  .layout {
-    @include layout-commons;
-    flex-direction: row;
-    padding: 0 $padding 0 $padding;
-
-    > .header,
-    > .floatbar {
-      display: none;
-    }
-
-    > .sidebar {
-      border-right: $border;
-    }
-  }
-}
+//     > .header,
+//     > .floatbar {
+//       display: none;
+//     }
+//   }
+// }

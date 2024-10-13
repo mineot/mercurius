@@ -1,6 +1,6 @@
 <template>
-  <div class="layout">
-    <div class="header">
+  <section role="layout">
+    <header>
       <router-link class="button" to="/">
         <i class="icon-home"></i>
         <span>Home</span>
@@ -9,10 +9,9 @@
         <i class="icon-help"></i>
         <span>About</span>
       </router-link>
-      <div class="separator"></div>
-    </div>
-    <div class="body">
+    </header>
+    <section>
       <router-view />
-    </div>
-  </div>
+    </section>
+  </section>
 </template>

@@ -1,13 +1,9 @@
 @media (min-width: $screen-small) and (max-width: $screen-large) {
-  .layout {
+  section[role='layout'] {
     padding: 0;
 
-    .header {
+    > header {
       min-width: 30vw;
-
-      > .separator {
-        display: none;
-      }
     }
   }
 }

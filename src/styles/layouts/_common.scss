@@ -1,10 +1,10 @@
-.layout {
+section[role='layout'] {
   flex: 1;
   display: flex;
   flex-wrap: nowrap;
   gap: $gap-1;
 
-  > .header {
+  > header {
     @extend .bg-body-secondary;
     flex: 0;
     display: flex;
@@ -12,17 +12,9 @@
     flex-wrap: nowrap;
     gap: $gap-2;
     padding: 0 $gap-2;
-
-    > * {
-      flex: 0;
-    }
-
-    > .separator {
-      flex: 1;
-    }
   }
 
-  > .body {
+  > section {
     flex: 1;
     display: flex;
     padding: 0 $gap-2;

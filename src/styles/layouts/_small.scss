@@ -1,8 +1,8 @@
 @media (max-width: $screen-small) {
-  .layout {
+  section[role='layout'] {
     flex-direction: column;
 
-    > .header {
+    > header {
       flex-direction: row;
       padding: $gap-2;
     }

@@ -1,28 +1,10 @@
-// @media (max-width: $screen-small) {
-//   .layout {
-//     @include layout-commons;
-//     flex-direction: column;
+@media (max-width: $screen-small) {
+  .layout {
+    flex-direction: column;
 
-//     > .sidebar,
-//     > .floatbar {
-//       display: none;
-//     }
-
-//     > .header {
-//       flex-direction: row;
-//       border-bottom: $border;
-
-//       > .title {
-//         flex: 0;
-//       }
-
-//       > .separator {
-//         flex: 1;
-//       }
-
-//       > .icons {
-//         flex: 0;
-//       }
-//     }
-//   }
-// }
+    > .header {
+      flex-direction: row;
+      padding: $gap-2;
+    }
+  }
+}

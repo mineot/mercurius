@@ -1,15 +1,13 @@
-// @media (min-width: $screen-small) and (max-width: $screen-large) {
-//   .layout {
-//     @include layout-commons;
-//     flex-direction: row;
+@media (min-width: $screen-small) and (max-width: $screen-large) {
+  .layout {
+    padding: 0;
 
-//     > .header,
-//     > .floatbar {
-//       display: none;
-//     }
+    .header {
+      min-width: 30vw;
 
-//     > .sidebar {
-//       border-right: $border;
-//     }
-//   }
-// }
+      > .separator {
+        display: none;
+      }
+    }
+  }
+}

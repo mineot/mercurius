@@ -1,41 +1,30 @@
-$layout-commons-gap: $gap-3;
-$layout-commons-padding: $gap-3;
-
-@mixin layout-commons-flex-nowrap {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-@mixin layout-commons {
-  @include layout-commons-flex-nowrap;
+.layout {
   flex: 1;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: $gap-1;
 
   > .header {
-    @include layout-commons-flex-nowrap;
-    gap: $layout-commons-gap;
-    padding: $layout-commons-padding;
+    @extend .bg-body-secondary;
     flex: 0;
-    flex-direction: row;
-  }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: $gap-2;
+    padding: 0 $gap-2;
 
-  > .floatbar {
-    @include layout-commons-flex-nowrap;
-    flex: 0;
-  }
+    > * {
+      flex: 0;
+    }
 
-  > .sidebar {
-    @include layout-commons-flex-nowrap;
-    gap: $layout-commons-gap;
-    padding: $layout-commons-padding;
-    flex: 0;
+    > .separator {
+      flex: 1;
+    }
   }
 
   > .body {
-    @include layout-commons-flex-nowrap;
-    gap: $layout-commons-gap;
-    padding: $layout-commons-padding;
     flex: 1;
+    display: flex;
+    padding: 0 $gap-2;
   }
 }

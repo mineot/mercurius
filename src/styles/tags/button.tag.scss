@@ -1,0 +1,14 @@
+button,
+.button {
+  @extend .btn;
+  @extend .btn-sm;
+  @extend .btn-link;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: $gap-1;
+
+  &.secondary {
+    @extend .btn-secondary;
+  }
+}

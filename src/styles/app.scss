@@ -1,6 +1,8 @@
 @import 'bootstrap/dist/css/bootstrap.min';
 @import 'bootstrap-icons/font/bootstrap-icons.min';
 @import 'variables';
+@import 'tags/index.scss';
+@import 'utils/index.scss';
 @import 'layouts/index.scss';
 
 * {

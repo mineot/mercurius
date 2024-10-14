@@ -1,0 +1,33 @@
+// $scrollbar-size: 5px;
+// $scrollbar-color: $primary;
+// $scrollbar-color-alt: $primary-light;
+// $scrollbar-color-hover: $primary-dark;
+
+// ::-webkit-scrollbar-button {
+//   display: none;
+// }
+
+// ::-webkit-scrollbar {
+//   width: $scrollbar-size;
+//   height: $scrollbar-size;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: $scrollbar-size;
+//   border-radius: $scrollbar-size;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: $scrollbar-color-alt;
+//   border-radius: $scrollbar-size;
+//   border: 1px solid $scrollbar-size;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background-color: $scrollbar-color-hover;
+// }
+
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: $scrollbar-color-alt $scrollbar-size;
+// }

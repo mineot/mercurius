@@ -1,0 +1,12 @@
+{
+  "en": {
+    "name": "John Doe",
+    "photo": "https://i.pravatar.cc/300",
+    "summary": "Lorem ipsum odor amet, consectetuer adipiscing elit. Accumsan hac rhoncus bibendum maecenas vestibulum amet commodo."
+  },
+  "pt": {
+    "name": "José Ninguém",
+    "photo": "https://i.pravatar.cc/300",
+    "summary": "Lorem ipsum odor amet, consectetuer adipiscing elit. Accumsan hac rhoncus bibendum maecenas vestibulum amet commodo."
+  }
+}

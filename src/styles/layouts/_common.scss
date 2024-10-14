@@ -11,12 +11,12 @@ section[role='layout'] {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: $gap-2;
-    padding: 0 $gap-2;
+    padding: $gap-1 $gap-2;
   }
 
   > section {
     flex: 1;
     display: flex;
-    padding: 0 $gap-2;
+    padding: $gap-1 $gap-2;
   }
 }

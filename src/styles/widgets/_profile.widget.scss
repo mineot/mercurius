@@ -1,0 +1,23 @@
+section[role='profile-widget'] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gap-2;
+
+  > .name {
+    @extend .h4;
+    @extend .text-body-secondary;
+    @extend .m-0;
+  }
+
+  > .photo {
+    @extend .rounded-circle;
+    max-width: 120px;
+  }
+
+  > .summary {
+    @extend .text-body-secondary;
+    text-align: center;
+  }
+}

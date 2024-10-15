@@ -1,0 +1,46 @@
+{
+  "en": [
+    {
+      "icon": ["bi", "bi-whastapp"],
+      "title": "Contact me on WhatsApp",
+      "link": "https://www.whatsapp.com/"
+    },
+    {
+      "icon": ["bi", "bi-telegram"],
+      "title": "Contact me on Telegram",
+      "link": "https://www.telegram.org/"
+    },
+    {
+      "icon": ["bi", "bi-twitter-x"],
+      "title": "Follow me on Twitter/X",
+      "link": "https://x.com/"
+    },
+    {
+      "icon": ["bi", "bi-youtube"],
+      "title": "See my Youtube",
+      "link": "https://www.youtube.com/"
+    }
+  ],
+  "pt": [
+    {
+      "icon": ["bi", "bi-whastapp"],
+      "title": "Entre em contato no WhatsApp",
+      "link": "https://www.whatsapp.com/"
+    },
+    {
+      "icon": ["bi", "bi-telegram"],
+      "title": "Entre em contato no Telegram",
+      "link": "https://www.telegram.org/"
+    },
+    {
+      "icon": ["bi", "bi-twitter-x"],
+      "title": "Siga-me no Twitter/X",
+      "link": "https://x.com/"
+    },
+    {
+      "icon": ["bi", "bi-youtube"],
+      "title": "Veja meu Youtube",
+      "link": "https://www.youtube.com/"
+    }
+  ]
+}

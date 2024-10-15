@@ -9,15 +9,37 @@ section[role='profile-widget'] {
     @extend .h4;
     @extend .text-body-secondary;
     @extend .m-0;
+    order: 0;
   }
 
   > .photo {
     @extend .rounded-circle;
-    max-width: 120px;
+    max-width: $avatar-size-normal;
+    order: 1;
   }
 
   > .summary {
     @extend .text-body-secondary;
     text-align: center;
+    order: 2;
+  }
+}
+
+@media (max-width: $screen-small) {
+  section[role='profile-widget'] {
+    flex-direction: row;
+
+    > .name {
+      order: 1;
+    }
+
+    > .photo {
+      order: 0;
+      max-width: $avatar-size-small;
+    }
+
+    > .summary {
+      display: none;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { detectLanguage } from '@src/core/i18n';
+import { fetchDoc } from './fetch-doc';
 
 export interface Profile {
   name: string;
@@ -6,15 +6,4 @@ export interface Profile {
   summary: string;
 }
 
-export async function fetchProfile(): Promise<Profile> {
-  return new Promise((resolve, reject) => {
-    const lang = detectLanguage();
-
-    fetch(`/docs/profile.json`)
-      .catch(reject)
-      .then(async (response: any) => {
-        const profile = await response.json();
-        resolve(profile[lang]);
-      });
-  });
-}
+export const fetchProfile = async (): Promise<Profile> => fetchDoc('profile');

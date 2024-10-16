@@ -1,10 +1,10 @@
-@media (max-width: $screen-small) {
+@media (max-width: vars-screen-small) {
   section[role='layout'] {
     flex-direction: column;
 
     > header {
       flex-direction: row;
-      padding: $gap-2;
+      padding: vars-gap-medium;
       justify-content: space-between;
       align-items: center;
     }

@@ -2,7 +2,7 @@ section[role='layout'] {
   flex: 1;
   display: flex;
   flex-wrap: nowrap;
-  gap: $gap-1;
+  gap: vars-gap-small;
 
   > header {
     @extend .bg-body-secondary;
@@ -10,13 +10,13 @@ section[role='layout'] {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: $gap-2;
-    padding: $gap-1 $gap-2;
+    gap: vars-gap-medium;
+    padding: vars-gap-small vars-gap-medium;
   }
 
   > section {
     flex: 1;
     display: flex;
-    padding: $gap-1 $gap-2;
+    padding: vars-gap-small vars-gap-medium;
   }
 }

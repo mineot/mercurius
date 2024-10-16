@@ -3,18 +3,18 @@ section[role='profile-widget'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: $gap-2;
+  gap: vars-gap-medium;
 
   > .name {
-    @extend .h4;
-    @extend .text-body-secondary;
+    @extend bs.h4;
+    @extend bs.text-body-secondary;
     @extend .m-0;
     order: 0;
   }
 
   > .photo {
     @extend .rounded-circle;
-    max-width: $avatar-size-normal;
+    max-width: vars-avatar-size-large;
     order: 1;
   }
 
@@ -25,7 +25,7 @@ section[role='profile-widget'] {
   }
 }
 
-@media (max-width: $screen-small) {
+@media (max-width: vars-screen-small) {
   section[role='profile-widget'] {
     flex-direction: row;
 
@@ -35,7 +35,7 @@ section[role='profile-widget'] {
 
     > .photo {
       order: 0;
-      max-width: $avatar-size-small;
+      max-width: vars-avatar-size-small;
     }
 
     > .summary {

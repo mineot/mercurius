@@ -6,7 +6,7 @@ button,
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: $gap-1;
+  gap: vars-gap-small;
 
   &.secondary {
     @extend .btn-secondary;

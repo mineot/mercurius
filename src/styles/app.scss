@@ -1,35 +1,4 @@
-// @use 'bootstrap/dist/css/bootstrap.min' as bs;
-// @use 'bootstrap-icons/font/bootstrap-icons.min';
-
-// @forward 'variables' as vars-*;
-
-// @use 'layouts/common';
-// @use 'layouts/large';
-// @use 'layouts/medium';
-// @use 'layouts/small';
-
-// @use 'utils/icons.util';
-// @use 'utils/scrollbar.util';
-
-// @use 'tags/button.tag';
-
-// @use 'widgets/profile.widget';
-
-// * {
-//   box-sizing: border-box;
-// }
-
-// body {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   height: 100vh;
-//   margin: 0;
-//   overflow: hidden;
-
-//   #app {
-//     flex: 1;
-//     display: flex;
-//     flex-wrap: nowrap;
-//     overflow: hidden;
-//   }
-// }
+@forward 'theme';
+@forward 'variables';
+@forward 'essentials';
+@forward 'layouts';

@@ -1,5 +1,9 @@
 <template>
-  <section role="layout">
+  <section class="layout">
+    <section class="panel">Panel</section>
+    <section class="content">Content</section>
+  </section>
+  <!-- <section role="layout">
     <header>
       <app-profile-widget />
       <router-link class="button" to="/">
@@ -14,5 +18,5 @@
     <section>
       <router-view />
     </section>
-  </section>
+  </section> -->
 </template>

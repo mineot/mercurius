@@ -1,0 +1,43 @@
+@use 'essentials' as es;
+@use 'theme' as th;
+@use 'variables' as vr;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include es.app-flex;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  > #app {
+    @include es.app-flex;
+    overflow: hidden;
+    flex: 1;
+
+    > section.layout {
+      @include es.app-flex-row;
+      @include th.container;
+      padding: 0;
+      flex: 1;
+
+      @media (max-width: vr.$screen-small) {
+        @include es.app-flex-column;
+      }
+
+      > section.panel {
+        @include th.panel-background;
+        padding: vr.$gap-small vr.$gap-large;
+        flex: 0;
+      }
+
+      > section.content {
+        padding: vr.$gap-small vr.$gap-small vr.$gap-small 0;
+        flex: 1;
+      }
+    }
+  }
+}

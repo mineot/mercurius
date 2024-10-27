@@ -1,0 +1,11 @@
+@use 'bootstrap/dist/css/bootstrap.min';
+@use 'bootstrap-icons/font/bootstrap-icons.min';
+
+@mixin container {
+  @extend .container-md;
+  background-color: red;
+}
+
+@mixin panel-background {
+  @extend .bg-body-secondary;
+}

@@ -15,7 +15,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "lodash": "^4.17.21",
     "vue": "^3.5.12",

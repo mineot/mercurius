@@ -1,6 +1,3 @@
-@use 'theme';
-@use 'variables';
-
 * {
   box-sizing: border-box;
 }
@@ -14,27 +11,9 @@ body {
   overflow: hidden;
 
   #app {
-    @include theme.appContainer;
     flex: 1;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    gap: variables.$gap-medium;
-
-    @media (max-width: variables.$screen-small) {
-      flex-direction: column;
-    }
-
-    section.app-panel {
-      flex: 0;
-      display: flex;
-      flex-wrap: nowrap;
-    }
-
-    section.app-content {
-      flex: 1;
-      display: flex;
-      flex-wrap: nowrap;
-    }
   }
 }

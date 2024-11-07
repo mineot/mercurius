@@ -1,4 +1,3 @@
-import './../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import './styles/app.scss';
 import { createApp } from 'vue';
 import { i18n } from '@src/core/i18n';

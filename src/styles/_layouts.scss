@@ -1,43 +1,40 @@
-@use 'essentials' as es;
-@use 'theme' as th;
-@use 'variables' as vr;
+@use 'theme';
+@use 'variables';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include es.app-flex;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
   height: 100vh;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 
-  > #app {
-    @include es.app-flex;
-    overflow: hidden;
+  #app {
+    @include theme.appContainer;
     flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: variables.$gap-medium;
 
-    > section.layout {
-      @include es.app-flex-row;
-      @include th.container;
-      padding: 0;
+    @media (max-width: variables.$screen-small) {
+      flex-direction: column;
+    }
+
+    section.app-panel {
+      flex: 0;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    section.app-content {
       flex: 1;
-
-      @media (max-width: vr.$screen-small) {
-        @include es.app-flex-column;
-      }
-
-      > section.panel {
-        @include th.panel-background;
-        padding: vr.$gap-small vr.$gap-large;
-        flex: 0;
-      }
-
-      > section.content {
-        padding: vr.$gap-small vr.$gap-small vr.$gap-small 0;
-        flex: 1;
-      }
+      display: flex;
+      flex-wrap: nowrap;
     }
   }
 }

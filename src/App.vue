@@ -1,8 +1,7 @@
 <template>
-  <section class="layout">
-    <section class="panel">Panel</section>
-    <section class="content">Content</section>
-  </section>
+  <h1>App</h1>
+  <!-- <section class="app-panel">App Panel</section>
+  <section class="app-content">App Content</section> -->
   <!-- <section role="layout">
     <header>
       <app-profile-widget />

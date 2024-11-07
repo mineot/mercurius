@@ -1,1 +1,19 @@
 @use 'bootstrap-icons/font/bootstrap-icons.min';
+@use 'color';
+
+* {
+  box-sizing: border-box;
+  background-color: color.$primary;
+  color: color.$secondary;
+  font-family: 'kode-mono', 'sans-serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}

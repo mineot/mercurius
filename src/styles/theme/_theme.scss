@@ -17,3 +17,8 @@ h6 {
   padding: 0;
   margin: 0;
 }
+
+@mixin border {
+  border: var.$border-size var.$border-style var.$border-color;
+  border-radius: var.$border-radius;
+}

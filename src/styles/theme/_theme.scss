@@ -1,10 +1,10 @@
 @use 'bootstrap-icons/font/bootstrap-icons.min';
-@use 'color';
+@use 'variables' as var;
 
 * {
   box-sizing: border-box;
-  background-color: color.$primary;
-  color: color.$secondary;
+  background-color: var.$primary;
+  color: var.$secondary;
   font-family: 'kode-mono', 'sans-serif';
 }
 

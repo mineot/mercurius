@@ -1,0 +1,41 @@
+@forward "styles/fonts";
+
+@use "styles/colors" as colors;
+@use "styles/variables" as vars;
+@use "styles/mixins" as mix;
+
+* {
+  box-sizing: border-box;
+  font-family: "Tomorrow", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: colors.$background-color;
+  background-image: vars.$background-image;
+  color: colors.$text-color;
+  text-shadow: vars.$text-shadow;
+
+  main {
+    flex: 1;
+  }
+
+  @media (min-width: vars.$screen-medium) {
+    padding: 0 20%;
+  }
+
+  @media (min-width: vars.$screen-small) and (max-width: vars.$screen-medium) {
+    padding: 0 10%;
+  }
+
+  @media (max-width: vars.$screen-small) {
+    padding: 0 10px;
+  }
+}

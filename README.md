@@ -1,50 +1,52 @@
 # Mercurius
 
-O Mercurius é um website simples que pode ser usado para sites pessoais ou pequenas empresas, é desenvolvido puramente em HTML, Javascript e CSS
+Mercurius is a simple website template that can be used for personal sites or small businesses, developed purely in HTML, JavaScript, and CSS.
 
-## Dependencias:
+## Requirements
 
-- NodeJS: v22 ou superior
-- NPM: v10 ou superior
+- NodeJS: v22 or higher
+- NPM: v10 or higher
 
-## Instalação
+## Installation
 
-Baixe o projeto do Github
+Download the project from GitHub
 
 ```bash
 git clone https://github.com/mineot/mercurius.git
 ```
 
-Acesse o projeto no diretório criado
+Navigate to the project directory
 
 ```bash
 cd mercurius
 ```
 
-Instale as dependências
+Install the dependencies
 
 ```bash
 npm install
 ```
 
-## Desenvolvimento
+## Development
+
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-## Compilação
+## Build
 
-Gere a versão do projeto
+Generate the production version of the project
 
 ```bash
 npm run build
 ```
 
-Será criada uma pasta no diretório raiz chamada "dist"
+A folder named "dist" will be created in the root directory.
 
-Para fazer o deploy, copie o conteudo da pasta "dist" para o diretório do seu servidor web
+To deploy, copy the contents of the "dist" folder to your web server directory.
 
-## Licenca  
+## Licenca
 
 MIT

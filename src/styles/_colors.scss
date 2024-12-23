@@ -1,11 +1,11 @@
 @use "sass:color";
 
-$forecolor: color.adjust(#32fbe2, $lightness: -14%);
 $background-color: #1a0933;
-$background-image: linear-gradient(
-  to bottom,
-  #17082e 20%,
-  #1a0933 40%,
-  #1a0933 60%,
-  #0c1f4c 100%
+$background-image-colors: (
+  "20": #17082e,
+  "40": #1a0933,
+  "60": #1a0933,
+  "100": #0c1f4c,
 );
+
+$text-color: color.adjust(#32fbe2, $lightness: -14%);

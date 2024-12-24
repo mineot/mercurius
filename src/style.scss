@@ -1,8 +1,8 @@
-@forward "styles/fonts";
+@forward "@/styles/fonts";
 
-@use "styles/colors" as colors;
-@use "styles/variables" as vars;
-@use "styles/mixins" as mix;
+@use "@/styles/colors" as colors;
+@use "@/styles/variables" as vars;
+@use "@/styles/mixins" as mix;
 
 * {
   box-sizing: border-box;
@@ -25,6 +25,8 @@ body {
 
   main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: vars.$screen-medium) {

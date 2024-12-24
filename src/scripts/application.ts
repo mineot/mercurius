@@ -6,6 +6,14 @@ interface Param {
 export class Application {
   private $currentPage: string | "home" = "";
 
+  static initGlobal(): void {
+    (window as any).$app = new Application();
+  }
+
+  static get instance(): Application {
+    return (window as any).$app;
+  }
+
   setPage(page: string | "home", params?: Param[]): void {
     let href = "/";
 
@@ -34,11 +42,26 @@ export class Application {
 
   load(): void {
     const qs = new URLSearchParams(location.search);
-    const page = qs.get("page");
+    const page = qs.get("page") ?? "home";
 
-    if (page && page !== this.$currentPage) {
-      console.log("load", page);
-      console.log("id", this.getParam("id"));
+    if (page !== this.$currentPage) {
+      fetch(`./pages/${page}.html`)
+        .then((res: any) => {
+          if (!res.ok) {
+            throw { status: res.status, message: res.statusText };
+          }
+
+          return res.text();
+        })
+        .then((content: any) => {
+          const main = document.getElementById("app");
+          if (main) {
+            main.innerHTML = content;
+          }
+        })
+        .catch((err) => {
+          console.error("Load page fail: ", err);
+        });
     }
   }
 }

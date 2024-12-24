@@ -2,9 +2,9 @@
 
 $background-color: #1a0933;
 $background-image-colors: (
-  "20": #17082e,
-  "40": #1a0933,
-  "60": #1a0933,
+  "20": color.adjust($background-color, $lightness: -6%),
+  "40": color.adjust($background-color, $lightness: -2%),
+  "60": $background-color,
   "100": #0c1f4c,
 );
 

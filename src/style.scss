@@ -1,5 +1,6 @@
-@forward "@/styles/fonts";
+@use "sass:map";
 
+@forward "@/styles/fonts";
 @use "@/styles/colors" as colors;
 @use "@/styles/variables" as vars;
 @use "@/styles/mixins" as mix;
@@ -15,12 +16,11 @@ body {
   height: 100vh;
   width: 100vw;
 
-  @include mix.background-mix;
-  color: colors.$text-color;
-  text-shadow: vars.$text-shadow;
-
   display: flex;
   flex-direction: column;
+
+  @include mix.main-background-mix;
+  @include mix.main-foreground-mix;
 
   main {
     flex: 1;

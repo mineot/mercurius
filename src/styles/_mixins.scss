@@ -1,7 +1,8 @@
+@use "sass:map";
 @use "colors" as colors;
 @use "variables" as vars;
 
-@mixin background-mix {
+@mixin main-background-mix {
   $gradient-steps: "";
 
   @each $percentage, $color in colors.$background-image-colors {
@@ -10,6 +11,11 @@
 
   $gradient: linear-gradient(to bottom, $gradient-steps);
 
-  background-color: colors.$background-color;
+  background-color: map.get(colors.$colors, "dark");
   background-image: $gradient;
+}
+
+@mixin main-foreground-mix {
+  color: map.get(colors.$colors, "light");
+  text-shadow: vars.$text-shadow;
 }

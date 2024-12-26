@@ -1,15 +1,3 @@
-@use "sass:map";
-@use "colors" as colors;
-
 $screen-medium: 768px;
 $screen-small: 576px;
-
-$background-image: linear-gradient(
-  to bottom,
-  map.get(colors.$background-image-colors, "20") 20%,
-  map.get(colors.$background-image-colors, "40") 40%,
-  map.get(colors.$background-image-colors, "60") 60%,
-  map.get(colors.$background-image-colors, "100") 100%
-);
-
-$text-shadow: 0 0 6px colors.$text-color;
+$text-shadow: none;

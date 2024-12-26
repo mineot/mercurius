@@ -12,16 +12,15 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+
+  @include mix.background-mix;
+  color: colors.$text-color;
+  text-shadow: vars.$text-shadow;
 
   display: flex;
   flex-direction: column;
-
-  background-color: colors.$background-color;
-  background-image: vars.$background-image;
-  color: colors.$text-color;
-  text-shadow: vars.$text-shadow;
 
   main {
     flex: 1;

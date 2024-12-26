@@ -1,0 +1,15 @@
+@use "colors" as colors;
+@use "variables" as vars;
+
+@mixin background-mix {
+  $gradient-steps: "";
+
+  @each $percentage, $color in colors.$background-image-colors {
+    $gradient-steps: #{$gradient-steps}, #{$color} #{$percentage}#{"%"};
+  }
+
+  $gradient: linear-gradient(to bottom, $gradient-steps);
+
+  background-color: colors.$background-color;
+  background-image: $gradient;
+}

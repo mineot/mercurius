@@ -17,6 +17,18 @@
     align-items: flex-start;
     gap: vars.$gap-medium;
 
+    @include mix.responsive-mix(
+      (
+        "flex-direction": row,
+      ),
+      (
+        "flex-direction": column,
+      ),
+      (
+        "flex-direction": column,
+      )
+    );
+
     > figure {
       flex: 0;
       margin: 0;

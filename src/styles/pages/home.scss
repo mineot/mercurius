@@ -1,14 +1,15 @@
 @use "@/styles/variables" as vars;
+@use "@/styles/mixins" as mix;
 
 .home {
   flex: 1;
-  overflow: hidden;
-  overflow-y: auto;
-  padding-top: vars.$gap-small;
-
   display: flex;
   flex-direction: column;
   gap: vars.$gap-small;
+
+  overflow: hidden;
+  overflow-y: auto;
+  padding-top: vars.$gap-small;
 
   > header {
     display: flex;
@@ -20,8 +21,7 @@
       flex: 0;
 
       > img {
-        border: vars.$img-photo-border;
-        max-width: vars.$img-photo-width;
+        @include mix.img-small-mix;
       }
     }
 

@@ -2,8 +2,8 @@
 @use "sass:map";
 
 $colors: (
-  "dark": #111,
-  "light": #ccc,
+  "background": #111,
+  "forecolor": #ccc,
   "primary": orange,
   "secondary": cyan,
   "danger": red,
@@ -23,8 +23,8 @@ $colors: (
 }
 
 $background-image-colors: (
-  "0": map.get($colors, "dark"),
-  "40": color.adjust(map.get($colors, "dark"), $lightness: 4%),
-  "80": color.adjust(map.get($colors, "dark"), $lightness: 6%),
-  "100": color.adjust(map.get($colors, "dark"), $lightness: 10%),
+  "0": map.get($colors, "background"),
+  "40": color.adjust(map.get($colors, "background"), $lightness: 4%),
+  "80": color.adjust(map.get($colors, "background"), $lightness: 6%),
+  "100": color.adjust(map.get($colors, "background"), $lightness: 10%),
 );

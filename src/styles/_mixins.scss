@@ -1,21 +1,28 @@
 @use "sass:map";
+
 @use "colors" as colors;
 @use "variables" as vars;
 
-@mixin main-background-mix {
+@mixin body-mix {
   $gradient-steps: "";
 
   @each $percentage, $color in colors.$background-image-colors {
     $gradient-steps: #{$gradient-steps}, #{$color} #{$percentage}#{"%"};
   }
 
-  $gradient: linear-gradient(to bottom, $gradient-steps);
-
-  background-color: map.get(colors.$colors, "dark");
-  background-image: $gradient;
+  background-color: map.get(colors.$colors, "background");
+  background-image: linear-gradient(to bottom, $gradient-steps);
+  color: map.get(colors.$colors, "forecolor");
+  font-size: vars.$font-size;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: vars.$text-shadow;
+  width: 100vw;
 }
 
-@mixin main-foreground-mix {
-  color: map.get(colors.$colors, "light");
-  text-shadow: vars.$text-shadow;
+@mixin img-small-mix {
+  border: 2px dashed map.get(colors.$colors, "primary");
+  max-width: vars.$img-photo-small;
 }

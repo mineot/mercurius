@@ -1,10 +1,8 @@
 @use "sass:map";
-
-@forward "@/styles/fonts";
-@use "@/styles/colors" as colors;
 @use "@/styles/variables" as vars;
 @use "@/styles/mixins" as mix;
-
+@forward "@/styles/colors";
+@forward "@/styles/fonts";
 @forward "@/styles/pages/home";
 
 * {
@@ -18,6 +16,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  font-size: vars.$font-size;
 
   display: flex;
   flex-direction: column;

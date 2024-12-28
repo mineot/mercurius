@@ -19,6 +19,7 @@ export class Application {
 
     if (page !== "home") {
       const qs = new URLSearchParams();
+
       qs.append("page", page);
 
       if (params) {
@@ -40,28 +41,28 @@ export class Application {
     return value ? { name, value } : null;
   }
 
-  load(): void {
-    const qs = new URLSearchParams(location.search);
-    const page = qs.get("page") ?? "home";
+  async load(): Promise<void> {
+    try {
+      const qs = new URLSearchParams(location.search);
+      const page = qs.get("page") ?? "home";
 
-    if (page !== this.$currentPage) {
-      fetch(`./pages/${page}.html`)
-        .then((res: any) => {
-          if (!res.ok) {
-            throw { status: res.status, message: res.statusText };
-          }
+      if (page !== this.$currentPage) {
+        const response = await fetch(`./pages/${page}.html`);
 
-          return res.text();
-        })
-        .then((content: any) => {
-          const main = document.getElementById("app");
-          if (main) {
-            main.innerHTML = content;
-          }
-        })
-        .catch((err) => {
-          console.error("Load page fail: ", err);
-        });
+        if (!response.ok) {
+          throw { status: response.status, message: response.statusText };
+        }
+
+        const main = document.getElementById("app");
+
+        if (main) {
+          main.innerHTML = await response.text();
+        } else {
+          throw { status: 404, message: "Main element not found!" };
+        }
+      }
+    } catch (err) {
+      console.error(err);
     }
   }
 }

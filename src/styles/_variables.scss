@@ -1,8 +1,16 @@
+@use "@/styles/colors" as colors;
+@use "sass:map";
+
+$font-size: 14px;
+
+$gap-large: 15px;
+$gap-medium: 10px;
+$gap-small: 5px;
+
+$img-photo-border: 2px dashed map.get(colors.$colors, "primary");
+$img-photo-width: 150px;
+
 $screen-medium: 768px;
 $screen-small: 576px;
-
-$gap-small: 5px;
-$gap-medium: 10px;
-$gap-large: 15px;
 
 $text-shadow: none;

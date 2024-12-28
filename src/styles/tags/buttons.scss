@@ -1,4 +1,5 @@
 @use "@/styles/colors" as colors;
+@use "@/styles/variables" as vars;
 @use "sass:color";
 @use "sass:map";
 
@@ -26,6 +27,18 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: vars.$gap-small;
+
+  > i {
+    flex: 0;
+  }
+
+  > span {
+    flex: 1;
+  }
 
   @include btn-mix(
     map.get(colors.$colors, "primary"),

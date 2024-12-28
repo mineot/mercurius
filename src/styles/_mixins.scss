@@ -26,3 +26,23 @@
   border: 2px dashed map.get(colors.$colors, "primary");
   max-width: vars.$img-photo-small;
 }
+
+@mixin responsive-mix($large-props, $medium-props, $small-props) {
+  @media (min-width: vars.$screen-medium) {
+    @each $property, $value in $large-props {
+      #{$property}: #{$value};
+    }
+  }
+
+  @media (min-width: vars.$screen-small) and (max-width: vars.$screen-medium) {
+    @each $property, $value in $medium-props {
+      #{$property}: #{$value};
+    }
+  }
+
+  @media (max-width: vars.$screen-small) {
+    @each $property, $value in $small-props {
+      #{$property}: #{$value};
+    }
+  }
+}

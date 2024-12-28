@@ -52,6 +52,14 @@
       > p {
         margin: vars.$gap-small 0 0 0;
       }
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        gap: vars.$gap-medium;
+        padding: vars.$gap-medium 0 0 0;
+      }
     }
   }
 

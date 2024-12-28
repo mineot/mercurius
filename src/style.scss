@@ -1,6 +1,7 @@
 @use "sass:map";
 @forward "@/styles/fonts";
 @forward "@/styles/colors";
+@forward "@/styles/tags/buttons";
 @use "@/styles/variables" as vars;
 @use "@/styles/mixins" as mix;
 @forward "@/styles/pages/home";

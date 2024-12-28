@@ -1,0 +1,76 @@
+@use "@/styles/colors" as colors;
+@use "sass:color";
+@use "sass:map";
+
+@mixin btn-mix($color, $forecolor) {
+  background-color: $color;
+  color: $forecolor;
+
+  &:hover {
+    background-color: color.adjust($color, $lightness: -5%);
+  }
+
+  &:active {
+    background-color: color.adjust($color, $lightness: -10%);
+  }
+}
+
+@mixin btn-alt-mix($name, $color, $forecolor) {
+  &.#{$name} {
+    @include btn-mix($color, $forecolor);
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+
+  @include btn-mix(
+    map.get(colors.$colors, "primary"),
+    map.get(colors.$invert-forecolors, "primary")
+  );
+
+  @include btn-alt-mix(
+    "secondary",
+    map.get(colors.$colors, "secondary"),
+    map.get(colors.$invert-forecolors, "secondary")
+  );
+
+  @include btn-alt-mix(
+    "danger",
+    map.get(colors.$colors, "danger"),
+    map.get(colors.$invert-forecolors, "danger")
+  );
+
+  @include btn-alt-mix(
+    "info",
+    map.get(colors.$colors, "info"),
+    map.get(colors.$invert-forecolors, "info")
+  );
+
+  @include btn-alt-mix(
+    "success",
+    map.get(colors.$colors, "success"),
+    map.get(colors.$invert-forecolors, "success")
+  );
+
+  @include btn-alt-mix(
+    "warning",
+    map.get(colors.$colors, "warning"),
+    map.get(colors.$invert-forecolors, "warning")
+  );
+
+  @include btn-alt-mix(
+    "background",
+    map.get(colors.$colors, "background"),
+    map.get(colors.$invert-forecolors, "background")
+  );
+
+  @include btn-alt-mix(
+    "forecolor",
+    map.get(colors.$colors, "forecolor"),
+    map.get(colors.$invert-forecolors, "forecolor")
+  );
+}

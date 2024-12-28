@@ -12,6 +12,17 @@ $colors: (
   "warning": yellow,
 );
 
+$invert-forecolors: (
+  "background": #fff,
+  "forecolor": #000,
+  "primary": #000,
+  "secondary": #000,
+  "danger": #fff,
+  "info": #fff,
+  "success": #fff,
+  "warning": #000,
+);
+
 @each $key, $value in $colors {
   .bg-#{$key} {
     background-color: $value;

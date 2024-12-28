@@ -1,0 +1,23 @@
+@use "@/styles/variables" as vars;
+
+.home {
+  flex: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  > div.personal-data {
+    flex: 0;
+    display: flex;
+    gap: vars.$gap-small;
+
+    > div.image {
+      flex: 0;
+    }
+
+    > div.sumarry {
+      flex: 1;
+    }
+  }
+}

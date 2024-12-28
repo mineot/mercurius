@@ -5,6 +5,8 @@
 @use "@/styles/variables" as vars;
 @use "@/styles/mixins" as mix;
 
+@forward "@/styles/pages/home";
+
 * {
   box-sizing: border-box;
   font-family: "Tomorrow", sans-serif;
@@ -15,6 +17,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -26,6 +29,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   @media (min-width: vars.$screen-medium) {

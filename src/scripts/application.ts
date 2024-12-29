@@ -1,12 +1,14 @@
-interface Param {
+export type CurrentPage = "home" | null;
+
+export interface Param {
   name: string;
   value: string;
 }
 
 export class Application {
-  private $currentPage: string | "home" = "";
+  private $currentPage: CurrentPage = null;
 
-  static initGlobal(): void {
+  static async initGlobal() {
     (window as any).$app = new Application();
   }
 
@@ -14,13 +16,13 @@ export class Application {
     return (window as any).$app;
   }
 
-  setPage(page: string | "home", params?: Param[]): void {
+  setPage(page: CurrentPage, params?: Param[]): void {
     let href = "/";
 
-    if (page !== "home") {
+    if (page !== "home" && page !== null) {
       const qs = new URLSearchParams();
 
-      qs.append("page", page);
+      qs.append("page", page ?? "home");
 
       if (params) {
         for (let p of params) {
@@ -31,7 +33,7 @@ export class Application {
       href = `/?${qs.toString()}`;
     }
 
-    this.$currentPage = page;
+    this.$currentPage = page ?? "home";
     location.href = href;
   }
 
@@ -41,10 +43,10 @@ export class Application {
     return value ? { name, value } : null;
   }
 
-  async load(): Promise<void> {
+  async load(): Promise<CurrentPage> {
     try {
       const qs = new URLSearchParams(location.search);
-      const page = qs.get("page") ?? "home";
+      const page: CurrentPage = (qs.get("page") as CurrentPage) ?? "home";
 
       if (page !== this.$currentPage) {
         const response = await fetch(`./pages/${page}.html`);
@@ -61,8 +63,11 @@ export class Application {
           throw { status: 404, message: "Main element not found!" };
         }
       }
+
+      return page;
     } catch (err) {
       console.error(err);
+      return null;
     }
   }
 }

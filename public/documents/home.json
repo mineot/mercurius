@@ -1,0 +1,10 @@
+{
+  "photo": "https://placehold.co/150",
+  "title": "Title",
+  "subtitle": "Subtitle",
+  "summary": "Summary",
+  "resume": false,
+  "portfolio": false,
+  "articles": false,
+  "blog": false
+}

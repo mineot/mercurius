@@ -8,8 +8,14 @@ $gap-large: 15px;
 $gap-medium: 10px;
 $gap-small: 5px;
 
-$img-photo-border: 2px dashed map.get(colors.$colors, "primary");
-$img-photo-small: 150px;
-
 $font-size: 14px;
 $text-shadow: none;
+
+$border-width: 1px;
+$border-color: map.get(colors.$colors, "primary");
+$border-style: dashed;
+
+$header-image-max-dimension: (
+  "width": 150px,
+  "height": 150px,
+);

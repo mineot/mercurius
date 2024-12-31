@@ -1,30 +1,17 @@
 @use "sass:map";
-
 @use "colors" as colors;
 @use "variables" as vars;
 
-@mixin body-mix {
-  $gradient-steps: "";
-
-  @each $percentage, $color in colors.$background-image-colors {
-    $gradient-steps: #{$gradient-steps}, #{$color} #{$percentage}#{"%"};
+@mixin border-mix($position: "all") {
+  @if ($position == "all") {
+    border-width: vars.$border-width;
+    border-color: vars.$border-color;
+    border-style: vars.$border-style;
+  } @else {
+    border-#{$position}-width: vars.$border-width;
+    border-#{$position}-color: vars.$border-color;
+    border-#{$position}-style: vars.$border-style;
   }
-
-  background-color: map.get(colors.$colors, "background");
-  background-image: linear-gradient(to bottom, $gradient-steps);
-  color: map.get(colors.$colors, "forecolor");
-  font-size: vars.$font-size;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  text-shadow: vars.$text-shadow;
-  width: 100vw;
-}
-
-@mixin img-small-mix {
-  border: 2px dashed map.get(colors.$colors, "primary");
-  max-width: vars.$img-photo-small;
 }
 
 @mixin responsive-mix($large-props, $medium-props, $small-props) {

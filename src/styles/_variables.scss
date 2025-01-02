@@ -1,8 +1,18 @@
 @use "@/styles/colors" as colors;
+@use "sass:color";
 @use "sass:map";
 
 $screen-medium: 768px;
 $screen-small: 576px;
+
+$screen-padding-large: 20%;
+$screen-padding-medium: 10%;
+$screen-padding-small: 10px;
+
+$scrollbar-size: 8px;
+$scrollbar-color: map.get(colors.$colors, "background");
+$scrollbar-bar: map.get(colors.$colors, "secondary");
+$scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -5%);
 
 $gap-large: 15px;
 $gap-medium: 10px;

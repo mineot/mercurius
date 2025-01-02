@@ -1,4 +1,5 @@
 @forward "@/styles/fonts";
+@forward "@/styles/scrollbar";
 @forward "@/styles/tags/buttons";
 @use "@/styles/colors" as colors;
 @use "@/styles/mixins" as mix;
@@ -11,15 +12,32 @@
 }
 
 body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: vars.$gap-small;
+
+  > header,
+  > nav,
+  > footer {
+    flex: 0;
+  }
+
+  > main {
+    flex: 1;
+    overflow-y: auto;
+  }
+
   $gradient-steps: "";
 
   @each $percentage, $color in colors.$background-image-colors {
     $gradient-steps: #{$gradient-steps}, #{$color} #{$percentage}#{"%"};
   }
-
-  display: flex;
-  flex-direction: column;
-  gap: vars.$gap-small;
 
   background-color: map.get(colors.$colors, "background");
   background-image: linear-gradient(to bottom, $gradient-steps);
@@ -27,111 +45,108 @@ body {
   font-size: vars.$font-size;
   text-shadow: vars.$text-shadow;
 
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-
-  > header {
-    flex: 0;
-    display: flex;
-    align-items: flex-start;
-    gap: vars.$gap-small;
-
-    padding-top: vars.$gap-small;
-
-    > figure {
-      flex: 0;
-      margin: 0;
-
-      > img {
-        @include mix.border-mix;
-        max-width: map.get(vars.$header-image-max-dimension, "width");
-        max-height: map.get(vars.$header-image-max-dimension, "height");
-      }
-    }
-
-    > section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: vars.$gap-small;
-
-      > h1 {
-        margin: 0;
-        color: map.get(colors.$colors, "primary");
-      }
-
-      > span {
-        color: map.get(colors.$colors, "secondary");
-      }
-
-      > p {
-        margin: 0;
-      }
-    }
-
-    @include mix.responsive-mix(
-      (
-        "flex-direction": row,
-      ),
-      (
-        "flex-direction": column,
-      ),
-      (
-        "flex-direction": column,
-      )
-    );
-  }
-
-  > nav {
-    flex: 0;
-    display: flex;
-    flex-direction: row;
-    gap: vars.$gap-small;
-    flex-flow: wrap;
-  }
-
-  > main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  > footer {
-    flex: 0;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    align-items: center;
-    gap: vars.$gap-small;
-
-    padding: vars.$gap-small 0;
-    color: map.get(colors.$colors, "secondary");
-
-    > p {
-      margin: 0;
-    }
-
-    > p.copyright {
-      flex: 1;
-      text-wrap: nowrap;
-    }
-
-    > p.contact {
-      flex: 0;
-    }
-  }
-
   @include mix.responsive-mix(
     (
-      "padding": 0 20%,
+      "padding": 0 vars.$screen-padding-large,
     ),
     (
-      "padding": 0 10%,
+      "padding": 0 vars.$screen-padding-medium,
     ),
     (
-      "padding": 0 10px,
+      "padding": 0 vars.$screen-padding-small,
     )
   );
 }
+
+// body {
+//   > header {
+//     flex: 0;
+//     display: flex;
+//     align-items: flex-start;
+//     gap: vars.$gap-small;
+
+//     padding-top: vars.$gap-small;
+
+//     > figure {
+//       flex: 0;
+//       margin: 0;
+
+//       > img {
+//         @include mix.border-mix;
+//         max-width: map.get(vars.$header-image-max-dimension, "width");
+//         max-height: map.get(vars.$header-image-max-dimension, "height");
+//       }
+//     }
+
+//     > section {
+//       flex: 1;
+//       display: flex;
+//       flex-direction: column;
+//       gap: vars.$gap-small;
+
+//       > h1 {
+//         margin: 0;
+//         color: map.get(colors.$colors, "primary");
+//       }
+
+//       > span {
+//         color: map.get(colors.$colors, "secondary");
+//       }
+
+//       > p {
+//         margin: 0;
+//       }
+//     }
+
+//     @include mix.responsive-mix(
+//       (
+//         "flex-direction": row,
+//       ),
+//       (
+//         "flex-direction": column,
+//       ),
+//       (
+//         "flex-direction": column,
+//       )
+//     );
+//   }
+
+//   > nav {
+//     flex: 0;
+//     display: flex;
+//     flex-direction: row;
+//     gap: vars.$gap-small;
+//     flex-flow: wrap;
+//   }
+
+//   > main {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   > footer {
+//     flex: 0;
+//     display: flex;
+//     flex-direction: row;
+//     flex-flow: wrap;
+//     align-items: center;
+//     gap: vars.$gap-small;
+
+//     padding: vars.$gap-small 0;
+//     color: map.get(colors.$colors, "secondary");
+
+//     > p {
+//       margin: 0;
+//     }
+
+//     > p.copyright {
+//       flex: 1;
+//       text-wrap: nowrap;
+//     }
+
+//     > p.contact {
+//       flex: 0;
+//     }
+//   }
+// }

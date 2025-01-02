@@ -24,9 +24,22 @@ body {
 
   > footer {
     flex: 0;
+    padding-top: vars.$gap-small;
+    font-size: vars.$font-small;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: vars.$gap-small;
 
     > p {
       margin: 0;
+    }
+
+    > p.copy {
+      flex: 1;
+      text-wrap: nowrap;
     }
   }
 

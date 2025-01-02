@@ -9,10 +9,12 @@
 
   &:hover {
     background-color: color.adjust($color, $lightness: -5%);
+    color: color.adjust($forecolor, $lightness: -5%);
   }
 
   &:active {
     background-color: color.adjust($color, $lightness: -10%);
+    color: color.adjust($forecolor, $lightness: -10%);
   }
 }
 
@@ -22,19 +24,18 @@
   }
 }
 
-button {
-  cursor: pointer;
-  padding: 5px 10px;
+button,
+a.btn {
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  font-size: vars.$font-medium;
+  padding: 5px 10px;
+  text-decoration: none;
 
   display: flex;
   flex-direction: row;
   gap: vars.$gap-small;
-
-  > svg {
-    flex: 0;
-  }
 
   > span {
     flex: 1;
@@ -86,4 +87,8 @@ button {
     map.get(colors.$colors, "forecolor"),
     map.get(colors.$invert-forecolors, "forecolor")
   );
+
+  &.small {
+    font-size: vars.$font-small;
+  }
 }

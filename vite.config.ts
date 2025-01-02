@@ -8,6 +8,9 @@ export default defineConfig({
   define: {
     "process.env": {
       APP_NAME: process.env.APP_NAME,
+      APP_CONTACT: process.env.APP_CONTACT,
+      COPYRIGHT_YEAR: process.env.COPYRIGHT_YEAR,
+      COPYRIGHT_NAME: process.env.COPYRIGHT_NAME,
     },
   },
   resolve: {

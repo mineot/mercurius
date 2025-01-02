@@ -100,6 +100,27 @@ body {
 
   > footer {
     flex: 0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    gap: vars.$gap-small;
+
+    padding: vars.$gap-small 0;
+    color: map.get(colors.$colors, "secondary");
+
+    > p {
+      margin: 0;
+    }
+
+    > p.copyright {
+      flex: 1;
+      text-wrap: nowrap;
+    }
+
+    > p.contact {
+      flex: 0;
+    }
   }
 
   @include mix.responsive-mix(

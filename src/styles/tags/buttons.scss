@@ -29,7 +29,7 @@ a.btn {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-size: vars.$font-medium;
+  font-size: vars.$font-small;
   padding: 5px 10px;
   text-decoration: none;
 
@@ -88,7 +88,11 @@ a.btn {
     map.get(colors.$invert-forecolors, "forecolor")
   );
 
-  &.small {
-    font-size: vars.$font-small;
+  &.medium {
+    font-size: vars.$font-medium;
+  }
+
+  &.large {
+    font-size: vars.$font-large;
   }
 }

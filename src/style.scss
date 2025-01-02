@@ -12,11 +12,12 @@
 }
 
 body {
+  font-size: vars.$font-medium;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
   padding: 0;
   width: 100vw;
-  overflow: hidden;
 
   display: flex;
   flex-direction: column;

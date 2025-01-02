@@ -5,10 +5,30 @@ export async function svgLoader() {
     fetch(`icons/${container.getAttribute("data-icon")}.svg`)
       .then((response) => response.text())
       .then((svgContent) => {
-        container.prepend(
-          new DOMParser().parseFromString(svgContent, "image/svg+xml")
-            .documentElement
+        const dom = new DOMParser().parseFromString(
+          svgContent,
+          "image/svg+xml"
         );
+
+        const getSvgWidth = (element: Element): string => {
+          const fontSize: string = window.getComputedStyle(container).fontSize;
+
+          // SEE: _variables.scss ($font-small|medium|large)
+          switch (fontSize) {
+            case "16px":
+              return "20";
+            case "12px":
+              return "15";
+            default:
+              return "18";
+          }
+        };
+
+        const element: Element = dom.documentElement;
+        element.setAttribute("height", "");
+        element.setAttribute("width", getSvgWidth(container));
+
+        container.prepend(element);
       });
   });
 }

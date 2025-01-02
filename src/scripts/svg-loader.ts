@@ -1,12 +1,14 @@
 export async function svgLoader() {
-  const spans = document.querySelectorAll("span.icon");
+  const containers = document.querySelectorAll("[data-icon]");
 
-  spans.forEach((span: Element) => {
-    fetch(`icons/${span.classList[1]}.svg`)
+  containers.forEach((container: Element) => {
+    fetch(`icons/${container.getAttribute("data-icon")}.svg`)
       .then((response) => response.text())
       .then((svgContent) => {
-        span.parentElement?.prepend(svgContent);
-        span.remove();
+        container.prepend(
+          new DOMParser().parseFromString(svgContent, "image/svg+xml")
+            .documentElement
+        );
       });
   });
 }

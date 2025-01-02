@@ -50,7 +50,7 @@ body {
   background-color: map.get(colors.$colors, "background");
   background-image: linear-gradient(to bottom, $gradient-steps);
   color: map.get(colors.$colors, "forecolor");
-  font-size: vars.$font-size;
+  font-size: vars.$font-medium;
   text-shadow: vars.$text-shadow;
 
   @include mix.responsive-mix(

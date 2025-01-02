@@ -22,15 +22,23 @@ body {
   flex-direction: column;
   gap: vars.$gap-small;
 
-  > header,
-  > nav,
   > footer {
+    flex: 0;
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  > header,
+  > nav {
     flex: 0;
   }
 
   > main {
     flex: 1;
     overflow-y: auto;
+    padding-bottom: vars.$gap-small;
   }
 
   $gradient-steps: "";

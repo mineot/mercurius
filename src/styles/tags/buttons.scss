@@ -32,7 +32,8 @@ button {
   flex-direction: row;
   gap: vars.$gap-small;
 
-  > img {
+  > span.icon,
+  > svg {
     flex: 0;
   }
 

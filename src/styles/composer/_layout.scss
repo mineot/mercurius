@@ -9,6 +9,7 @@
   font-size: vars.$font-medium;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
   text-shadow: vars.$text-shadow;
   width: 100vw;
 
@@ -19,11 +20,9 @@
   @include mix.responsive-mix(
     (
       "padding": 0 vars.$screen-padding-large,
-      "overflow": hidden,
     ),
     (
       "padding": 0 vars.$screen-padding-medium,
-      "overflow": hidden,
     ),
     (
       "padding": 0 vars.$screen-padding-small,
@@ -56,6 +55,8 @@
 
 @mixin header-layout {
   display: flex;
+  align-items: flex-start;
+  flex-direction: row;
   gap: vars.$gap-small;
 
   > figure {
@@ -81,17 +82,10 @@
   }
 
   @include mix.responsive-mix(
-    (
-      "flex-direction": row,
-      "align-items": flex-start,
-    ),
-    (
-      "flex-direction": row,
-      "align-items": flex-start,
-    ),
+    (),
+    (),
     (
       "flex-direction": column,
-      "align-items": flex-start,
     )
   );
 }

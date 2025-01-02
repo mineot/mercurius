@@ -1,11 +1,9 @@
 @forward "@/styles/colors";
-@forward "@/styles/composer";
-@forward "@/styles/fonts";
+@forward "@/styles/composer/composer";
 @forward "@/styles/mixins";
-@forward "@/styles/scrollbar";
 @forward "@/styles/tags/buttons";
 @forward "@/styles/variables";
-@use "@/styles/layout" as layout;
+@use "@/styles/composer/layout" as layout;
 
 * {
   box-sizing: border-box;

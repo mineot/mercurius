@@ -1,3 +1,6 @@
+@forward "@/styles/composer/fonts";
+@forward "@/styles/composer/layout";
+@forward "@/styles/composer/scrollbar";
 @use "@/styles/colors" as colors;
 @use "@/styles/variables" as vars;
 

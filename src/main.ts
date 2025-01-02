@@ -1,4 +1,4 @@
-import "@/style.scss";
+import "@/main.scss";
 import { svgLoader } from "@/scripts/svg-loader";
 import { setCopyright } from "@/scripts/copyright";
 

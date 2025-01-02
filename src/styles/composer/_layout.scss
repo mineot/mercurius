@@ -92,6 +92,10 @@
 
 @mixin nav-layout {
   flex: 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: vars.$gap-small;
 }
 
 @mixin main-layout {

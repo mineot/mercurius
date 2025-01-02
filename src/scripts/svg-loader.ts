@@ -10,7 +10,7 @@ export async function svgLoader() {
           "image/svg+xml"
         );
 
-        const getSvgWidth = (element: Element): string => {
+        const getSvgWidth = (): string => {
           const fontSize: string = window.getComputedStyle(container).fontSize;
 
           // SEE: _variables.scss ($font-small|medium|large)
@@ -26,7 +26,7 @@ export async function svgLoader() {
 
         const element: Element = dom.documentElement;
         element.setAttribute("height", "");
-        element.setAttribute("width", getSvgWidth(container));
+        element.setAttribute("width", getSvgWidth());
 
         container.prepend(element);
       });

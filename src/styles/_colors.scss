@@ -22,20 +22,3 @@ $invert-forecolors: (
   "success": #fff,
   "warning": #000,
 );
-
-@each $key, $value in $colors {
-  .bg-#{$key} {
-    background-color: $value;
-  }
-
-  .text-#{$key} {
-    color: $value;
-  }
-}
-
-$background-image-colors: (
-  "0": map.get($colors, "background"),
-  "40": color.adjust(map.get($colors, "background"), $lightness: 4%),
-  "80": color.adjust(map.get($colors, "background"), $lightness: 6%),
-  "100": color.adjust(map.get($colors, "background"), $lightness: 10%),
-);

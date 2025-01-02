@@ -7,7 +7,7 @@ $screen-small: 576px;
 
 $screen-padding-large: 20%;
 $screen-padding-medium: 10%;
-$screen-padding-small: 10px;
+$screen-padding-small: 15px;
 
 $scrollbar-size: 8px;
 $scrollbar-color: map.get(colors.$colors, "background");
@@ -25,10 +25,8 @@ $font-large: 16px;
 $text-shadow: none;
 
 $border-width: 1px;
-$border-color: map.get(colors.$colors, "primary");
 $border-style: dashed;
+$border-positions: ("top", "right", "bottom", "left");
 
-$header-image-max-dimension: (
-  "width": 150px,
-  "height": 150px,
-);
+$logo-width: 100px;
+$logo-height: 100px;

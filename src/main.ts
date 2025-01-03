@@ -1,17 +1,24 @@
 import "@/main.scss";
-import { svgLoader } from "@/scripts/svg-loader";
+import { initI18Next } from "@/scripts/i18n";
 import { setCopyright } from "@/scripts/copyright";
+import { svgLoader } from "@/scripts/svg-loader";
 
 // import { Application, CurrentPage } from "@/scripts/application";
 
 document.body.onload = () => {
-  svgLoader();
-  setCopyright(process);
-  document.title = process.env.APP_NAME ?? "Mercurius";
-  // Application.initGlobal();
-  // Application.instance.load().then((page: CurrentPage) => {
-  //   if (page === "home") {
-  //     // home();
-  //   }
-  // });
+  initI18Next().then((i18next) => {
+    svgLoader();
+    setCopyright(process);
+    document.title = process.env.APP_NAME ?? "Mercurius";
+
+    console.log(i18next.t("contact_me"));
+    console.log(i18next.t("home:title"));
+
+    // Application.initGlobal();
+    // Application.instance.load().then((page: CurrentPage) => {
+    //   if (page === "home") {
+    //     // home();
+    //   }
+    // });
+  });
 };

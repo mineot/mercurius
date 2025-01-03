@@ -8,12 +8,14 @@ export async function initI18Next(): Promise<i18n> {
     resources: {
       en: {
         translation: {
-          contact_me: "Contact Me",
+          all_rights_reserved: "All rights reserved",
+          contact: "Contact",
         },
       },
       "pt-BR": {
         translation: {
-          contact_me: "Entre em Contato",
+          all_rights_reserved: "Todos os direitos reservados",
+          contact: "Contato",
         },
       },
     },

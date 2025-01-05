@@ -1,4 +1,5 @@
 import { i18n } from "i18next";
+import { homePage } from "@/scripts/pages/home-page";
 
 type PageName = "home" | null;
 
@@ -51,6 +52,11 @@ export class App {
   async load(i18next: i18n): Promise<void> {
     const qs = new URLSearchParams(location.search);
     const page = qs.get("page") ?? "home";
-    console.log({ page, i18next });
+
+    switch (page) {
+      case "home":
+        await homePage({ i18next });
+        break;
+    }
   }
 }

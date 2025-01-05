@@ -1,8 +1,8 @@
 {
   "header": {
-    "photo": "https://placehold.co/100",
-    "title": "Título",
-    "subtitle": "Subtítulo",
+    "logo": "https://placehold.co/100",
+    "title": "Pagina Inicial",
+    "subtitle": "Apenas uma simples pagina inicial",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum ex soluta labore doloremque iste officiis? Sunt ut deleniti repudiandae aliquid consectetur velit nesciunt accusamus, voluptate, dolorem, magnam voluptatum molestias."
   }
 }

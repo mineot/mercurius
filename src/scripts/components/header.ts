@@ -1,11 +1,11 @@
-export interface HeaderParameters {
+interface Args {
   logoUrl: string;
   title: string;
   subtitle: string;
   summary: string;
 }
 
-export async function header(args: HeaderParameters) {
+export async function header(args: Args) {
   const img: HTMLElement = document.createElement("img");
   img.classList.add("border-primary");
   img.setAttribute("src", args.logoUrl);

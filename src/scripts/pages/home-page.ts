@@ -27,4 +27,10 @@ export async function homePage({ i18next }: Args) {
     articles: data.nav.articles,
     blog: data.nav.blog,
   });
+
+  const underconstruction = document.createElement("h3");
+  underconstruction.innerHTML = i18next.t("underconstruction");
+
+  const main = document.body.querySelector("main");
+  main?.append(underconstruction);
 }

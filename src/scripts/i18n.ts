@@ -19,6 +19,7 @@ export async function initI18Next(): Promise<i18n> {
           products: "Products",
           resume: "Resume",
           services: "Services",
+          underconstruction: "Under construction",
         },
       },
       "pt-BR": {
@@ -32,6 +33,7 @@ export async function initI18Next(): Promise<i18n> {
           products: "Produtos",
           resume: "Curriculo",
           services: "Serviços",
+          underconstruction: "Em construção",
         },
       },
     },

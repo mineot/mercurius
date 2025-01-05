@@ -4,5 +4,14 @@
     "title": "Pagina Inicial",
     "subtitle": "Apenas uma simples pagina inicial",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum ex soluta labore doloremque iste officiis? Sunt ut deleniti repudiandae aliquid consectetur velit nesciunt accusamus, voluptate, dolorem, magnam voluptatum molestias."
+  },
+  "nav": {
+    "home": true,
+    "resume": true,
+    "portfolio": true,
+    "products": true,
+    "services": true,
+    "articles": true,
+    "blog": true
   }
 }

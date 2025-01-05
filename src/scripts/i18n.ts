@@ -11,26 +11,31 @@ export async function initI18Next(): Promise<i18n> {
       en: {
         translation: {
           all_rights_reserved: "All rights reserved",
+          articles: "Articles",
+          blog: "Blog",
           contact: "Contact",
+          home: "Home",
+          portfolio: "Portfolio",
+          products: "Products",
+          resume: "Resume",
+          services: "Services",
         },
       },
       "pt-BR": {
         translation: {
           all_rights_reserved: "Todos os direitos reservados",
+          articles: "Artigos",
+          blog: "Blog",
           contact: "Contato",
+          home: "Home",
+          portfolio: "Portifólio",
+          products: "Produtos",
+          resume: "Curriculo",
+          services: "Serviços",
         },
       },
     },
   });
-
-  async function fetchPage(lng: string, page: string) {
-    const response = await fetch(`./documents/${page}.${lng}.json`);
-    const data = await response.json();
-    i18next.addResourceBundle(lng, page, data, true, true);
-  }
-
-  await fetchPage("en", "home");
-  await fetchPage("pt-BR", "home");
 
   return i18next;
 }

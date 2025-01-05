@@ -1,6 +1,6 @@
 import { i18n } from "i18next";
 
-interface Params {
+export interface AnchorArgs {
   i18next: i18n;
   i18Key: string;
   href: string;
@@ -8,7 +8,7 @@ interface Params {
 }
 
 export class Anchor {
-  private static anchor(args: Params): HTMLElement {
+  public static primary(args: AnchorArgs): HTMLElement {
     const element: HTMLElement = document.createElement("a");
     element.classList.add("btn");
     element.setAttribute("href", args.href);
@@ -24,8 +24,8 @@ export class Anchor {
     return element;
   }
 
-  public static info(args: Params): HTMLElement {
-    const element: HTMLElement = Anchor.anchor(args);
+  public static info(args: AnchorArgs): HTMLElement {
+    const element: HTMLElement = Anchor.primary(args);
     element.classList.add("info");
     return element;
   }

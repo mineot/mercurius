@@ -9,7 +9,7 @@ document.body.onload = () =>
   initI18Next().then(async (i18next) => {
     await setDocumentTitle(process);
     await setFooter(i18next, process);
-    await svgLoader();
     await App.initGlobal();
     await App.instance.load(i18next);
+    await svgLoader();
   });

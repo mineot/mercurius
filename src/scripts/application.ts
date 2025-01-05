@@ -1,7 +1,15 @@
 import { i18n } from "i18next";
 import { homePage } from "@/scripts/pages/home-page";
 
-type PageName = "home" | null;
+type PageName =
+  | "home"
+  | "resume"
+  | "portfolio"
+  | "services"
+  | "products"
+  | "articles"
+  | "blog"
+  | null;
 
 export interface Param {
   name: string;
@@ -24,11 +32,10 @@ export class App {
     return (window as any).$app;
   }
 
-  href({ page, params }: Href = {}): void {
+  href({ page, params }: Href = {}): string {
     if (!page || page === "home") {
       this.$page === "home";
-      location.href = "/";
-      return;
+      return "/";
     }
 
     const qs = new URLSearchParams();
@@ -40,7 +47,7 @@ export class App {
       }
     }
 
-    location.href = `/?${qs.toString()}`;
+    return `/?${qs.toString()}`;
   }
 
   get(key: string): Param | null {

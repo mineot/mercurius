@@ -3,7 +3,9 @@ import { i18n } from "i18next";
 
 export async function initI18Next(): Promise<i18n> {
   i18next.init({
+    // FIXME: auto detect language
     lng: "pt-BR",
+    fallbackLng: "en",
     debug: true,
     resources: {
       en: {

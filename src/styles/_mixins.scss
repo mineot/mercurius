@@ -1,0 +1,21 @@
+@use "@/styles/variables" as vars;
+
+@mixin responsive-mixin($large, $medium, $small) {
+  @media (min-width: vars.$screen-medium) {
+    @each $property, $value in $large {
+      #{$property}: #{$value};
+    }
+  }
+
+  @media (min-width: vars.$screen-small) and (max-width: vars.$screen-medium) {
+    @each $property, $value in $medium {
+      #{$property}: #{$value};
+    }
+  }
+
+  @media (max-width: vars.$screen-small) {
+    @each $property, $value in $small {
+      #{$property}: #{$value};
+    }
+  }
+}

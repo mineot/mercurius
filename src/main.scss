@@ -1,7 +1,7 @@
 @forward "@/styles/composer";
-@forward "@/styles/variables";
 @use "@/styles/colors" as colors;
 @use "@/styles/mixins" as mix;
+@use "@/styles/variables" as vars;
 
 @font-face {
   font-family: "Tomorrow";
@@ -149,6 +149,17 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: vars.$gap;
+
+    > footer,
+    header,
+    nav {
+      flex: 0;
+    }
+
+    > main {
+      flex: 1;
+    }
 
     @include mix.responsive-mixin(
       $large: (

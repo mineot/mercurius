@@ -1,0 +1,34 @@
+@use "@/styles/colors" as colors;
+@use "@/styles/variables" as vars;
+@use "sass:map";
+
+@each $key, $value in map.get(colors.$colors, "colors") {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+
+  $texts: map.get(colors.$colors, "texts");
+  $color: map.get($texts, $key);
+
+  .text-#{$key}-inverse {
+    color: $color;
+  }
+
+  .border-#{$key} {
+    border-color: $value;
+    border-style: vars.$border-style;
+    border-width: vars.$border-width;
+  }
+
+  @each $position in vars.$border-positions {
+    .border-#{$key}-#{$position} {
+      border-#{$position}-color: $value;
+      border-#{$position}-style: vars.$border-style;
+      border-#{$position}-width: vars.$border-width;
+    }
+  }
+}

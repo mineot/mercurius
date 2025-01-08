@@ -1,4 +1,6 @@
+@forward "@/styles/composer";
 @forward "@/styles/variables";
+@use "@/styles/colors" as colors;
 @use "@/styles/mixins" as mix;
 
 @font-face {
@@ -137,6 +139,8 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  background-color: colors.$background;
+  color: colors.$text;
 
   display: flex;
   flex-direction: row;

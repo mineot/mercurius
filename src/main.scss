@@ -134,22 +134,66 @@
   font-family: "Tomorrow", sans-serif;
 }
 
-body {
+@mixin body-mixin {
   padding: 0;
   margin: 0;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background-color: colors.$background;
   color: colors.$text;
 
   display: flex;
   flex-direction: row;
 
+  @include mix.responsive-mixin(
+    $large: (),
+    $medium: (),
+    $small: (
+      "overflow-y": auto,
+      "overflow-x": hidden,
+    )
+  );
+}
+
+@mixin section-mixin {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$gap;
+
+  @include mix.responsive-mixin(
+    $large: (
+      "padding": vars.$padding-large,
+    ),
+    $medium: (
+      "padding": vars.$padding-medium,
+    ),
+    $small: (
+      "padding": vars.$padding-small,
+    )
+  );
+}
+
+@mixin main-mixin {
+  @include mix.responsive-mixin(
+    $large: (
+      "overflow-y": auto,
+      "flex": 1,
+    ),
+    $medium: (
+      "overflow-y": auto,
+      "flex": 1,
+    ),
+    $small: ()
+  );
+}
+
+body {
+  @include body-mixin;
+
   > section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: vars.$gap;
+    @include section-mixin;
 
     > footer,
     header,
@@ -158,19 +202,33 @@ body {
     }
 
     > main {
-      flex: 1;
+      @include main-mixin;
     }
-
-    @include mix.responsive-mixin(
-      $large: (
-        "padding": 0 20%,
-      ),
-      $medium: (
-        "padding": 0 10%,
-      ),
-      $small: (
-        "padding": 0 10px,
-      )
-    );
   }
+}
+
+::-webkit-scrollbar {
+  width: vars.$scrollbar-size;
+  height: vars.$scrollbar-size;
+}
+
+::-webkit-scrollbar-track {
+  background: vars.$scrollbar-color;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: vars.$scrollbar-bar;
+  border-radius: 0px;
+  border: 1px solid vars.$scrollbar-color;
+  cursor: ns-resize;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: vars.$scrollbar-bar-hover;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: vars.$scrollbar-bar-hover vars.$scrollbar-color;
 }

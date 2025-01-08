@@ -1,8 +1,20 @@
+@use "@/styles/colors" as colors;
+@use "sass:color";
+
 $screen-medium: 768px;
 $screen-small: 576px;
+
+$padding-large: 0 20%;
+$padding-medium: 0 10%;
+$padding-small: 0 10px;
 
 $border-width: 1px;
 $border-style: solid;
 $border-positions: ("top", "right", "bottom", "left");
+
+$scrollbar-size: 8px;
+$scrollbar-color: colors.$background;
+$scrollbar-bar: colors.$text;
+$scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);
 
 $gap: 10px;

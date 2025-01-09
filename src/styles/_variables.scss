@@ -4,9 +4,15 @@
 $screen-medium: 768px;
 $screen-small: 576px;
 
+$gap: 10px;
+
 $padding-large: 0 20%;
 $padding-medium: 0 10%;
 $padding-small: 0 10px;
+
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 18px;
 
 $border-width: 1px;
 $border-style: solid;
@@ -17,4 +23,8 @@ $scrollbar-color: colors.$background;
 $scrollbar-bar: colors.$text;
 $scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);
 
-$gap: 10px;
+$button-gap: 2px;
+$button-padding: 3px 8px;
+$button-radius: 3px;
+$button-hover: -2.5%;
+$button-active: -5%;

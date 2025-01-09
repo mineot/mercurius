@@ -1,5 +1,6 @@
 @use "@/styles/colors" as colors;
 @use "@/styles/variables" as vars;
+@use "sass:color";
 @use "sass:map";
 
 @each $key, $value in map.get(colors.$colors, "colors") {
@@ -31,4 +32,39 @@
       border-#{$position}-width: vars.$border-width;
     }
   }
+
+  .btn-#{$key} {
+    @extend .bg-#{$key};
+    @extend .text-#{$key}-inverse;
+
+    &:hover {
+      background-color: color.adjust($value, $lightness: vars.$button-hover);
+      color: color.adjust($color, $lightness: vars.$button-hover);
+    }
+
+    &:active {
+      background-color: color.adjust($value, $lightness: vars.$button-active);
+      color: color.adjust($color, $lightness: vars.$button-active);
+    }
+  }
+
+  .link-#{$key} {
+    @extend .text-#{$key};
+
+    &:hover {
+      color: color.adjust($value, $lightness: vars.$button-hover);
+    }
+
+    &:active {
+      color: color.adjust($value, $lightness: vars.$button-active);
+    }
+  }
+}
+
+.text-small {
+  font-size: vars.$font-size-small;
+}
+
+.text-large {
+  font-size: vars.$font-size-large;
 }

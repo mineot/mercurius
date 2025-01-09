@@ -28,10 +28,6 @@
       <app-icon type="blog" />
       <span>Blog</span>
     </RouterLink>
-    <RouterLink to="/contact">
-      <app-icon type="contact" />
-      <span>Contact</span>
-    </RouterLink>
     <RouterLink to="/about">
       <app-icon type="about" />
       <span>About</span>

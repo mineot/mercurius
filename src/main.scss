@@ -1,8 +1,8 @@
+@forward "@/styles/colors";
 @forward "@/styles/composer";
-@forward "@/styles/tags/button";
-@use "@/styles/colors" as colors;
-@use "@/styles/mixins" as mix;
-@use "@/styles/variables" as vars;
+@forward "@/styles/variables";
+// @forward "@/styles/tags/button";
+// @use "@/styles/mixins" as mix;
 
 @font-face {
   font-family: "Tomorrow";
@@ -135,121 +135,121 @@
   font-family: "Tomorrow", sans-serif;
 }
 
-@mixin body-mixin {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: colors.$background;
-  color: colors.$text;
-  font-size: vars.$font-size-medium;
+// ::-webkit-scrollbar {
+//   width: vars.$scrollbar-size;
+//   height: vars.$scrollbar-size;
+// }
 
-  display: flex;
-  flex-direction: row;
+// ::-webkit-scrollbar-track {
+//   background: vars.$scrollbar-color;
+//   border-radius: 0px;
+// }
 
-  @include mix.responsive-mixin(
-    $large: (),
-    $medium: (),
-    $small: (
-      "overflow-y": auto,
-      "overflow-x": hidden,
-    )
-  );
-}
+// ::-webkit-scrollbar-thumb {
+//   background: vars.$scrollbar-bar;
+//   border-radius: 0px;
+//   border: 1px solid vars.$scrollbar-color;
+//   cursor: ns-resize;
+// }
 
-@mixin section-mixin {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: vars.$gap;
+// ::-webkit-scrollbar-thumb:hover {
+//   background: vars.$scrollbar-bar-hover;
+// }
 
-  @include mix.responsive-mixin(
-    $large: (
-      "padding": vars.$padding-large,
-    ),
-    $medium: (
-      "padding": vars.$padding-medium,
-    ),
-    $small: (
-      "padding": vars.$padding-small,
-    )
-  );
-}
+// .scrollable {
+//   scrollbar-width: thin;
+//   scrollbar-color: vars.$scrollbar-bar-hover vars.$scrollbar-color;
+// }
 
-@mixin footer-mixin {
-  flex: 0;
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  gap: vars.$gap;
+// @mixin body-mixin {
+//   padding: 0;
+//   margin: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+//   background-color: colors.$background;
+//   color: colors.$text;
+//   font-size: vars.$font-size-medium;
 
-  > section.message {
-    flex: 1;
-  }
+//   display: flex;
+//   flex-direction: row;
 
-  > section.contact {
-    flex: 0;
-  }
-}
+//   @include mix.responsive-mixin(
+//     $large: (),
+//     $medium: (),
+//     $small: (
+//       "overflow-y": auto,
+//       "overflow-x": hidden,
+//     )
+//   );
+// }
 
-@mixin main-mixin {
-  @include mix.responsive-mixin(
-    $large: (
-      "overflow-y": auto,
-      "flex": 1,
-    ),
-    $medium: (
-      "overflow-y": auto,
-      "flex": 1,
-    ),
-    $small: ()
-  );
-}
+// @mixin section-mixin {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   gap: vars.$gap;
 
-body {
-  @include body-mixin;
+//   @include mix.responsive-mixin(
+//     $large: (
+//       "padding": vars.$padding-large,
+//     ),
+//     $medium: (
+//       "padding": vars.$padding-medium,
+//     ),
+//     $small: (
+//       "padding": vars.$padding-small,
+//     )
+//   );
+// }
 
-  > section {
-    @include section-mixin;
+// @mixin footer-mixin {
+//   flex: 0;
+//   display: flex;
+//   flex-direction: row;
+//   flex-flow: wrap;
+//   gap: vars.$gap;
 
-    > header,
-    nav {
-      flex: 0;
-    }
+//   > section.message {
+//     flex: 1;
+//   }
 
-    > main {
-      @include main-mixin;
-    }
+//   > section.contact {
+//     flex: 0;
+//   }
+// }
 
-    > footer {
-      @include footer-mixin;
-    }
-  }
-}
+// @mixin main-mixin {
+//   @include mix.responsive-mixin(
+//     $large: (
+//       "overflow-y": auto,
+//       "flex": 1,
+//     ),
+//     $medium: (
+//       "overflow-y": auto,
+//       "flex": 1,
+//     ),
+//     $small: ()
+//   );
+// }
 
-::-webkit-scrollbar {
-  width: vars.$scrollbar-size;
-  height: vars.$scrollbar-size;
-}
+// body {
+//   @include body-mixin;
 
-::-webkit-scrollbar-track {
-  background: vars.$scrollbar-color;
-  border-radius: 0px;
-}
+//   > section {
+//     @include section-mixin;
 
-::-webkit-scrollbar-thumb {
-  background: vars.$scrollbar-bar;
-  border-radius: 0px;
-  border: 1px solid vars.$scrollbar-color;
-  cursor: ns-resize;
-}
+//     > header,
+//     nav {
+//       flex: 0;
+//     }
 
-::-webkit-scrollbar-thumb:hover {
-  background: vars.$scrollbar-bar-hover;
-}
+//     > main {
+//       @include main-mixin;
+//     }
 
-.scrollable {
-  scrollbar-width: thin;
-  scrollbar-color: vars.$scrollbar-bar-hover vars.$scrollbar-color;
-}
+//     > footer {
+//       @include footer-mixin;
+//     }
+//   }
+// }

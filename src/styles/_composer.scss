@@ -3,68 +3,88 @@
 @use "sass:color";
 @use "sass:map";
 
-@each $key, $value in map.get(colors.$colors, "colors") {
+@mixin hover-action-mixin($color, $inverse: null) {
+  &:hover {
+    @if $inverse {
+      background-color: color.adjust($color, $lightness: colors.$hover);
+      color: color.adjust($inverse, $lightness: colors.$hover);
+    } @else {
+      color: color.adjust($color, $lightness: colors.$hover);
+    }
+  }
+
+  &:active {
+    @if $inverse {
+      background-color: color.adjust($color, $lightness: colors.$active);
+      color: color.adjust($inverse, $lightness: colors.$active);
+    } @else {
+      color: color.adjust($color, $lightness: colors.$active);
+    }
+  }
+}
+
+@each $key, $value in colors.$colors {
+  $color: map.get($value, "color");
+  $inverse: map.get($value, "inverse");
+
   .bg-#{$key} {
-    background-color: $value;
+    background-color: $color;
   }
 
   .text-#{$key} {
-    color: $value;
-  }
-
-  $texts: map.get(colors.$colors, "texts");
-  $color: map.get($texts, $key);
-
-  .text-#{$key}-inverse {
     color: $color;
   }
 
+  .text-#{$key}-inverse {
+    color: $inverse;
+  }
+
   .border-#{$key} {
-    border-color: $value;
+    border-color: $color;
     border-style: vars.$border-style;
     border-width: vars.$border-width;
   }
 
   @each $position in vars.$border-positions {
     .border-#{$key}-#{$position} {
-      border-#{$position}-color: $value;
+      border-#{$position}-color: $color;
       border-#{$position}-style: vars.$border-style;
       border-#{$position}-width: vars.$border-width;
     }
   }
 
   .btn-#{$key} {
-    @extend .bg-#{$key};
-    @extend .text-#{$key}-inverse;
+    background-color: $color;
+    border-radius: vars.$btn-radius;
+    border: none;
+    color: $inverse;
+    cursor: pointer;
+    font-size: vars.$font-size-medium;
+    outline: none;
+    padding: vars.$btn-padding;
+    text-decoration: none;
 
-    &:hover {
-      background-color: color.adjust($value, $lightness: vars.$button-hover);
-      color: color.adjust($color, $lightness: vars.$button-hover);
-    }
+    display: inline-flex;
+    flex-direction: row;
+    gap: vars.$btn-gap;
 
-    &:active {
-      background-color: color.adjust($value, $lightness: vars.$button-active);
-      color: color.adjust($color, $lightness: vars.$button-active);
+    @include hover-action-mixin($color, $inverse);
+
+    &.link {
+      color: $color;
+      text-decoration: underline;
+      background-color: transparent;
+      padding: 0;
+
+      @include hover-action-mixin($color);
     }
   }
-
-  .link-#{$key} {
-    @extend .text-#{$key};
-
-    &:hover {
-      color: color.adjust($value, $lightness: vars.$button-hover);
-    }
-
-    &:active {
-      color: color.adjust($value, $lightness: vars.$button-active);
-    }
-  }
 }
 
-.text-small {
-  font-size: vars.$font-size-small;
-}
+// .text-small {
+//   font-size: vars.$font-size-small;
+// }
 
-.text-large {
-  font-size: vars.$font-size-large;
-}
+// .text-large {
+//   font-size: vars.$font-size-large;
+// }

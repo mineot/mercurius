@@ -213,10 +213,6 @@ body {
   > section {
     @include section-mixin;
 
-    > footer {
-      @include footer-mixin;
-    }
-
     > header,
     nav {
       flex: 0;
@@ -224,6 +220,10 @@ body {
 
     > main {
       @include main-mixin;
+    }
+
+    > footer {
+      @include footer-mixin;
     }
   }
 }

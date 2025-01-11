@@ -1,8 +1,10 @@
 <template>
-  <app-header />
-  <app-nav />
+  <header>
+    <span>Header</span>
+    <nav>Nav</nav>
+  </header>
   <main>
     <slot></slot>
   </main>
-  <app-footer />
+  <footer>Footer</footer>
 </template>

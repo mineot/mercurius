@@ -1,0 +1,27 @@
+@use "@/styles/variables" as vars;
+
+::-webkit-scrollbar {
+  width: vars.$scrollbar-size;
+  height: vars.$scrollbar-size;
+}
+
+::-webkit-scrollbar-track {
+  background: vars.$scrollbar-color;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: vars.$scrollbar-bar;
+  border-radius: 0px;
+  border: 1px solid vars.$scrollbar-color;
+  cursor: ns-resize;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: vars.$scrollbar-bar-hover;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: vars.$scrollbar-bar-hover vars.$scrollbar-color;
+}

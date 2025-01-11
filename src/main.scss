@@ -1,255 +1,104 @@
-@forward "@/styles/colors";
+@forward "@/styles/base/fonts";
+@forward "@/styles/base/scrollbars";
+@forward "@/styles/base/tags";
 @forward "@/styles/composer";
-@forward "@/styles/variables";
-// @forward "@/styles/tags/button";
-// @use "@/styles/mixins" as mix;
 
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-ExtraLightItalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-SemiBoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tomorrow";
-  src: url("@/styles/fonts/Tomorrow-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
+@use "@/styles/colors" as colors;
+@use "@/styles/mixins" as mix;
+@use "@/styles/variables" as vars;
 
 * {
   box-sizing: border-box;
   font-family: "Tomorrow", sans-serif;
 }
 
-// ::-webkit-scrollbar {
-//   width: vars.$scrollbar-size;
-//   height: vars.$scrollbar-size;
-// }
+@mixin body-mixin {
+  background-color: colors.$background;
+  color: colors.$text;
+  font-size: vars.$font-size-medium;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100vw;
 
-// ::-webkit-scrollbar-track {
-//   background: vars.$scrollbar-color;
-//   border-radius: 0px;
-// }
+  display: flex;
+  flex-direction: row;
 
-// ::-webkit-scrollbar-thumb {
-//   background: vars.$scrollbar-bar;
-//   border-radius: 0px;
-//   border: 1px solid vars.$scrollbar-color;
-//   cursor: ns-resize;
-// }
+  @include mix.responsive-mixin(
+    $large: (),
+    $medium: (),
+    $small: (
+      "overflow-y": auto,
+      "overflow-x": hidden,
+    )
+  );
+}
 
-// ::-webkit-scrollbar-thumb:hover {
-//   background: vars.$scrollbar-bar-hover;
-// }
+@mixin section-mixin {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$main-gap;
 
-// .scrollable {
-//   scrollbar-width: thin;
-//   scrollbar-color: vars.$scrollbar-bar-hover vars.$scrollbar-color;
-// }
+  @include mix.responsive-mixin(
+    $large: (
+      "padding": 0 vars.$container-large,
+    ),
+    $medium: (
+      "padding": 0 vars.$container-medium,
+    ),
+    $small: (
+      "padding": 0 vars.$container-small,
+    )
+  );
+}
 
-// @mixin body-mixin {
-//   padding: 0;
-//   margin: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   overflow: hidden;
-//   background-color: colors.$background;
-//   color: colors.$text;
-//   font-size: vars.$font-size-medium;
+@mixin header-mixin {
+  flex: 0;
+}
 
-//   display: flex;
-//   flex-direction: row;
+@mixin nav-mixin {
+}
 
-//   @include mix.responsive-mixin(
-//     $large: (),
-//     $medium: (),
-//     $small: (
-//       "overflow-y": auto,
-//       "overflow-x": hidden,
-//     )
-//   );
-// }
+@mixin main-mixin {
+  @include mix.responsive-mixin(
+    $large: (
+      "overflow-y": auto,
+      "flex": 1,
+    ),
+    $medium: (
+      "overflow-y": auto,
+      "flex": 1,
+    ),
+    $small: ()
+  );
+}
 
-// @mixin section-mixin {
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   gap: vars.$gap;
+@mixin footer-mixin {
+  flex: 0;
+}
 
-//   @include mix.responsive-mixin(
-//     $large: (
-//       "padding": vars.$padding-large,
-//     ),
-//     $medium: (
-//       "padding": vars.$padding-medium,
-//     ),
-//     $small: (
-//       "padding": vars.$padding-small,
-//     )
-//   );
-// }
+body {
+  @include body-mixin;
 
-// @mixin footer-mixin {
-//   flex: 0;
-//   display: flex;
-//   flex-direction: row;
-//   flex-flow: wrap;
-//   gap: vars.$gap;
+  > section {
+    @include section-mixin;
 
-//   > section.message {
-//     flex: 1;
-//   }
+    > header {
+      @include header-mixin;
 
-//   > section.contact {
-//     flex: 0;
-//   }
-// }
+      > nav {
+        @include nav-mixin;
+      }
+    }
 
-// @mixin main-mixin {
-//   @include mix.responsive-mixin(
-//     $large: (
-//       "overflow-y": auto,
-//       "flex": 1,
-//     ),
-//     $medium: (
-//       "overflow-y": auto,
-//       "flex": 1,
-//     ),
-//     $small: ()
-//   );
-// }
+    > main {
+      @include main-mixin;
+    }
 
-// body {
-//   @include body-mixin;
-
-//   > section {
-//     @include section-mixin;
-
-//     > header,
-//     nav {
-//       flex: 0;
-//     }
-
-//     > main {
-//       @include main-mixin;
-//     }
-
-//     > footer {
-//       @include footer-mixin;
-//     }
-//   }
-// }
+    > footer {
+      @include footer-mixin;
+    }
+  }
+}

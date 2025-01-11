@@ -1,6 +1,14 @@
 @use "@/styles/colors" as colors;
 @use "sass:color";
 
+$screen-medium: 768px;
+$screen-small: 576px;
+$main-gap: 5px;
+
+$container-large: 20%;
+$container-medium: 10%;
+$container-small: 10px;
+
 $border-width: 1px;
 $border-style: solid;
 $border-positions: ("top", "right", "bottom", "left");
@@ -13,16 +21,7 @@ $font-size-small: 12px;
 $font-size-medium: 14px;
 $font-size-large: 18px;
 
-// $main-gap: 10px;
-
-// $screen-medium: 768px;
-// $screen-small: 576px;
-
-// $padding-large: 0 20%;
-// $padding-medium: 0 10%;
-// $padding-small: 0 10px;
-
-// $scrollbar-size: 8px;
-// $scrollbar-color: colors.$background;
-// $scrollbar-bar: colors.$text;
-// $scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);
+$scrollbar-size: 8px;
+$scrollbar-color: colors.$background;
+$scrollbar-bar: colors.$text;
+$scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);

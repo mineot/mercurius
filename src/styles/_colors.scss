@@ -1,36 +1,36 @@
-$background: #000;
-$text: #fff;
-
 $hover: -2.5%;
 $active: -5%;
+
+$background: #111;
+$text: #ccc;
 
 $colors: (
   "primary": (
     "color": orange,
-    "inverse": #000,
+    "inverse": $background,
   ),
   "secondary": (
     "color": cyan,
-    "inverse": #000,
+    "inverse": $background,
   ),
   "accent": (
     "color": purple,
-    "inverse": #fff,
+    "inverse": $text,
   ),
   "danger": (
     "color": red,
-    "inverse": #fff,
+    "inverse": $text,
   ),
   "success": (
     "color": green,
-    "inverse": #fff,
+    "inverse": $text,
   ),
   "warning": (
     "color": gold,
-    "inverse": #000,
+    "inverse": $background,
   ),
   "info": (
     "color": blue,
-    "inverse": #fff,
+    "inverse": $text,
   ),
 );

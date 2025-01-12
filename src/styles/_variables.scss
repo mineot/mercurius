@@ -21,7 +21,7 @@ $font-size-small: 12px;
 $font-size-medium: 14px;
 $font-size-large: 18px;
 
-$scrollbar-size: 8px;
+$scrollbar-size: 5px;
 $scrollbar-color: colors.$background;
 $scrollbar-bar: colors.$text;
 $scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);

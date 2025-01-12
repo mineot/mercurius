@@ -54,6 +54,7 @@
   }
 
   .btn-#{$key} {
+    align-items: center;
     background-color: $color;
     border-radius: vars.$btn-radius;
     border: none;
@@ -70,6 +71,14 @@
 
     @include hover-action-mixin($color, $inverse);
 
+    &.small {
+      font-size: vars.$font-size-small;
+    }
+
+    &.large {
+      font-size: vars.$font-size-large;
+    }
+
     &.link {
       color: $color;
       text-decoration: underline;
@@ -80,11 +89,3 @@
     }
   }
 }
-
-// .text-small {
-//   font-size: vars.$font-size-small;
-// }
-
-// .text-large {
-//   font-size: vars.$font-size-large;
-// }

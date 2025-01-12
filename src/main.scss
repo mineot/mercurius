@@ -47,8 +47,41 @@
   );
 }
 
+@mixin main-mixin {
+  flex: 0;
+}
+
 @mixin header-mixin {
   flex: 0;
+  display: flex;
+  flex-direction: column;
+
+  > section {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    gap: vars.$main-gap;
+
+    > figure {
+      flex: 0;
+      margin: 0;
+
+      > img {
+        width: vars.$header-image-width;
+        height: vars.$header-image-height;
+      }
+    }
+
+    > section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  > nav {
+    @include nav-mixin;
+  }
 }
 
 @mixin nav-mixin {

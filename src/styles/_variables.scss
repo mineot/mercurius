@@ -26,3 +26,6 @@ $scrollbar-size: 5px;
 $scrollbar-color: colors.$background;
 $scrollbar-bar: colors.$text;
 $scrollbar-bar-hover: color.adjust($scrollbar-bar, $lightness: -35%);
+
+$header-image-width: 120px;
+$header-image-height: 120px;

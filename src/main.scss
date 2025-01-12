@@ -7,6 +7,7 @@
 @use "@/styles/colors" as colors;
 @use "@/styles/mixins" as mix;
 @use "@/styles/variables" as vars;
+@use "sass:color";
 
 * {
   box-sizing: border-box;
@@ -68,6 +69,9 @@
   justify-content: center;
   font-size: vars.$font-size-small;
   gap: vars.$main-gap;
+  padding: vars.$main-gap;
+  background-color: color.adjust(colors.$background, $lightness: colors.$footer-background);
+  border-radius: vars.$main-radius vars.$main-radius 0 0;
 }
 
 body {

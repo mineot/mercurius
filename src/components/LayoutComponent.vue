@@ -1,10 +1,12 @@
 <template>
-  <header>
-    <span>Header</span>
-    <nav>Nav</nav>
-  </header>
+  <HeaderWidget />
   <main>
     <slot></slot>
   </main>
-  <footer>Footer</footer>
+  <FooterWidget />
 </template>
+
+<script setup lang="ts">
+import HeaderWidget from "./widgets/HeaderWidget.vue";
+import FooterWidget from "./widgets/FooterWidget.vue";
+</script>

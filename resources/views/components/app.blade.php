@@ -8,10 +8,25 @@
     </head>
     <body data-bs-theme="dark">
         <section class="container">
-            <header>Header</header>
-            <nav>Nav</nav>
+            @isset($header)
+                <header>
+                    {{ $header }}
+                </header>
+            @endisset
+
+            @isset($nav)
+                <nav>
+                    {{ $nav }}
+                </nav>
+            @endisset
+
             <main>{{ $slot }}</main>
-            <footer>Footer</footer>
+
+            @isset($footer)
+                <footer>
+                    {{ $footer }}
+                </footer>
+            @endisset
         </section>
     </body>
 </html>

@@ -10,7 +10,8 @@
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["resources/scripts/*"]
+            "scripts/*": ["resources/scripts/*"],
+            "node_modules/*": ["node_modules/*"]
         }
     },
     "include": ["resources/scripts/**/*", "vite.config.ts"],

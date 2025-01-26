@@ -1,7 +1,14 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
+import path from "path";
 
 export default defineConfig({
+    resolve: {
+        alias: {
+            scripts: path.resolve(__dirname, "resources/scripts"),
+            node_modules: path.resolve(__dirname, "node_modules"),
+        },
+    },
     plugins: [
         laravel({
             input: ["resources/sass/app.scss", "resources/scripts/app.ts"],

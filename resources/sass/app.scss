@@ -1,8 +1,35 @@
+@forward "node_modules/bootstrap/scss/bootstrap.scss";
+@forward "node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    > section {
+        @extend .gap-1;
+
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        > header,
+        nav,
+        footer {
+            flex: 0;
+        }
+
+        > main {
+            flex: 1;
+        }
+    }
 }

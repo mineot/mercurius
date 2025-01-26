@@ -11,6 +11,8 @@
         "baseUrl": ".",
         "paths": {
             "scripts/*": ["resources/scripts/*"],
+            "sass/*": ["resources/sass/*"],
+            "vues/*": ["resources/scripts/vue/*"],
             "node_modules/*": ["node_modules/*"]
         }
     },

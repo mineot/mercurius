@@ -7,7 +7,7 @@
         @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
     </head>
     <body data-bs-theme="dark">
-        <section class="container">
+        <div id="app" class="container">
             @isset($header)
                 <header>
                     {{ $header }}
@@ -27,6 +27,6 @@
                     {{ $footer }}
                 </footer>
             @endisset
-        </section>
+        </div>
     </body>
 </html>

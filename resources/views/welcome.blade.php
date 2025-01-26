@@ -12,4 +12,5 @@
     </x-slot:footer>
 
     <h1>Mercurius</h1>
+    <v-welcome ></v-welcome>
 </x-app>

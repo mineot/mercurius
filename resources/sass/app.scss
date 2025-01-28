@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    > div {
+    > #app {
         @extend .gap-1;
 
         flex: 1;

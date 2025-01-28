@@ -7,26 +7,10 @@
         @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
     </head>
     <body data-bs-theme="dark">
-        <div id="app" class="container">
-            @isset($header)
-                <header>
-                    {{ $header }}
-                </header>
-            @endisset
-
-            @isset($nav)
-                <nav>
-                    {{ $nav }}
-                </nav>
-            @endisset
-
-            <main>{{ $slot }}</main>
-
-            @isset($footer)
-                <footer>
-                    {{ $footer }}
-                </footer>
-            @endisset
-        </div>
+        <section id="app">
+            <x-header />
+            <x-main> {{ $slot }} </x-main>
+            <x-footer />
+        </section>
     </body>
 </html>

@@ -1,32 +1,57 @@
-// * {
-//     box-sizing: border-box;
-// }
+@forward "node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@forward "sass/fonts";
+@use "sass/colors" as colors;
+@use "sass/mixins" as mix;
+@use "sass/variables" as vars;
 
-// body {
-//     margin: 0;
-//     padding: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     overflow: hidden;
+* {
+    box-sizing: border-box;
+}
 
-//     display: flex;
-//     flex-direction: column;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Tomorrow", sans-serif;
+    background-color: colors.$background;
+    color: colors.$text;
+    display: flex;
 
-//     > #app {
-//         @extend .gap-1;
+    @include mix.responsive(
+        $large: (
+            padding: 0 vars.$container-large,
+        ),
+        $medium: (
+            padding: 0 vars.$container-medium,
+        ),
+        $small: (
+            padding: 0 vars.$container-small,
+        )
+    );
 
-//         flex: 1;
-//         display: flex;
-//         flex-direction: column;
+    > #app {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: vars.$gap-small;
 
-//         > header,
-//         nav,
-//         footer {
-//             flex: 0;
-//         }
+        > header {
+            flex: 0;
+        }
 
-//         > main {
-//             flex: 1;
-//         }
-//     }
-// }
+        > nav {
+            flex: 0;
+        }
+
+        > main {
+            flex: 1;
+        }
+
+        > footer {
+            flex: 0;
+            padding: vars.$gap-medium;
+        }
+    }
+}

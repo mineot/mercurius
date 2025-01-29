@@ -6,11 +6,15 @@
         <title>{{ config('app.name') }}</title>
         @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
     </head>
-    <body data-bs-theme="dark">
+    <body>
         <section id="app">
-            <x-header />
-            <x-main> {{ $slot }} </x-main>
-            <x-footer />
+            <header>Header</header>
+            <nav>Nav</nav>
+            <main>
+                <i class="bi bi-house"></i>
+                Main
+            </main>
+            <footer>Footer</footer>
         </section>
     </body>
 </html>

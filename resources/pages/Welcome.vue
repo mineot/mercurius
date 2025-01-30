@@ -1,9 +1,9 @@
 <template>
-  <header>Header</header>
+  <c-header />
   <nav>Nav</nav>
   <main>
     <i class="bi bi-house"></i>
-    Main
+    <w-title />
   </main>
   <footer>Footer</footer>
 </template>

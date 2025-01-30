@@ -10,10 +10,12 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "scripts/*": ["resources/scripts/*"],
+      "comps/*": ["resources/components/*"],
+      "pages/*": ["resources/pages/*"],
       "sass/*": ["resources/sass/*"],
-      "vues/*": ["resources/scripts/vue/*"],
-      "node_modules/*": ["node_modules/*"]
+      "src/*": ["resources/scripts/*"],
+      "wid/*": ["resources/widgets/*"],
+      "modules/*": ["node_modules/*"]
     }
   },
   "include": ["resources/scripts/**/*", "vite.config.ts"],

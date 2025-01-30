@@ -6,10 +6,12 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      scripts: path.resolve(__dirname, 'resources/scripts'),
+      comps: path.resolve(__dirname, 'resources/components'),
+      pages: path.resolve(__dirname, 'resources/pages'),
       sass: path.resolve(__dirname, 'resources/sass'),
-      vues: path.resolve(__dirname, 'resources/scripts/vue'),
-      node_modules: path.resolve(__dirname, 'node_modules'),
+      src: path.resolve(__dirname, 'resources/scripts'),
+      wid: path.resolve(__dirname, 'resources/widgets'),
+      modules: path.resolve(__dirname, 'node_modules'),
       vue: 'vue/dist/vue.esm-bundler.js',
     },
   },

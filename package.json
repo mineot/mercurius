@@ -1,23 +1,24 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "build": "vite build",
-        "dev": "vite"
-    },
-    "devDependencies": {
-        "@types/node": "^22.10.10",
-        "@vitejs/plugin-vue": "^5.2.1",
-        "axios": "^1.7.4",
-        "bootstrap-icons": "^1.11.3",
-        "concurrently": "^9.0.1",
-        "laravel-vite-plugin": "^1.0",
-        "sass": "^1.83.4",
-        "typescript": "^5.7.3",
-        "vite": "^6.0"
-    },
-    "dependencies": {
-        "@inertiajs/vue3": "^2.0.3",
-        "vue": "^3.5.13"
-    }
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "composer format && prettier --write ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "axios": "^1.7.4",
+    "bootstrap-icons": "^1.11.3",
+    "concurrently": "^9.0.1",
+    "laravel-vite-plugin": "^1.0",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0"
+  },
+  "dependencies": {
+    "@inertiajs/vue3": "^2.0.3",
+    "vue": "^3.5.13"
+  }
 }

@@ -7,14 +7,6 @@
         @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
     </head>
     <body>
-        <section id="app">
-            <header>Header</header>
-            <nav>Nav</nav>
-            <main>
-                <i class="bi bi-house"></i>
-                Main
-            </main>
-            <footer>Footer</footer>
-        </section>
+        @inertia
     </body>
 </html>

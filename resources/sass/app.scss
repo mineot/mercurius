@@ -1,0 +1,58 @@
+@forward "node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@forward "sass/fonts";
+
+@use "sass/colors" as colors;
+@use "sass/mixins" as mix;
+@use "sass/variables" as vars;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Tomorrow", sans-serif;
+    background-color: colors.$background;
+    color: colors.$text;
+    display: flex;
+
+    @include mix.responsive(
+        $large: (
+            padding: 0 vars.$container-large,
+        ),
+        $medium: (
+            padding: 0 vars.$container-medium,
+        ),
+        $small: (
+            padding: 0 vars.$container-small,
+        )
+    );
+
+    > #app {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: vars.$gap-small;
+
+        > header {
+            flex: 0;
+        }
+
+        > nav {
+            flex: 0;
+        }
+
+        > main {
+            flex: 1;
+        }
+
+        > footer {
+            flex: 0;
+            padding: vars.$gap-medium;
+        }
+    }
+}

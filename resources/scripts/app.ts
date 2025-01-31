@@ -1,5 +1,6 @@
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
+import { i18n } from 'src/i18n';
 import axios from 'axios';
 
 import HeaderComponent from 'comps/HeaderComponent.vue';
@@ -13,6 +14,7 @@ createInertiaApp({
   resolve: (name) => import(`../pages/${name}.vue`),
   setup({ el, App, props }) {
     const app = createApp({ render: () => h(App, props) });
+    app.use(i18n);
     app.component('c-header', HeaderComponent);
     app.component('w-title', TitleWidget);
     app.mount(el);

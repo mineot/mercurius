@@ -23,12 +23,13 @@ class SetLocale
         } else {
             $locale = substr($request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2);
             $supported = ['en', 'pt'];
-            if (!in_array($locale, $supported) ) {
+            if (! in_array($locale, $supported)) {
                 $locale = 'en';
             }
         }
 
         App::setLocale($locale);
+
         return $next($request);
     }
 }

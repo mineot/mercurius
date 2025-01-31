@@ -1,9 +1,9 @@
 <template>
-  <c-header />
-  <nav>Nav</nav>
+  <header>{{ $t('header') }}</header>
+  <nav>{{ $t('nav') }}</nav>
   <main>
     <i class="bi bi-house"></i>
-    <w-title />
+    <span>{{ $t('main') }}</span>
   </main>
-  <footer>Footer</footer>
+  <footer>{{ $t('footer') }}</footer>
 </template>

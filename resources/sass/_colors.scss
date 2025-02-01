@@ -1,16 +1,48 @@
 @use 'sass:color';
 @use 'sass:map';
-@use 'sass/variables' as vars;
 
-$background: black;
-$text: white;
+$background: #222;
+$text: #ccc;
 
-.bg-background {
-  background-color: $background;
+$color-range: (
+  darken-3: -9%,
+  darken-2: -6%,
+  darken-1: -3%,
+  lighten-1: 3%,
+  lighten-2: 6%,
+  lighten-3: 9%,
+);
 
-  @each $color, $value in vars.$color-range {
-    &.#{color} {
-      background-color: color.adjust($background, $lightness: $value);
+$colors: (
+  'dark': $background,
+  'light': $text,
+  'primary': indigo,
+  'secondary': darkcyan,
+  'accent': #ff7518,
+  'success': darkolivegreen,
+  'info': dodgerblue,
+  'warning': gold,
+  'danger': firebrick,
+);
+
+@each $c, $v in $colors {
+  .bg-#{$c} {
+    background-color: $v;
+
+    @each $rc, $rv in $color-range {
+      &.#{$rc} {
+        background-color: color.adjust($v, $lightness: $rv);
+      }
+    }
+  }
+
+  .text-#{$c} {
+    color: $v;
+
+    @each $rc, $rv in $color-range {
+      &.#{$rc} {
+        color: color.adjust($v, $lightness: $rv);
+      }
     }
   }
 }

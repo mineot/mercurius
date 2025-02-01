@@ -1,5 +1,6 @@
 @forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
 @forward 'sass/fonts';
+@forward 'sass/composers/padding';
 
 @use 'sass/colors' as colors;
 @use 'sass/mixins' as mix;
@@ -52,7 +53,6 @@ body {
 
     > footer {
       flex: 0;
-      padding: vars.$gap-medium;
     }
   }
 }

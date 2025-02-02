@@ -3,7 +3,7 @@
 
 $dark: #222;
 $light: #ccc;
-$primary: cyan;
+$primary: darkcyan;
 $secondary: color.adjust(purple, $lightness: 30%);
 $accent: coral;
 $success: lime;
@@ -13,42 +13,10 @@ $danger: firebrick;
 
 $dark-inverse-text: $light;
 $light-inverse-text: $dark;
-$primary-inverse-text: $light;
+$primary-inverse-text: $dark;
 $secondary-inverse-text: $dark;
 $accent-inverse-text: $dark;
 $success-inverse-text: $dark;
 $info-inverse-text: $dark;
 $warning-inverse-text: $dark;
 $danger-inverse-text: $light;
-
-// @each $c, $v in $colors {
-//   .bg-#{$c} {
-//     background-color: $v;
-
-//     @each $rc, $rv in $color-range {
-//       &.#{$rc} {
-//         background-color: color.adjust($v, $lightness: $rv);
-//       }
-//     }
-//   }
-
-//   .text-#{$c} {
-//     color: $v;
-
-//     @each $rc, $rv in $color-range {
-//       &.#{$rc} {
-//         color: color.adjust($v, $lightness: $rv);
-//       }
-//     }
-//   }
-
-//   .text-shadown-#{$c} {
-//     text-shadow: $text-shadow-sizes color.adjust($v, $lightness: $text-shadow-lightness);
-//   }
-
-//   .border-#{$c} {
-//     border-width: 1px;
-//     border-style: solid;
-//     border-color: $v;
-//   }
-// }

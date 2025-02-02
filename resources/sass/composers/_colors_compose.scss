@@ -1,0 +1,57 @@
+@use 'sass/variables' as vars;
+@use 'sass/colors' as colors;
+@use 'sass:map';
+
+$color-list: (
+  'dark': colors.$dark,
+  'light': colors.$light,
+  'primary': colors.$primary,
+  'secondary': colors.$secondary,
+  'accent': colors.$accent,
+  'success': colors.$success,
+  'info': colors.$info,
+  'warning': colors.$warning,
+  'danger': colors.$danger,
+);
+
+$color-inverse-text-list: (
+  'dark': colors.$dark-inverse-text,
+  'light': colors.$light-inverse-text,
+  'primary': colors.$primary-inverse-text,
+  'secondary': colors.$secondary-inverse-text,
+  'accent': colors.$accent-inverse-text,
+  'success': colors.$success-inverse-text,
+  'info': colors.$info-inverse-text,
+  'warning': colors.$warning-inverse-text,
+  'danger': colors.$danger-inverse-text,
+);
+
+@each $name, $color in $color-list {
+  $inverse-text: map.get($color-inverse-text-list, $name);
+
+  .bg-#{$name} {
+    background-color: $color;
+    color: $inverse-text;
+  }
+
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .border-#{$name} {
+    border-width: vars.$border-width;
+    border-style: vars.$border-style;
+    border-color: $color;
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+
+    &.#{$name} {
+      border-width: vars.$border-width;
+      border-style: vars.$border-style;
+      border-color: $color;
+    }
+  }
+}

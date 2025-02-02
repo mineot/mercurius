@@ -4,6 +4,9 @@
 $background: #222;
 $text: #ccc;
 
+$text-shadow-sizes: 2px 2px 2px;
+$text-shadow-lightness: -30%;
+
 $color-range: (
   darken-3: -9%,
   darken-2: -6%,
@@ -16,12 +19,12 @@ $color-range: (
 $colors: (
   'dark': $background,
   'light': $text,
-  'primary': indigo,
-  'secondary': darkcyan,
-  'accent': #ff7518,
-  'success': darkolivegreen,
+  'primary': cyan,
+  'secondary': color.adjust(purple, $lightness: 30%),
+  'accent': coral,
+  'success': lime,
   'info': dodgerblue,
-  'warning': gold,
+  'warning': orange,
   'danger': firebrick,
 );
 
@@ -56,5 +59,15 @@ $color-texts: (
         color: color.adjust($v, $lightness: $rv);
       }
     }
+  }
+
+  .text-shadown-#{$c} {
+    text-shadow: $text-shadow-sizes color.adjust($v, $lightness: $text-shadow-lightness);
+  }
+
+  .border-#{$c} {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $v;
   }
 }

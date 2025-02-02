@@ -1,12 +1,6 @@
 <template>
   <c-layout>
-    <div>
-      <img :src="profile?.avatar" :alt="profile?.name" />
-    </div>
-    <span>{{ profile?.name }}</span>
-    <div>
-      <span>{{ profile?.summary }}</span>
-    </div>
+    <w-person :profile="profile" />
     <div>
       <span>{{ profile?.job_title }}</span>
     </div>
@@ -20,7 +14,5 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  profile: Object,
-});
+defineProps({ profile: Object });
 </script>

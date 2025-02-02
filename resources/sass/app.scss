@@ -1,8 +1,10 @@
 @forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
-@forward 'sass/fonts';
-@forward 'sass/composers/padding';
-@forward 'sass/composers/flex';
+
 @forward 'sass/composers/button_anchor';
+@forward 'sass/composers/flex';
+@forward 'sass/composers/padding';
+@forward 'sass/fonts';
+@forward 'sass/scrollbars';
 
 @use 'sass/colors' as colors;
 @use 'sass/mixins' as mix;
@@ -52,6 +54,8 @@ body {
 
     > main {
       flex: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     > footer {

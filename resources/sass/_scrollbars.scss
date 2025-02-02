@@ -1,0 +1,33 @@
+@use 'sass/variables' as vars;
+@use 'sass/colors' as colors;
+@use 'sass:color';
+
+$color: colors.$background;
+$color-hover: color.adjust($color, $lightness: vars.$scrollbar-hover);
+$color-active: color.adjust($color, $lightness: vars.$scrollbar-active);
+
+::-webkit-scrollbar {
+  width: vars.$scrollbar-size;
+  height: vars.$scrollbar-size;
+}
+
+::-webkit-scrollbar-track {
+  background: $color;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-hover;
+  border-radius: 0px;
+  border: none;
+  cursor: ns-resize;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-active;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: $color-hover $color-active;
+}

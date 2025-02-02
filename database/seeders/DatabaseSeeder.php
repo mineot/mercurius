@@ -17,7 +17,9 @@ class DatabaseSeeder extends Seeder
         $now = now();
 
         User::firstOrCreate(
-            ['email' => 'admin@admin.com'],
+            [
+                'email' => 'admin@admin.com',
+            ],
             [
                 'name' => 'Administrator',
                 'email' => 'admin@admin.com',
@@ -40,24 +42,36 @@ class DatabaseSeeder extends Seeder
 
         foreach ($languages as $language) {
             Language::firstOrCreate(
-                ['code' => $language['code'], 'country' => $language['country']], // 🔍 Verifica pelo código e país
+                [
+                    'code' => $language['code'],
+                    'country' => $language['country'],
+                ],
                 $language
             );
         }
 
         if (Profile::count() === 0) {
+            $en = Language::where('code', 'en')->first();
+            $pt = Language::where('code', 'pt')->first();
+
             Profile::create([
+                'language_id' => $pt->id,
                 'name' => 'Zé Ninguem',
                 'avatar' => 'https://placehold.co/200x200/',
-                'job_title' => 'Assistente de Coisa Nenhuma',
                 'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
+                'job_title' => 'Assistente de Coisa Nenhuma',
+                'job_avatar' => 'https://placehold.co/600x600/',
+                'job_description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit quasi tenetur. Neque, quas veritatis est minus, asperiores, in modi culpa exercitationem delectus ea aut explicabo architecto corrupti debitis eum.',
             ]);
 
             Profile::create([
+                'language_id' => $en->id,
                 'name' => 'Joe Doe',
                 'avatar' => 'https://placehold.co/200x200/',
-                'job_title' => 'Jack of No Trades',
                 'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
+                'job_title' => 'Jack of No Trades',
+                'job_avatar' => 'https://placehold.co/600x600/',
+                'job_description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit quasi tenetur. Neque, quas veritatis est minus, asperiores, in modi culpa exercitationem delectus ea aut explicabo architecto corrupti debitis eum.',
             ]);
         }
     }

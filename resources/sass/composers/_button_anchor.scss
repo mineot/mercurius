@@ -1,0 +1,99 @@
+@use 'sass/variables' as vars;
+@use 'sass/colors' as colors;
+@use 'sass:color';
+@use 'sass:map';
+
+@mixin button($bg, $tx) {
+  background-color: $bg;
+  color: $tx;
+
+  &:hover {
+    background-color: color.adjust($bg, $lightness: vars.$button-hover);
+    color: color.adjust($tx, $lightness: vars.$button-hover);
+  }
+
+  &:active {
+    background-color: color.adjust($bg, $lightness: vars.$button-active);
+    color: color.adjust($tx, $lightness: vars.$button-active);
+  }
+}
+
+@mixin anchor($tx) {
+  color: $tx;
+
+  &:hover {
+    text-decoration: underline;
+    color: color.adjust($tx, $lightness: vars.$anchor-hover);
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: color.adjust($tx, $lightness: vars.$anchor-active);
+  }
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+
+  border-radius: vars.$button-radius;
+  gap: vars.$button-gap;
+
+  padding: vars.$button-padding-md;
+  font-size: vars.$font-size-md;
+
+  &.btn-sm {
+    padding: vars.$button-padding-sm;
+    font-size: vars.$font-size-sm;
+  }
+
+  &.btn-lg {
+    padding: vars.$button-padding-lg;
+    font-size: vars.$font-size-lg;
+  }
+
+  @include button(colors.$text, colors.$background);
+
+  @each $color, $value in colors.$colors {
+    $text: map.get(colors.$color-texts, $color);
+
+    &.btn-#{$color} {
+      @include button($value, $text);
+    }
+  }
+}
+
+a {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+
+  gap: vars.$anchor-gap;
+  font-size: vars.$font-size-md;
+
+  &.a-sm {
+    font-size: vars.$font-size-sm;
+  }
+
+  &.a-lg {
+    font-size: vars.$font-size-lg;
+  }
+
+  @include anchor(colors.$text);
+
+  @each $color, $value in colors.$colors {
+    &.a-#{$color} {
+      @include anchor($value);
+    }
+  }
+}

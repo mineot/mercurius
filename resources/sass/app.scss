@@ -1,6 +1,8 @@
 @forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
 @forward 'sass/fonts';
 @forward 'sass/composers/padding';
+@forward 'sass/composers/flex';
+@forward 'sass/composers/button_anchor';
 
 @use 'sass/colors' as colors;
 @use 'sass/mixins' as mix;
@@ -17,19 +19,20 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: 'Tomorrow', sans-serif;
+  font-size: vars.$font-size-md;
   background-color: colors.$background;
   color: colors.$text;
   display: flex;
 
   @include mix.responsive(
     $large: (
-      padding: 0 vars.$container-large,
+      padding: 0 vars.$container-lg,
     ),
     $medium: (
-      padding: 0 vars.$container-medium,
+      padding: 0 vars.$container-md,
     ),
     $small: (
-      padding: 0 vars.$container-small,
+      padding: 0 vars.$container-sm,
     )
   );
 
@@ -37,7 +40,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: vars.$gap-small;
+    gap: vars.$gap-sm;
 
     > header {
       flex: 0;

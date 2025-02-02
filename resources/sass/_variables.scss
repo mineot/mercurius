@@ -1,10 +1,32 @@
-$screen-small: 576px;
-$screen-large: 992px;
+$screen-sm: 576px;
+$screen-lg: 992px;
 
-$container-small: 10px;
-$container-medium: 10%;
-$container-large: 20%;
+$container-sm: 10px;
+$container-md: 10%;
+$container-lg: 20%;
 
-$gap-small: 5px;
-$gap-medium: 10px;
-$gap-large: 15px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+
+$gap-sm: 5px;
+$gap-md: 10px;
+$gap-lg: 15px;
+
+$gap-range: (
+  'sm': $gap-sm,
+  'md': $gap-md,
+  'lg': $gap-lg,
+);
+
+$button-gap: 2px;
+$button-radius: 3px;
+$button-padding-sm: 2px 4px;
+$button-padding-md: 4px 6px;
+$button-padding-lg: 6px 8px;
+$button-hover: 10%;
+$button-active: 20%;
+
+$anchor-gap: 2px;
+$anchor-hover: 10%;
+$anchor-active: 20%;

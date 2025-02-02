@@ -1,3 +1,5 @@
 <template>
-  <c-layout>Welcome</c-layout>
+  <c-layout>
+    <span>Welcome</span>
+  </c-layout>
 </template>

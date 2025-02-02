@@ -25,6 +25,18 @@ $colors: (
   'danger': firebrick,
 );
 
+$color-texts: (
+  'dark': $text,
+  'light': $background,
+  'primary': $text,
+  'secondary': $background,
+  'accent': $background,
+  'success': $background,
+  'info': $background,
+  'warning': $background,
+  'danger': $text,
+);
+
 @each $c, $v in $colors {
   .bg-#{$c} {
     background-color: $v;

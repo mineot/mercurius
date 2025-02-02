@@ -30,16 +30,16 @@ export const i18n = createI18n({
   fallbackLocale: fallbackLocale,
   messages: {
     en: {
+      all_rights_reserved: 'All rights reserved',
       header: 'Header',
-      nav: 'Navigation',
       main: 'Content',
-      footer: 'Footer',
+      nav: 'Navigation',
     },
     pt: {
+      all_rights_reserved: 'Todos os direitos reservados',
       header: 'Cabeçalho',
-      nav: 'Navegação',
       main: 'Conteúdo',
-      footer: 'Rodapé',
+      nav: 'Navegação',
     },
   },
 });

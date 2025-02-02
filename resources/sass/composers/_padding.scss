@@ -1,9 +1,9 @@
 @use 'sass/variables' as vars;
 
 $padding-size-range: (
-  'sm': vars.$gap-small,
-  'md': vars.$gap-medium,
-  'lg': vars.$gap-large,
+  'sm': vars.$gap-sm,
+  'md': vars.$gap-md,
+  'lg': vars.$gap-lg,
 );
 
 $padding-pos-range: (

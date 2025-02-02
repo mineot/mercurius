@@ -2,19 +2,19 @@
 @use 'sass/variables' as vars;
 
 @mixin responsive($large, $medium, $small) {
-  @media (min-width: vars.$screen-large) {
+  @media (min-width: vars.$screen-lg) {
     @each $property, $value in $large {
       #{$property}: #{$value};
     }
   }
 
-  @media (min-width: vars.$screen-small) and (max-width: vars.$screen-large) {
+  @media (min-width: vars.$screen-sm) and (max-width: vars.$screen-lg) {
     @each $property, $value in $medium {
       #{$property}: #{$value};
     }
   }
 
-  @media (max-width: vars.$screen-small) {
+  @media (max-width: vars.$screen-sm) {
     @each $property, $value in $small {
       #{$property}: #{$value};
     }

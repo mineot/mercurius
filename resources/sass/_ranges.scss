@@ -1,0 +1,14 @@
+$padding-range: (
+  'sm': $gap-sm,
+  'md': $gap-md,
+  'lg': $gap-lg,
+);
+
+$color-range: (
+  darken-3: -9%,
+  darken-2: -6%,
+  darken-1: -3%,
+  lighten-1: 3%,
+  lighten-2: 6%,
+  lighten-3: 9%,
+);

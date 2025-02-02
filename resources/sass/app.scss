@@ -1,13 +1,12 @@
 @forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
-@forward 'sass/composers/button_anchor';
-@forward 'sass/composers/flex';
-@forward 'sass/composers/padding';
-@forward 'sass/fonts';
-@forward 'sass/scrollbars';
+@forward 'sass/essentials/fonts';
+@forward 'sass/essentials/scrollbars';
 
-@use 'sass/colors' as colors;
-@use 'sass/mixins' as mix;
+// @forward 'sass/composers/button_anchor';
+// @forward 'sass/composers/flex';
+// @forward 'sass/composers/padding';
+
 @use 'sass/variables' as vars;
 
 * {
@@ -15,34 +14,22 @@
 }
 
 body {
+  background-color: vars.$body-background;
+  color: vars.$body-color;
+  font-family: vars.$body-font-family;
+  font-size: vars.$body-font-size;
+
+  display: flex;
+  height: 100vh;
   margin: 0;
+  overflow: hidden;
   padding: 0;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  font-family: 'Tomorrow', sans-serif;
-  font-size: vars.$font-size-md;
-  background-color: colors.$background;
-  color: colors.$text;
-  display: flex;
-
-  @include mix.responsive(
-    $large: (
-      padding: 0 vars.$container-lg,
-    ),
-    $medium: (
-      padding: 0 vars.$container-md,
-    ),
-    $small: (
-      padding: 0 vars.$container-sm,
-    )
-  );
 
   > #app {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: vars.$gap-sm;
 
     > header {
       flex: 0;

@@ -2,7 +2,7 @@
 @use 'sass/colors' as colors;
 @use 'sass:color';
 
-$color: colors.$background;
+$color: colors.$dark;
 $color-hover: color.adjust($color, $lightness: vars.$scrollbar-hover);
 $color-active: color.adjust($color, $lightness: vars.$scrollbar-active);
 

@@ -1,36 +1,40 @@
+@use 'sass/colors' as colors;
+
 $screen-sm: 576px;
 $screen-lg: 992px;
-
-$container-sm: 10px;
-$container-md: 10%;
-$container-lg: 20%;
-
-$scrollbar-size: 6px;
-$scrollbar-hover: 5%;
-$scrollbar-active: 10%;
 
 $font-size-sm: 12px;
 $font-size-md: 14px;
 $font-size-lg: 16px;
 
-$gap-sm: 5px;
-$gap-md: 10px;
-$gap-lg: 15px;
+$scrollbar-size: 6px;
+$scrollbar-hover: 5%;
+$scrollbar-active: 10%;
 
-$gap-range: (
-  'sm': $gap-sm,
-  'md': $gap-md,
-  'lg': $gap-lg,
-);
+$body-background: colors.$dark;
+$body-color: colors.$light;
+$body-font-family: 'Tomorrow', sans-serif;
+$body-font-size: $font-size-md;
 
-$button-gap: 2px;
-$button-radius: 3px;
-$button-padding-sm: 2px 4px;
-$button-padding-md: 4px 6px;
-$button-padding-lg: 6px 8px;
-$button-hover: 10%;
-$button-active: 20%;
+// $container-sm: 10px;
+// $container-md: 10%;
+// $container-lg: 20%;
 
-$anchor-gap: 2px;
-$anchor-hover: 10%;
-$anchor-active: 20%;
+// $gap-sm: 5px;
+// $gap-md: 10px;
+// $gap-lg: 15px;
+
+// $text-shadow-sizes: 2px 2px 2px;
+// $text-shadow-lightness: -30%;
+
+// $button-gap: 2px;
+// $button-radius: 3px;
+// $button-padding-sm: 2px 4px;
+// $button-padding-md: 4px 6px;
+// $button-padding-lg: 6px 8px;
+// $button-hover: 10%;
+// $button-active: 20%;
+
+// $anchor-gap: 2px;
+// $anchor-hover: 10%;
+// $anchor-active: 20%;

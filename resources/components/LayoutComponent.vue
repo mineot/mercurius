@@ -1,8 +1,6 @@
 <template>
-  <c-header />
-  <c-nav />
-  <main class="p-x-sm">
-    <slot />
-  </main>
-  <c-footer />
+  <header>Header</header>
+  <nav>Navigation</nav>
+  <main>Main</main>
+  <footer>Footer</footer>
 </template>

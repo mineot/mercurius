@@ -1,73 +1,7 @@
 <template>
-  <header>Header</header>
-  <nav>Navigation</nav>
-  <main>
-    <br />
-    <div ref="container"></div>
-    <br />
+  <c-header />
+  <main class="px-2">
+    <slot></slot>
   </main>
-  <footer>Footer</footer>
+  <c-footer />
 </template>
-
-<script setup lang="ts">
-import { ref, onMounted } from 'vue';
-
-const colors = [
-  'dark',
-  'light',
-  'primary',
-  'secondary',
-  'accent',
-  'success',
-  'info',
-  'warning',
-  'danger',
-];
-
-const container = ref(null);
-
-onMounted(() => {
-  if (container.value) {
-    const dom = container.value as any;
-
-    const create = (element: string, prop: string, color: string) => {
-      const el = document.createElement(element);
-      el.classList.add(`${prop}-${color}`);
-      el.innerText = `${prop}-${color}`;
-      el.style.marginBottom = '10px';
-      dom.appendChild(el);
-    };
-
-    const hr = (color: string) => {
-      const el = document.createElement('hr');
-      el.classList.add(color);
-      el.style.marginBottom = '10px';
-      dom.appendChild(el);
-    };
-
-    const btn = (color: string) => {
-      const el = document.createElement('button');
-      el.classList.add(color);
-      el.style.marginBottom = '10px';
-      el.style.marginRight = '10px';
-
-      const icon = document.createElement('i');
-      icon.classList.add('bi', 'bi-house');
-      el.appendChild(icon);
-
-      const span = document.createElement('span');
-      span.innerText = `button-${color}`;
-      el.appendChild(span);
-      el.appendChild(span);
-
-      dom.appendChild(el);
-    };
-
-    colors.forEach((color) => create('div', 'bg', color));
-    colors.forEach((color) => create('div', 'text', color));
-    colors.forEach((color) => create('div', 'border', color));
-    colors.forEach((color) => hr(color));
-    colors.forEach((color) => btn(color));
-  }
-});
-</script>

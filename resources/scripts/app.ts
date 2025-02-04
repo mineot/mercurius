@@ -8,7 +8,7 @@ import HeaderComponent from 'comps/HeaderComponent.vue';
 import LayoutComponent from 'comps/LayoutComponent.vue';
 import NavComponent from 'comps/NavComponent.vue';
 
-import PersonWidget from 'wid/PersonWidget.vue';
+import BrandWidget from 'wid/BrandWidget.vue';
 
 (window as any).axios = axios;
 (window as any).axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -22,7 +22,7 @@ createInertiaApp({
     app.component('c-header', HeaderComponent);
     app.component('c-layout', LayoutComponent);
     app.component('c-nav', NavComponent);
-    app.component('w-person', PersonWidget);
+    app.component('w-brand', BrandWidget);
     app.mount(el);
   },
 });

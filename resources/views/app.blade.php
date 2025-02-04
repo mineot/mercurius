@@ -6,7 +6,7 @@
         <title>{{ config('app.name') }}</title>
         @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
     </head>
-    <body>
+    <body data-bs-theme="dark">
         @inertia
     </body>
 </html>

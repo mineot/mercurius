@@ -1,3 +1,17 @@
 <template>
-  <header class="bg-dark darken-1 p-sm">{{ $t('header') }}</header>
+  <header :class="style">
+    <div>{{ $t('header') }}</div>
+    <c-nav />
+  </header>
 </template>
+
+<script setup lang="ts">
+const style = [
+  'bg-body-tertiary',
+  'p-2',
+  'd-flex',
+  'flex-nowrap',
+  'justify-content-between',
+  'align-items-center',
+];
+</script>

@@ -45,10 +45,29 @@ onMounted(() => {
       dom.appendChild(el);
     };
 
+    const btn = (color: string) => {
+      const el = document.createElement('button');
+      el.classList.add(color);
+      el.style.marginBottom = '10px';
+      el.style.marginRight = '10px';
+
+      const icon = document.createElement('i');
+      icon.classList.add('bi', 'bi-house');
+      el.appendChild(icon);
+
+      const span = document.createElement('span');
+      span.innerText = `button-${color}`;
+      el.appendChild(span);
+      el.appendChild(span);
+
+      dom.appendChild(el);
+    };
+
     colors.forEach((color) => create('div', 'bg', color));
     colors.forEach((color) => create('div', 'text', color));
     colors.forEach((color) => create('div', 'border', color));
     colors.forEach((color) => hr(color));
+    colors.forEach((color) => btn(color));
   }
 });
 </script>

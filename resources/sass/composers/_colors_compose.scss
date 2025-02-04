@@ -43,15 +43,39 @@ $color-inverse-text-list: (
     border-style: vars.$border-style;
     border-color: $color;
   }
+}
 
-  hr {
-    padding: 0;
-    margin: 0;
+hr {
+  padding: 0;
+  margin: 0;
 
+  @each $name, $color in $color-list {
     &.#{$name} {
       border-width: vars.$border-width;
       border-style: vars.$border-style;
       border-color: $color;
+    }
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: vars.$button-radius;
+  padding: vars.$button-padding;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: vars.$button-gap;
+
+  @each $name, $color in $color-list {
+    $inverse-text: map.get($color-inverse-text-list, $name);
+
+    &.#{$name} {
+      background-color: $color;
+      color: $inverse-text;
     }
   }
 }

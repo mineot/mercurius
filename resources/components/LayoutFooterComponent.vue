@@ -1,16 +1,18 @@
 <template>
   <footer :class="style">
-    <small class="text-body-secondary">
-      &copy; {{ year }} {{ owner }}, {{ $t('all_rights_reserved') }}
-    </small>
-    <a href="#" class="btn btn-sm btn-link">Contact Me</a>
+    <span class="text-body-secondary small">
+      <span class="small">
+        <small>&copy; {{ year }} {{ owner }}, {{ $t('all_rights_reserved') }}</small>
+      </span>
+    </span>
+    <a href="/contact" class="btn btn-sm btn-link">Contact Me</a>
   </footer>
 </template>
 
 <script setup lang="ts">
 const style = [
   'bg-body-tertiary',
-  'p-2',
+  'p-1',
   'd-flex',
   'flex-wrap',
   'justify-content-md-between',

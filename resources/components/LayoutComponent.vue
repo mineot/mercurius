@@ -1,7 +1,7 @@
 <template>
-  <c-header />
-  <main class="px-2">
+  <app-layout-header />
+  <app-layout-main>
     <slot></slot>
-  </main>
-  <c-footer />
+  </app-layout-main>
+  <app-layout-footer />
 </template>

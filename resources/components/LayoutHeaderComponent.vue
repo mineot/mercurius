@@ -1,7 +1,7 @@
 <template>
   <header :class="style">
     <div>{{ $t('header') }}</div>
-    <c-nav />
+    <app-layout-nav />
   </header>
 </template>
 

@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Language;
+use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class WelcomeController extends Controller
+class ContactController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Welcome', [
+        return Inertia::render('Contact', [
             // 'profile' => Language::getCurrentLanguage()->profiles()->first(),
         ]);
     }

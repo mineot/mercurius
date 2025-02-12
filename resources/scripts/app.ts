@@ -1,7 +1,10 @@
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
+import { createPinia } from 'pinia';
 import { i18n } from 'src/i18n';
 import axios from 'axios';
+
+const pinia = createPinia();
 
 import FooterComponent from 'comps/FooterComponent.vue';
 import HeaderComponent from 'comps/HeaderComponent.vue';
@@ -18,6 +21,7 @@ createInertiaApp({
   setup({ el, App, props }) {
     const app = createApp({ render: () => h(App, props) });
     app.use(i18n);
+    app.use(pinia);
     app.component('c-footer', FooterComponent);
     app.component('c-header', HeaderComponent);
     app.component('c-layout', LayoutComponent);

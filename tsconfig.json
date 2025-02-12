@@ -14,6 +14,7 @@
       "pages/*": ["resources/pages/*"],
       "sass/*": ["resources/sass/*"],
       "src/*": ["resources/scripts/*"],
+      "store/*": ["resources/stores/*"],
       "wid/*": ["resources/widgets/*"],
       "modules/*": ["node_modules/*"]
     }

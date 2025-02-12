@@ -10,15 +10,15 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "comps/*": ["resources/components/*"],
-      "pages/*": ["resources/pages/*"],
-      "sass/*": ["resources/sass/*"],
-      "src/*": ["resources/scripts/*"],
-      "store/*": ["resources/stores/*"],
-      "wid/*": ["resources/widgets/*"],
-      "modules/*": ["node_modules/*"]
+      "@component/*": ["resources/components/*"],
+      "@page/*": ["resources/pages/*"],
+      "@sass/*": ["resources/sass/*"],
+      "@script/*": ["resources/scripts/*"],
+      "@store/*": ["resources/stores/*"],
+      "@widget/*": ["resources/widgets/*"],
+      "@module/*": ["node_modules/*"]
     }
   },
-  "include": ["resources/scripts/**/*", "vite.config.ts"],
+  "include": ["resources/**/*.ts", "resources/**/*.vue", "vite.config.ts"],
   "exclude": ["node_modules"]
 }

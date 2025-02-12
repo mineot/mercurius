@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { useProfileStore } from 'store/profile.store';
+import { useProfileStore } from '@store/profile.store';
 defineProps({ profile: Object });
 
 const useProfile = useProfileStore();

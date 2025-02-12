@@ -1,6 +1,6 @@
-@forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
-@forward 'modules/bootstrap/dist/css/bootstrap.min.css';
-@forward 'sass/essentials/scrollbars';
+@forward '@module/bootstrap-icons/font/bootstrap-icons.min.css';
+@forward '@module/bootstrap/dist/css/bootstrap.min.css';
+@forward '@sass/essentials/scrollbars';
 // @forward 'sass/essentials/fonts';
 
 * {

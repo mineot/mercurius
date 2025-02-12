@@ -1,17 +1,17 @@
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { createPinia } from 'pinia';
-import { i18n } from 'src/i18n';
+import { i18n } from '@script/i18n';
 import axios from 'axios';
 
 const pinia = createPinia();
 
-import FooterComponent from 'comps/FooterComponent.vue';
-import HeaderComponent from 'comps/HeaderComponent.vue';
-import LayoutComponent from 'comps/LayoutComponent.vue';
-import NavComponent from 'comps/NavComponent.vue';
+import FooterComponent from '@component/FooterComponent.vue';
+import HeaderComponent from '@component/HeaderComponent.vue';
+import LayoutComponent from '@component/LayoutComponent.vue';
+import NavComponent from '@component/NavComponent.vue';
 
-import BrandWidget from 'wid/BrandWidget.vue';
+import BrandWidget from '@widget/BrandWidget.vue';
 
 (window as any).axios = axios;
 (window as any).axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

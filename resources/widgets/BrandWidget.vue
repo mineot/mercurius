@@ -1,5 +1,6 @@
 <template>
-  <div class="d-flex column">
+  <div>Brand Widget</div>
+  <!-- <div class="d-flex column">
     <div>
       <img :src="profile?.avatar" :alt="profile?.name" />
     </div>
@@ -7,9 +8,9 @@
     <div>
       <span>{{ profile?.summary }}</span>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
-defineProps({ profile: Object });
+// defineProps({ profile: Object });
 </script>

@@ -1,7 +1,10 @@
 <template>
   <app-layout>
-    Welcome
-    <!-- <wapp-brand :profile="profile" /> -->
+    <template v-slot:header>
+      <wapp-brand></wapp-brand>
+      <!-- <wapp-brand :profile="profile" /> -->
+    </template>
+    <h1>Welcome</h1>
   </app-layout>
 </template>
 

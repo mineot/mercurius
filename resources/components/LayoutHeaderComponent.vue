@@ -1,6 +1,6 @@
 <template>
   <header :class="style">
-    <div>{{ $t('header') }}</div>
+    <slot></slot>
     <app-layout-nav />
   </header>
 </template>

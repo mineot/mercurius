@@ -31,13 +31,11 @@ export const i18n = createI18n({
   messages: {
     en: {
       all_rights_reserved: 'All rights reserved',
-      header: 'Header',
       main: 'Content',
       nav: 'Navigation',
     },
     pt: {
       all_rights_reserved: 'Todos os direitos reservados',
-      header: 'Cabeçalho',
       main: 'Conteúdo',
       nav: 'Navegação',
     },

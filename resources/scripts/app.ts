@@ -12,7 +12,7 @@ import LayoutHeaderComponent from '@component/LayoutHeaderComponent.vue';
 import LayoutMainComponent from '@component/LayoutMainComponent.vue';
 import LayoutNavComponent from '@component/LayoutNavComponent.vue';
 
-import BrandWidget from '@widget/BrandWidget.vue';
+import ProfileWidget from '@widget/ProfileWidget.vue';
 
 (window as any).axios = axios;
 (window as any).axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -28,7 +28,7 @@ createInertiaApp({
     app.component('app-layout-main', LayoutMainComponent);
     app.component('app-layout-nav', LayoutNavComponent);
     app.component('app-layout', LayoutComponent);
-    app.component('wapp-brand', BrandWidget);
+    app.component('wapp-profile', ProfileWidget);
     app.mount(el);
   },
 });

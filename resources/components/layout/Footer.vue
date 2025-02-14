@@ -1,10 +1,8 @@
 <template>
   <footer :class="style">
-    <span class="text-body-secondary small">
-      <span class="small">
-        <small>&copy; {{ year }} {{ owner }}, {{ $t('all_rights_reserved') }}</small>
-      </span>
-    </span>
+    <small class="text-body-secondary">
+      &copy; {{ year }} {{ owner }}, {{ $t('all_rights_reserved') }}
+    </small>
     <a href="/contact" class="btn btn-sm btn-link">
       <span>{{ $t('contact_me') }}</span>
     </a>
@@ -16,10 +14,11 @@ const style = [
   'bg-body-tertiary',
   'p-1',
   'd-flex',
-  'flex-wrap',
-  'justify-content-md-between',
-  'justify-content-sm-between',
-  'justify-content-around',
+  'flex-column',
+  'flex-md-row',
+  'flex-sm-row',
+  'flex-nowrap',
+  'justify-content-between',
   'align-items-center',
 ];
 

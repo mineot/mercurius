@@ -31,13 +31,11 @@ export const i18n = createI18n({
   messages: {
     en: {
       all_rights_reserved: 'All rights reserved',
-      main: 'Content',
-      nav: 'Navigation',
+      contact_me: 'Contact Me',
     },
     pt: {
       all_rights_reserved: 'Todos os direitos reservados',
-      main: 'Conteúdo',
-      nav: 'Navegação',
+      contact_me: 'Entre em Contato',
     },
   },
 });

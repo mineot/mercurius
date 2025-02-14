@@ -5,7 +5,9 @@
         <small>&copy; {{ year }} {{ owner }}, {{ $t('all_rights_reserved') }}</small>
       </span>
     </span>
-    <a href="/contact" class="btn btn-sm btn-link">Contact Me</a>
+    <a href="/contact" class="btn btn-sm btn-link">
+      <span>{{ $t('contact_me') }}</span>
+    </a>
   </footer>
 </template>
 

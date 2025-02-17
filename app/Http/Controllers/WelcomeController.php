@@ -10,7 +10,7 @@ class WelcomeController extends Controller
     public function index()
     {
         return Inertia::render('Welcome', [
-            'profile' => Language::getCurrentLanguage()->profiles()->first(),
+            // 'profile' => Language::getCurrentLanguage()->profiles()->first(),
         ]);
     }
 }

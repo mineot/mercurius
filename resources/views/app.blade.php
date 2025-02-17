@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name') }}</title>
-        @vite(['resources/sass/app.scss', 'resources/scripts/app.ts'])
+        @vite(['resources/core/sass/app.scss', 'resources/core/scripts/app.ts'])
     </head>
     <body data-bs-theme="dark">
         @inertia

@@ -10,12 +10,12 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@component/*": ["resources/components/*"],
+      "@component/*": ["resources/core/components/*"],
+      "@widget/*": ["resources/core/components/widgets/*"],
+      "@script/*": ["resources/core/scripts/*"],
+      "@store/*": ["resources/core/scripts/stores/*"],
+      "@sass/*": ["resources/core/sass/*"],
       "@page/*": ["resources/pages/*"],
-      "@sass/*": ["resources/sass/*"],
-      "@script/*": ["resources/scripts/*"],
-      "@store/*": ["resources/stores/*"],
-      "@widget/*": ["resources/widgets/*"],
       "@module/*": ["node_modules/*"]
     }
   },

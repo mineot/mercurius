@@ -1,5 +1,4 @@
 import { appComponents } from '@component/components';
-import { appWidgets } from '@widget/widgets';
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { createPinia } from 'pinia';
@@ -28,7 +27,6 @@ createInertiaApp({
     app.use(i18n);
     app.use(pinia);
     appComponents(app);
-    appWidgets(app);
     app.mount(el);
   },
 });

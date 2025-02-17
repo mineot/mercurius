@@ -1,0 +1,7 @@
+@forward '@module/bootstrap/dist/css/bootstrap.min.css';
+
+$screen-medium: 768px;
+$screen-small: 576px;
+
+$app-gap: 5px;
+$app-bg-tertiary: var(--bs-tertiary-bg);

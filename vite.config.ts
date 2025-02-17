@@ -6,19 +6,19 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@component': path.resolve(__dirname, 'resources/components'),
+      '@component': path.resolve(__dirname, 'resources/core/components'),
+      '@widget': path.resolve(__dirname, 'resources/core/components/widgets'),
+      '@script': path.resolve(__dirname, 'resources/core/scripts'),
+      '@store': path.resolve(__dirname, 'resources/core/scripts/stores'),
+      '@sass': path.resolve(__dirname, 'resources/core/sass'),
       '@page': path.resolve(__dirname, 'resources/pages'),
-      '@sass': path.resolve(__dirname, 'resources/sass'),
-      '@script': path.resolve(__dirname, 'resources/scripts'),
-      '@store': path.resolve(__dirname, 'resources/stores'),
-      '@widget': path.resolve(__dirname, 'resources/widgets'),
       '@module': path.resolve(__dirname, 'node_modules'),
       vue: 'vue/dist/vue.esm-bundler.js',
     },
   },
   plugins: [
     laravel({
-      input: ['resources/sass/app.scss', 'resources/scripts/app.ts'],
+      input: ['resources/core/sass/app.scss', 'resources/core/scripts/app.ts'],
       refresh: true,
     }),
     vue(),

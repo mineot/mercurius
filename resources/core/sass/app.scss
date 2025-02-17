@@ -1,0 +1,83 @@
+@forward '@module/bootstrap-icons/font/bootstrap-icons.min.css';
+@forward '@module/bootstrap/dist/css/bootstrap.min.css';
+@forward '@sass/essentials/scrollbars';
+
+@use '@sass/variables' as vars;
+@use '@sass/mixins' as mixs;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  > #app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: vars.$app-gap;
+
+    > section.app-layout {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: vars.$app-gap;
+
+      @include mixs.responsive-mixin(
+        (
+          flex-direction: row,
+        ),
+        (
+          flex-direction: column,
+        ),
+        (
+          flex-direction: column,
+        )
+      );
+
+      > header {
+        padding: vars.$app-gap;
+        background-color: vars.$app-bg-tertiary;
+
+        @include mixs.responsive-mixin(
+          (
+            display: none,
+          ),
+          (
+            flex: 0,
+          ),
+          (
+            flex: 0,
+          )
+        );
+      }
+
+      > aside {
+        padding: vars.$app-gap;
+        background-color: vars.$app-bg-tertiary;
+
+        @include mixs.responsive-mixin(
+          (
+            flex: 0,
+          ),
+          (
+            display: none,
+          ),
+          (
+            display: none,
+          )
+        );
+      }
+
+      > main {
+        flex: 1;
+      }
+    }
+  }
+}

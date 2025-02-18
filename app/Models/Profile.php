@@ -13,7 +13,7 @@ class Profile extends Model
 
     protected $keyType = 'string';
 
-    protected $fillable = ['name', 'avatar', 'summary', 'job_title', 'job_avatar', 'job_description'];
+    protected $fillable = ['name', 'avatar', 'summary'];
 
     public function language(): BelongsTo
     {

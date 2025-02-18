@@ -30,12 +30,12 @@ class DatabaseSeeder extends Seeder
         $languages = [
             [
                 'name' => 'English',
-                'code' => 'en',
+                'language' => 'en',
                 'country' => null,
             ],
             [
                 'name' => 'Português',
-                'code' => 'pt',
+                'language' => 'pt',
                 'country' => null,
             ],
         ];
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
         foreach ($languages as $language) {
             Language::firstOrCreate(
                 [
-                    'code' => $language['code'],
+                    'language' => $language['language'],
                     'country' => $language['country'],
                 ],
                 $language
@@ -51,27 +51,21 @@ class DatabaseSeeder extends Seeder
         }
 
         if (Profile::count() === 0) {
-            $en = Language::where('code', 'en')->first();
-            $pt = Language::where('code', 'pt')->first();
+            $en = Language::where('language', 'en')->first();
+            $pt = Language::where('language', 'pt')->first();
 
             Profile::create([
                 'language_id' => $pt->id,
                 'name' => 'Zé Ninguem',
-                'avatar' => 'https://i.pravatar.cc/80',
+                'avatar' => 'https://i.pravatar.cc/1024',
                 'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
-                'job_title' => 'Assistente de Coisa Nenhuma',
-                'job_avatar' => 'https://i.pravatar.cc/600',
-                'job_description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit quasi tenetur. Neque, quas veritatis est minus, asperiores, in modi culpa exercitationem delectus ea aut explicabo architecto corrupti debitis eum.',
             ]);
 
             Profile::create([
                 'language_id' => $en->id,
                 'name' => 'Joe Doe',
-                'avatar' => 'https://i.pravatar.cc/80',
+                'avatar' => 'https://i.pravatar.cc/1024',
                 'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
-                'job_title' => 'Jack of No Trades',
-                'job_avatar' => 'https://i.pravatar.cc/600',
-                'job_description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit quasi tenetur. Neque, quas veritatis est minus, asperiores, in modi culpa exercitationem delectus ea aut explicabo architecto corrupti debitis eum.',
             ]);
         }
     }

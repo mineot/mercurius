@@ -17,9 +17,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('avatar');
             $table->string('summary');
-            $table->string('job_title');
-            $table->string('job_avatar');
-            $table->string('job_description');
             $table->timestamps();
         });
     }

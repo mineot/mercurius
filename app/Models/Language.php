@@ -14,7 +14,7 @@ class Language extends Model
 
     protected $keyType = 'string';
 
-    protected $fillable = ['name', 'code', 'country'];
+    protected $fillable = ['name', 'language', 'country'];
 
     public function profiles(): HasMany
     {
@@ -28,10 +28,10 @@ class Language extends Model
         if (str_contains($locale, '-')) {
             [$code, $country] = explode('-', $locale, 2);
 
-            return self::where('code', $code)->where('country', $country)->first()
-                ?? self::where('code', $code)->first();
+            return self::where('language', $code)->where('country', $country)->first()
+                ?? self::where('language', $code)->first();
         }
 
-        return self::where('code', $locale)->first();
+        return self::where('language', $locale)->first();
     }
 }

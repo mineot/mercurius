@@ -1,11 +1,13 @@
 <template>
   <div class="flex-fill d-flex flex-column justify-content-center align-items-center">
     <form @submit.prevent="submitForm" class="border rounded p-3 d-flex flex-column gap-2">
-      <wapp-input label="Email" type="email" id="email" v-model="form.email" />
-      <wapp-input label="Password" type="password" id="password" v-model="form.password" />
-      <small class="text-danger text-center" v-if="fail">{{ failMessage }}</small>
+      <wapp-input :label="$t('email')" type="email" id="email" v-model="form.email" />
+      <wapp-input :label="$t('password')" type="password" id="password" v-model="form.password" />
+      <small class="text-danger text-center" v-if="fail">
+        <span>{{ $t(`fails.${failMessage}`) }}</span>
+      </small>
       <button type="submit" class="btn btn-primary">
-        <span>Sign In</span>
+        <span>{{ $t('sign_in') }}</span>
       </button>
     </form>
   </div>

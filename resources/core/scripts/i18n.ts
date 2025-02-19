@@ -32,10 +32,22 @@ export const i18n = createI18n({
     en: {
       all_rights_reserved: 'All rights reserved',
       contact_me: 'Contact Me',
+      email: 'Email',
+      password: 'Password',
+      sign_in: 'Sign In',
+      fails: {
+        invalid_credentials: 'Invalid credentials',
+      },
     },
     pt: {
       all_rights_reserved: 'Todos os direitos reservados',
       contact_me: 'Entre em Contato',
+      email: 'E-mail',
+      password: 'Senha',
+      sign_in: 'Entrar',
+      fails: {
+        invalid_credentials: 'Credenciais inválidas',
+      },
     },
   },
 });

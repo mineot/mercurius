@@ -1,8 +1,13 @@
 <template>
-  <h1>Admin</h1>
-  <button type="button" class="btn btn-secondary" @click="exit">
-    <span>Sign Out</span>
-  </button>
+  <app-layout>
+    <template #aside>
+      <span class="fs-2 fw-bold">Admin</span>
+      <button type="button" class="btn btn-sm btn-secondary" @click="exit">
+        <span>Sign Out</span>
+      </button>
+    </template>
+    <span>Admin</span>
+  </app-layout>
 </template>
 
 <script setup lang="ts">

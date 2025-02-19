@@ -9,11 +9,11 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $lang = Language::getCurrentLanguage() ;
+        $lang = Language::getCurrentLanguage();
 
         return Inertia::render('Welcome', [
             'profile' => $lang->profiles()->first(),
-            'language' => $lang
+            'language' => $lang,
         ]);
     }
 }

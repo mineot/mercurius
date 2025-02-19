@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('language');
             $table->string('country')->nullable();
+            $table->string('flag')->nullable();
             $table->timestamps();
         });
     }

@@ -31,12 +31,20 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'English',
                 'language' => 'en',
-                'country' => null,
+                'country' => 'US',
+                'flag' => 'https://flagcdn.com/w80/us.png',
             ],
             [
                 'name' => 'Português',
                 'language' => 'pt',
-                'country' => null,
+                'country' => 'BR',
+                'flag' => 'https://flagcdn.com/w80/br.png',
+            ],
+            [
+                'name' => 'Español',
+                'language' => 'es',
+                'country' => 'AR',
+                'flag' => 'https://flagcdn.com/w80/ar.png',
             ],
         ];
 
@@ -53,6 +61,7 @@ class DatabaseSeeder extends Seeder
         if (Profile::count() === 0) {
             $en = Language::where('language', 'en')->first();
             $pt = Language::where('language', 'pt')->first();
+            $es = Language::where('language', 'es')->first();
 
             Profile::create([
                 'language_id' => $pt->id,
@@ -64,6 +73,13 @@ class DatabaseSeeder extends Seeder
             Profile::create([
                 'language_id' => $en->id,
                 'name' => 'Joe Doe',
+                'avatar' => 'https://i.pravatar.cc/1024',
+                'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
+            ]);
+
+            Profile::create([
+                'language_id' => $es->id,
+                'name' => 'Juan Pérez',
                 'avatar' => 'https://i.pravatar.cc/1024',
                 'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas.',
             ]);

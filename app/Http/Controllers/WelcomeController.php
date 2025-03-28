@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Language;
-use Inertia\Inertia;
 
 class WelcomeController extends Controller
 {
@@ -11,7 +10,7 @@ class WelcomeController extends Controller
     {
         $lang = Language::getCurrentLanguage();
 
-        return Inertia::render('Welcome', [
+        return view('welcome', [
             'profile' => $lang->profiles()->first(),
             'language' => $lang,
         ]);

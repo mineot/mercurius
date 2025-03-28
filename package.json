@@ -7,20 +7,16 @@
     "format": "composer format && prettier --write ."
   },
   "devDependencies": {
-    "@inertiajs/vue3": "^2.0.3",
-    "@types/node": "^22.10.10",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "axios": "^1.7.4",
+    "@types/node": "^22.13.14",
+    "axios": "^1.8.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "concurrently": "^9.0.1",
-    "laravel-vite-plugin": "^1.0",
-    "pinia": "^2.3.1",
-    "prettier": "^3.5.1",
-    "sass": "^1.83.4",
-    "typescript": "^5.7.3",
-    "vite": "^6.0",
-    "vue": "^3.5.13",
-    "vue-i18n": "^11.1.0"
+    "prettier": "^3.5.3",
+    "sass": "^1.86.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2"
+  },
+  "dependencies": {
+    "laravel-vite-plugin": "^1.2.0"
   }
 }

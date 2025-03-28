@@ -9,16 +9,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "paths": {
-      "@component/*": ["resources/core/components/*"],
-      "@widget/*": ["resources/core/components/widgets/*"],
-      "@script/*": ["resources/core/scripts/*"],
-      "@store/*": ["resources/core/scripts/stores/*"],
-      "@sass/*": ["resources/core/sass/*"],
-      "@page/*": ["resources/pages/*"],
-      "@module/*": ["node_modules/*"]
-    }
+    "paths": {}
   },
-  "include": ["resources/**/*.ts", "resources/**/*.vue", "vite.config.ts"],
+  "include": ["resources/**/*.ts", "vite.config.ts"],
   "exclude": ["node_modules"]
 }

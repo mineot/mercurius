@@ -9,8 +9,6 @@
   "devDependencies": {
     "@types/node": "^22.13.14",
     "axios": "^1.8.4",
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
     "prettier": "^3.5.3",
     "sass": "^1.86.0",
     "typescript": "^5.8.2",

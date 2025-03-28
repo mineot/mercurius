@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         @vite(['resources/core/app.css', 'resources/core/app.ts'])
     </head>
-    <body data-bs-theme="dark">
+    <body>
         <h1>Bem-vindo ao Mercurius</h1>
         <p>Este é o seu novo construtor de websites!</p>
         <div>

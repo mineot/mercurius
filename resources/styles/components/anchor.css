@@ -1,0 +1,14 @@
+a {
+  @apply flex;
+  @apply flex-row;
+  @apply gap-8 sm:gap-4;
+  @apply flex-wrap;
+  @apply text-nowrap;
+
+  @apply text-primary-500 duration-300;
+  @apply hover:text-primary-200 hover:duration-300;
+}
+
+a.large {
+  @apply text-2xl;
+}

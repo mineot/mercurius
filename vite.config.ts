@@ -8,7 +8,7 @@ export default defineConfig({
   },
   plugins: [
     laravel({
-      input: ['resources/core/app.css', 'resources/core/app.ts'],
+      input: ['resources/styles/app.css', 'resources/scripts/app.ts'],
       refresh: true,
     }),
     tailwindcss(),

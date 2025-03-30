@@ -11,6 +11,10 @@ body {
   @apply h-screen;
   @apply w-screen;
   @apply overflow-hidden;
-  @apply bg-primary-950;
-  @apply text-primary-100;
+  @apply bg-background;
+  @apply text-forecolor;
+}
+
+hr {
+  @apply border-primary-500;
 }

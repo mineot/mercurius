@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+@import './core/theme.css';
+@import './core/layout.css';
+
+@import './components/anchor.css';
+@import './components/typography.css';
+
+@import './views/auth/index.css';
+@import './views/welcome.css';

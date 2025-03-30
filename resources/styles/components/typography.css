@@ -1,0 +1,12 @@
+.title {
+  @apply text-3xl;
+  @apply font-bold;
+  @apply min-w-3xs;
+}
+
+.subtitle {
+  @apply text-xs;
+  @apply font-light;
+  @apply max-w-2xl;
+  @apply text-primary-300;
+}

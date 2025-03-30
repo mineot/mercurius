@@ -1,0 +1,5 @@
+@theme {
+  --color-primary: var(--color-slate-500);
+  --color-primary-light: var(--color-slate-100);
+  --color-primary-dark: var(--color-slate-950);
+}

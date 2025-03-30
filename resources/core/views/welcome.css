@@ -1,0 +1,52 @@
+body {
+  @apply flex sm:justify-center sm:items-center;
+}
+
+.welcome {
+  @apply flex flex-col gap-4 sm:flex-row sm:flex-1;
+  @apply w-full sm:max-w-min;
+  @apply p-2 sm:py-0;
+}
+
+.welcome > hr {
+  @apply sm:hidden border-primary;
+}
+
+.welcome > .left {
+  @apply flex flex-col gap-2 sm:flex-1;
+  @apply sm:border-r-1 border-solid border-r-primary;
+}
+
+.welcome > .left > img {
+  @apply w-32 h-32 rounded-md;
+}
+
+.welcome > .left > h1 {
+  @apply text-3xl font-bold;
+  @apply min-w-3xs;
+}
+
+.welcome > .left > h2 {
+  @apply text-xs font-light max-w-2xl;
+  @apply text-primary;
+}
+
+.welcome > .left > .social {
+  @apply flex flex-row gap-4 flex-wrap;
+}
+
+.welcome > .left > .social > a {
+  @apply flex flex-row gap-8 sm:gap-4 flex-wrap text-2xl;
+  @apply text-primary hover:text-primary-light;
+  @apply duration-300 hover:duration-500;
+}
+
+.welcome > .right {
+  @apply flex flex-col gap-4 sm:flex-1;
+}
+
+.welcome > .right > a {
+  @apply flex flex-row gap-2 flex-nowrap text-nowrap items-center;
+  @apply text-primary hover:text-primary-light;
+  @apply duration-300 hover:duration-500;
+}

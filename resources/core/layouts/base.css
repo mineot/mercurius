@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  @apply h-screen;
+  @apply w-screen;
+}
+
+body {
+  @apply h-screen;
+  @apply w-screen;
+  @apply overflow-hidden;
+  @apply bg-primary-dark;
+  @apply text-primary-light;
+}

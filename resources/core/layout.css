@@ -11,6 +11,6 @@ body {
   @apply h-screen;
   @apply w-screen;
   @apply overflow-hidden;
-  @apply bg-primary-dark;
-  @apply text-primary-light;
+  @apply bg-primary-950;
+  @apply text-primary-100;
 }

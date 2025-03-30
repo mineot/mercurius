@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 // Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
-// Route::get('/auth/login', [AuthController::class, 'login'])->name('auth.login');
+Route::get('/auth/login', [AuthController::class, 'index'])->name('auth.index');
 // Route::post('/auth/signin', [AuthController::class, 'signIn'])->name('auth.signin');
 // Route::post('/auth/signout', [AuthController::class, 'signOut'])->name('auth.signout');
 
-// Route::middleware([AuthMiddleware::class])->group(function () {
-//     Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-// });
+Route::middleware([AuthMiddleware::class])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+});

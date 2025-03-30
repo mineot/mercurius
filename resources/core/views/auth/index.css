@@ -1,0 +1,39 @@
+body {
+  @apply justify-center;
+}
+
+.auth-index {
+  @apply flex flex-col gap-2 items-center p-4;
+}
+
+.auth-index > h1 {
+  @apply text-center text-3xl font-bold;
+}
+
+.auth-index > form {
+  @apply flex flex-col gap-2;
+}
+
+.auth-index > form > button {
+  @apply p-2 mt-4 rounded-md cursor-pointer;
+  @apply text-primary-950;
+  @apply bg-primary-500 hover:bg-primary-600 active:bg-primary-700;
+  @apply duration-300 hover:duration-300 active:duration-300;
+}
+
+.auth-index > form > .item {
+  @apply flex flex-col;
+}
+
+.auth-index > form > .item > label {
+  @apply text-primary-100;
+}
+
+.auth-index > form > .item > input {
+  @apply outline-0 p-2 rounded-sm;
+  @apply bg-primary-800;
+
+  @apply border-solid;
+  @apply border border-primary-500 focus:border-primary-100;
+  @apply duration-300 hover:duration-300;
+}

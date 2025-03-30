@@ -9,12 +9,12 @@ body {
 }
 
 .welcome > hr {
-  @apply sm:hidden border-primary;
+  @apply sm:hidden border-primary-500;
 }
 
 .welcome > .left {
   @apply flex flex-col gap-2 sm:flex-1;
-  @apply sm:border-r-1 border-solid border-r-primary;
+  @apply sm:border-r-1 border-solid border-r-primary-500;
 }
 
 .welcome > .left > img {
@@ -28,7 +28,7 @@ body {
 
 .welcome > .left > h2 {
   @apply text-xs font-light max-w-2xl;
-  @apply text-primary;
+  @apply text-primary-500;
 }
 
 .welcome > .left > .social {
@@ -37,7 +37,7 @@ body {
 
 .welcome > .left > .social > a {
   @apply flex flex-row gap-8 sm:gap-4 flex-wrap text-2xl;
-  @apply text-primary hover:text-primary-light;
+  @apply text-primary-500 hover:text-primary-100;
   @apply duration-300 hover:duration-500;
 }
 
@@ -47,6 +47,6 @@ body {
 
 .welcome > .right > a {
   @apply flex flex-row gap-2 flex-nowrap text-nowrap items-center;
-  @apply text-primary hover:text-primary-light;
+  @apply text-primary-500 hover:text-primary-100;
   @apply duration-300 hover:duration-500;
 }

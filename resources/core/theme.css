@@ -1,5 +1,9 @@
 @theme {
-  --color-primary: var(--color-slate-500);
-  --color-primary-light: var(--color-slate-100);
-  --color-primary-dark: var(--color-slate-950);
+  --color-primary-100: var(--color-slate-100);
+  --color-primary-500: var(--color-slate-500);
+  --color-primary-600: var(--color-slate-600);
+  --color-primary-700: var(--color-slate-700);
+  --color-primary-800: var(--color-slate-800);
+  --color-primary-900: var(--color-slate-900);
+  --color-primary-950: var(--color-slate-950);
 }

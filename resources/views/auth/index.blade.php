@@ -2,20 +2,20 @@
 
 @section("content")
 <div class="auth-index">
-    <h1>Login</h1>
+    <h1 class="title text-center">Login</h1>
 
     <form action="">
-        <div class="item">
+        <div class="formGroup">
             <label for="email">E-mail</label>
             <input type="email" id="email" />
         </div>
 
-        <div class="item">
+        <div class="formGroup">
             <label for="password">Password</label>
             <input type="password" id="password" />
         </div>
 
-        <button type="button">Login</button>
+        <button class="mt-4" type="button">Login</button>
     </form>
 </div>
 @endsection

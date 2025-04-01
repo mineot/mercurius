@@ -1,0 +1,14 @@
+.formGroup {
+  @apply flex flex-col flex-nowrap;
+}
+
+.formGroup > label {
+  @apply text-primary-400 text-sm;
+}
+
+.formGroup > input {
+  @apply outline-0 p-2 rounded-sm border-solid;
+  @apply bg-primary-800;
+  @apply border border-primary-500 focus:border-primary-100;
+  @apply duration-300 hover:duration-300;
+}

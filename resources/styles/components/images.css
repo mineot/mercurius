@@ -1,0 +1,5 @@
+.avatar {
+  @apply w-32;
+  @apply h-32;
+  @apply rounded-md;
+}

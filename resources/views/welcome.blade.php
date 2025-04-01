@@ -3,7 +3,7 @@
 @section("content")
 <section class="welcome">
     <div class="left">
-        <img src="{{ $profile->avatar }}" alt="{{ $profile->name }}" >
+        <img class="avatar" src="{{ $profile->avatar }}" alt="{{ $profile->name }}" >
 
         <h1 class="title">{{ $profile->name }}</h1>
 

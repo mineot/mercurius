@@ -1,0 +1,7 @@
+button {
+  @apply p-2 text-sm uppercase rounded-md cursor-pointer;
+  @apply bg-primary-500 text-primary-800;
+  @apply hover:bg-primary-600 hover:text-primary-900;
+  @apply active:bg-primary-700 active:text-primary-950;
+  @apply duration-300 hover:duration-300 active:duration-300;
+}

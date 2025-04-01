@@ -1,9 +1,12 @@
 @import 'tailwindcss';
 
-@import './core/theme.css';
 @import './core/layout.css';
+@import './core/theme.css';
 
 @import './components/anchor.css';
+@import './components/button.css';
+@import './components/images.css';
+@import './components/input.css';
 @import './components/typography.css';
 
 @import './views/auth/index.css';

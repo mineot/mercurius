@@ -1,26 +1,30 @@
 body {
-  @apply flex sm:justify-center sm:items-center;
+  @apply flex;
+  @apply sm:justify-center;
+  @apply sm:items-center;
 }
 
 .welcome {
-  @apply flex flex-col gap-4 sm:flex-row sm:flex-1;
+  @apply flex sm:flex-1;
+  @apply flex-col sm:flex-row;
+  @apply gap-4;
+
   @apply w-full sm:max-w-min;
   @apply p-2 sm:py-0;
 }
 
 .welcome > .left {
-  @apply flex flex-col gap-1 sm:flex-1;
-  @apply sm:border-r-1 border-solid border-r-primary-500;
-}
-
-.welcome > .left > img {
-  @apply w-32 h-32 rounded-md;
+  @apply flex flex-col sm:flex-1 gap-1;
+  @apply sm:border-r-1;
+  @apply border-solid;
+  @apply border-r-primary-500;
 }
 
 .welcome > .left > .social {
-  @apply flex flex-row gap-6 mt-6 flex-wrap;
+  @apply flex flex-row flex-wrap;
+  @apply gap-6 mt-6;
 }
 
 .welcome > .right {
-  @apply flex flex-col gap-4 sm:flex-1;
+  @apply flex flex-col sm:flex-1 gap-4;
 }

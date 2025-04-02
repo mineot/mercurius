@@ -1,30 +1,19 @@
-body {
-  @apply flex;
-  @apply sm:justify-center;
-  @apply sm:items-center;
+.welcome {
+  @apply flex flex-nowrap gap-1;
+  @apply flex-col sm:flex-row;
+  @apply p-2 sm:p-0;
 }
 
-.welcome {
-  @apply flex sm:flex-1;
-  @apply flex-col sm:flex-row;
-  @apply gap-4;
-
-  @apply w-full sm:max-w-min;
-  @apply p-2 sm:py-0;
+.welcome > hr {
+  @apply sm:hidden;
+  @apply text-primary-700;
 }
 
 .welcome > .left {
-  @apply flex flex-col sm:flex-1 gap-1;
-  @apply sm:border-r-1;
-  @apply border-solid;
-  @apply border-r-primary-500;
-}
-
-.welcome > .left > .social {
-  @apply flex flex-row flex-wrap;
-  @apply gap-6 mt-6;
+  @apply flex flex-col;
 }
 
 .welcome > .right {
-  @apply flex flex-col sm:flex-1 gap-4;
+  @apply p-0 sm:pl-2;
+  @apply border-0 sm:border-l-1 border-solid border-l-primary-700;
 }

@@ -1,14 +1,21 @@
 @extends("layouts/guest")
 
 @section("content")
-<section class="welcome">
+<section class="body-content centered">
+    <div class="welcome">
+        <div class="left">
+            <img class="avatar" src="{{ $profile->avatar }}" alt="{{ $profile->name }}" >
+            <h1>{{ $profile->name }}</h1>
+            <h2>{{ $profile->summary }}</h2>
+        </div>
+
+        <hr />
+
+        <h1 class="right">Welcome</h1>
+    </div>
+</section>
+{{-- <section class="welcome">
     <div class="left">
-        <img class="avatar" src="{{ $profile->avatar }}" alt="{{ $profile->name }}" >
-
-        <h1 class="title">{{ $profile->name }}</h1>
-
-        <h2 class="subtitle">{{ $profile->summary }}</h2>
-
         <div class="social">
             <a href="#" class="large">
                 <i class="fa-brands fa-instagram"></i>
@@ -59,5 +66,5 @@
             <span>Contato</span>
         </a>
     </div>
-</section>
+</section> --}}
 @endsection

@@ -5,8 +5,10 @@
 @import './layouts/guest.css';
 
 @import './components/anchor.css';
+@import './components/backdrop-glass.css';
 @import './components/button.css';
 @import './components/footer.css';
 @import './components/images.css';
 @import './components/input.css';
 @import './components/navbar.css';
+@import './components/sidebar.css';

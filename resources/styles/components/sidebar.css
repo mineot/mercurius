@@ -1,0 +1,22 @@
+.sidebar {
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply h-screen;
+  @apply min-w-min;
+  @apply z-20;
+  @apply px-2;
+  @apply py-1;
+  @apply overflow-x-hidden;
+  @apply overflow-y-auto;
+  @apply bg-secondary-950;
+
+  @apply -translate-x-full;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-in-out;
+}
+
+.sidebar.show {
+  @apply translate-x-0;
+}

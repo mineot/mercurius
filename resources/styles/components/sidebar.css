@@ -4,12 +4,17 @@
   @apply left-0;
   @apply h-screen;
   @apply min-w-min;
+  @apply max-w-1/2;
   @apply z-20;
   @apply px-2;
   @apply py-1;
   @apply overflow-x-hidden;
   @apply overflow-y-auto;
   @apply bg-secondary-950;
+
+  @apply flex;
+  @apply flex-col;
+  @apply gap-2;
 
   @apply -translate-x-full;
   @apply transition-transform;

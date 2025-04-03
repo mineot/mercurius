@@ -4,20 +4,20 @@
   @apply border-b-1 border-solid border-b-secondary-900;
 }
 
-.navbar > .navbar-brand {
+.navbar-brand {
   @apply flex gap-2 items-center;
 }
 
-.navbar > .navbar-menu {
+.navbar-menu {
   @apply flex;
 }
 
-.navbar > .navbar-menu > .menu-links {
+.menu-links {
   @apply hidden md:flex gap-3;
   @apply duration-300;
 }
 
-.navbar > .navbar-menu > .menu-toggle {
+.menu-toggle {
   @apply flex md:hidden;
   @apply text-2xl;
   @apply cursor-pointer;

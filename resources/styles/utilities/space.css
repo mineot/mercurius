@@ -1,0 +1,16 @@
+.space {
+  @apply p-4;
+}
+
+.space-x {
+  @apply px-4;
+}
+
+.space-y {
+  @apply py-4;
+}
+
+.margin-x {
+  @apply md:px-40;
+  @apply duration-300;
+}

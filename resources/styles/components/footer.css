@@ -1,0 +1,5 @@
+.footer {
+  @apply bg-secondary-950;
+  @apply text-secondary-100;
+  @apply shadow-[0_-3px_5px] shadow-secondary-900;
+}

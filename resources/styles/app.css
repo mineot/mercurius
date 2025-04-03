@@ -1,13 +1,12 @@
 @import 'tailwindcss';
+@import './theme.css';
 
-@import './core/theme.css';
-@import './core/layout.css';
+@import './utilities/space.css';
+@import './layouts/guest.css';
 
 @import './components/anchor.css';
 @import './components/button.css';
+@import './components/footer.css';
 @import './components/images.css';
 @import './components/input.css';
-@import './components/typography.css';
-
-@import './views/welcome.css';
-@import './views/auth/index.css';
+@import './components/navbar.css';

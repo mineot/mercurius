@@ -1,0 +1,5 @@
+.navbar {
+  @apply bg-secondary-950;
+  @apply text-secondary-100;
+  @apply shadow-md shadow-secondary-900;
+}

@@ -1,4 +1,4 @@
-a {
+/* a {
   @apply flex;
   @apply flex-row;
   @apply gap-8 sm:gap-4;
@@ -11,4 +11,4 @@ a {
 
 a.large {
   @apply text-2xl;
-}
+} */

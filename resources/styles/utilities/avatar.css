@@ -1,0 +1,6 @@
+@utility app-avatar-sm {
+  @apply w-10 md:w-12;
+  @apply h-10 md:h-12;
+  @apply rounded-full;
+  @apply duration-300;
+}

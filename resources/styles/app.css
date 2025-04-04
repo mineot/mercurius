@@ -1,8 +1,12 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-@import './utilities/space.css';
 @import './layouts/guest.css';
+
+@import './utilities/avatar.css';
+@import './utilities/link.css';
+@import './utilities/space.css';
+@import './utilities/profile.css';
 
 @import './components/anchor.css';
 @import './components/backdrop-glass.css';

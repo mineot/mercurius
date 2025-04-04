@@ -33,9 +33,6 @@
   @apply gap-1;
   @apply items-center;
 
-  @apply text-sm;
-  @apply font-thin;
-
   @apply text-secondary-500;
   @apply hover:text-secondary-300;
 

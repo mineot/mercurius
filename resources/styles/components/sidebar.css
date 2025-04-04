@@ -6,15 +6,14 @@
   @apply min-w-min;
   @apply max-w-1/2;
   @apply z-20;
-  @apply px-2;
-  @apply py-1;
+  @apply p-2;
   @apply overflow-x-hidden;
   @apply overflow-y-auto;
   @apply bg-secondary-950;
 
   @apply flex;
   @apply flex-col;
-  @apply gap-2;
+  @apply gap-6;
 
   @apply -translate-x-full;
   @apply transition-transform;
@@ -22,6 +21,46 @@
   @apply ease-in-out;
 }
 
+.sidebar-divider {
+  @apply text-secondary-800;
+}
+
 .sidebar.show {
   @apply translate-x-0;
+}
+
+.sidebar-brand {
+  @apply flex flex-col gap-1;
+}
+
+.sidebar-avatar {
+  @apply w-40;
+  @apply h-40;
+  @apply rounded-lg;
+}
+
+.sidebar-name {
+  @apply text-3xl;
+  @apply font-bold;
+}
+
+.sidebar-summary {
+  @apply text-sm;
+  @apply text-secondary-500;
+}
+
+.sidebar-menu {
+  @apply flex;
+}
+
+.sidebar-links {
+  @apply px-3;
+  @apply flex flex-col gap-2;
+}
+
+.sidebar-link {
+  @apply flex gap-3;
+  @apply text-secondary-500;
+  @apply hover:text-secondary-300;
+  @apply duration-300;
 }

@@ -22,7 +22,7 @@
 }
 
 .navbar-toggle {
-  @apply app-menu-toggle;
+  @apply app-toogle-link;
 }
 
 .navbar-avatar {

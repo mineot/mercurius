@@ -22,7 +22,7 @@
             </li>
         </ul>
 
-        <div class="navbar-toggle" onclick="window.sidebar()">
+        <div class="navbar-toggle" onclick="{!! $toogleClick !!}">
             <i class="bi bi-list"></i>
         </div>
 

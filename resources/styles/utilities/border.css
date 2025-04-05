@@ -1,0 +1,11 @@
+@utility border-botton {
+  @apply border-b-1;
+  @apply border-solid;
+  @apply border-b-secondary-900;
+}
+
+@utility border-top {
+  @apply border-t-1;
+  @apply border-solid;
+  @apply border-t-secondary-900;
+}

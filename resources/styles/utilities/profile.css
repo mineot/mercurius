@@ -19,3 +19,19 @@
   @apply md:flex;
   @apply text-secondary-500;
 }
+
+@utility app-profile-lg {
+  @apply flex;
+  @apply flex-col;
+  @apply gap-1;
+}
+
+@utility app-profile-name-lg {
+  @apply text-3xl;
+  @apply font-bold;
+}
+
+@utility app-profile-summary-lg {
+  @apply text-sm;
+  @apply text-secondary-500;
+}

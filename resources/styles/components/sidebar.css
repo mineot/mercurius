@@ -1,19 +1,9 @@
 .sidebar {
-  @apply absolute;
-  @apply top-0;
-  @apply left-0;
-  @apply h-screen;
-  @apply min-w-min;
-  @apply max-w-1/2;
-  @apply z-20;
-  @apply p-2;
-  @apply overflow-x-hidden;
-  @apply overflow-y-auto;
-  @apply bg-secondary-950;
-
-  @apply flex;
-  @apply flex-col;
-  @apply gap-6;
+  @apply flex flex-col gap-2;
+  @apply absolute top-0 left-0 h-screen p-2 z-20;
+  @apply min-w-min max-w-1/2;
+  @apply overflow-x-hidden overflow-y-auto;
+  @apply secondary-assent;
 
   @apply -translate-x-full;
   @apply transition-transform;
@@ -22,7 +12,7 @@
 }
 
 .sidebar-divider {
-  @apply text-secondary-800;
+  @apply divider;
 }
 
 .sidebar.show {
@@ -34,19 +24,19 @@
 }
 
 .sidebar-avatar {
-  @apply w-40;
-  @apply h-40;
-  @apply rounded-lg;
+  @apply app-avatar-lg;
+}
+
+.sidebar-profile {
+  @apply app-profile-lg;
 }
 
 .sidebar-name {
-  @apply text-3xl;
-  @apply font-bold;
+  @apply app-profile-name-lg;
 }
 
 .sidebar-summary {
-  @apply text-sm;
-  @apply text-secondary-500;
+  @apply app-profile-summary-lg;
 }
 
 .sidebar-menu {
@@ -54,13 +44,10 @@
 }
 
 .sidebar-links {
-  @apply px-3;
+  @apply px-1;
   @apply flex flex-col gap-2;
 }
 
 .sidebar-link {
-  @apply flex gap-3;
-  @apply text-secondary-500;
-  @apply hover:text-secondary-300;
-  @apply duration-300;
+  @apply app-link;
 }

@@ -15,6 +15,5 @@ body {
   @apply w-screen;
   @apply overflow-x-hidden;
   @apply overflow-y-auto;
-  @apply bg-primary-950;
-  @apply text-primary-100;
+  @apply primary-assent;
 }

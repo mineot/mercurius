@@ -4,3 +4,9 @@
   @apply rounded-full;
   @apply duration-300;
 }
+
+@utility app-avatar-lg {
+  @apply w-40;
+  @apply h-40;
+  @apply rounded-lg;
+}

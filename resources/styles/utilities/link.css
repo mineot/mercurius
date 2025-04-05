@@ -11,9 +11,7 @@
   @apply flex md:hidden;
   @apply text-2xl;
   @apply cursor-pointer;
-
   @apply text-secondary-500;
   @apply hover:text-secondary-300;
-
   @apply duration-300;
 }

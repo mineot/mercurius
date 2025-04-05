@@ -1,9 +1,14 @@
 <aside class="sidebar">
 
     <div class="sidebar-brand">
+
         <img class="sidebar-avatar" src="{{ $profile->avatar }}" alt="{{ $profile->name }}">
-        <span class="sidebar-name">{{ $profile->name }}</span>
-        <span class="sidebar-summary">{{ $profile->summary }}</span>
+
+        <div class="sidebar-profile">
+            <span class="sidebar-name">{{ $profile->name }}</span>
+            <span class="sidebar-summary">{{ $profile->summary }}</span>
+        </div>
+
     </div>
 
     <hr class="sidebar-divider">

@@ -1,16 +1,14 @@
 @utility app-space {
   @apply p-4;
+  @apply md:px-40;
+  @apply duration-300 md:duration-300;
 }
 
 @utility app-space-x {
-  @apply px-4;
+  @apply px-4 md:px-40;
+  @apply duration-300 md:duration-300;
 }
 
 @utility app-space-y {
   @apply py-4;
-}
-
-@utility app-margin-x {
-  @apply md:px-40;
-  @apply duration-300;
 }

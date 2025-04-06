@@ -1,4 +1,10 @@
-.navbar {
+@utility app-navbar {
+  @apply w-full app-helper-space;
+  @apply flex;
+  @apply app-asset-secondary;
+}
+
+/* .navbar {
   @apply flex justify-between items-center gap-2;
   @apply border-botton secondary-assent;
   @apply app-space;
@@ -39,4 +45,4 @@
 
 .navbar-summary {
   @apply app-profile-summary-sm;
-}
+} */

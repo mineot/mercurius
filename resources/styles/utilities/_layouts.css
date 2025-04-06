@@ -1,12 +1,21 @@
 @utility app-guest-layout {
-  @apply mx-auto h-full w-full sm:max-w-2xl;
-  @apply px-2 md:px-0;
+  @apply h-full w-full;
   @apply flex flex-col gap-2;
-  @apply duration-300;
+
+  > .header > .content {
+    @apply mx-auto w-full md:max-w-2xl;
+    @apply duration-300;
+  }
 
   > .content {
-    @apply overflow-x-hidden;
-    @apply sm:overflow-y-auto;
-    @apply sm:flex-1;
+    @apply overflow-x-hidden md:overflow-y-auto;
+    @apply mx-auto w-full md:max-w-2xl;
+    @apply md:flex-1;
+    @apply duration-300;
+  }
+
+  > .footer > .content {
+    @apply mx-auto w-full md:max-w-2xl;
+    @apply duration-300;
   }
 }

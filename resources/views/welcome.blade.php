@@ -2,9 +2,15 @@
 
 @section("content")
 <section class="app-guest-layout">
-    <header>Header</header>
-    <main class="content">Welcome</main>
-    <footer>Footer</footer>
+    <header class="header app-navbar">
+        <section class="content">Header</section>
+    </header>
+
+    <main class="content app-helper-space-content">Welcome</main>
+
+    <footer class="footer app-helper-space-content">
+        <section class="content">Footer</section>
+    </footer>
 </section>
 {{-- <x-header :profile="$profile" toogleClick="window.sidebar()" />
 <div class="app-space-x">Profissional</div>

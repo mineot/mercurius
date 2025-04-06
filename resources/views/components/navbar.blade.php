@@ -2,7 +2,7 @@
 
     <section class="content app-navbar-content">
 
-        <div>Brand</div>
+        <div>{{ $brand }}</div>
 
         <nav class="app-navbar-nav">
             <ul class="app-navbar-list">

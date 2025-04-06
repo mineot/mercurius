@@ -6,7 +6,9 @@
 @import './utilities/_layouts.css';
 @import './utilities/anchors.css';
 @import './utilities/footer.css';
+@import './utilities/glass.css';
 @import './utilities/navbar.css';
+@import './utilities/sidebar.css';
 
 * {
   box-sizing: border-box;

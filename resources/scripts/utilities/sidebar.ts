@@ -1,5 +1,5 @@
-export function toggleSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  (window as any).backdropGlass();
+export function toogleSidebar() {
+  const sidebar = document.querySelector('.app-sidebar');
+  (window as any).glass();
   sidebar?.classList.toggle('show');
 }

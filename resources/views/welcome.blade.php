@@ -2,9 +2,11 @@
 
 @section("content")
 <section class="app-layout">
-    <x-navbar />
+    <x-navbar toogleClick="window.sidebar()" />
+    <x-sidebar />
     <main class="content app-helper-space-content">Welcome</main>
     <x-footer />
+    <x-glass click="window.sidebar()" />
 </section>
 {{-- <x-header :profile="$profile" toogleClick="window.sidebar()" />
 <div class="app-space-x">Profissional</div>

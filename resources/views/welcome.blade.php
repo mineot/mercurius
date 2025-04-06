@@ -2,21 +2,7 @@
 
 @section("content")
 <section class="app-guest-layout">
-    <header class="header app-navbar">
-        <section class="content app-navbar-content">
-            <div>Brand</div>
-            <nav class="app-navbar-nav">
-                <ul class="app-navbar-list">
-                    <li class="app-navbar-item">Item 1</li>
-                    <li class="app-navbar-item">Item 2</li>
-                    <li class="app-navbar-item">Item 3</li>
-                </ul>
-            </nav>
-            <div class="app-navbar-toogle" onclick="alert('toogle')">
-                <i class="bi bi-list"></i>
-            </div>
-        </section>
-    </header>
+    <x-navbar />
 
     <main class="content app-helper-space-content">Welcome</main>
 

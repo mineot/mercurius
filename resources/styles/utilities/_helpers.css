@@ -8,3 +8,27 @@
   @apply px-2 md:px-0;
   @apply duration-300;
 }
+
+@utility app-border-b-primary {
+  @apply border-b-1;
+  @apply border-solid;
+  @apply border-b-primary-900;
+}
+
+@utility app-border-b-secondary {
+  @apply border-b-1;
+  @apply border-solid;
+  @apply border-b-secondary-900;
+}
+
+@utility app-border-t-primary {
+  @apply border-t-1;
+  @apply border-solid;
+  @apply border-t-primary-900;
+}
+
+@utility app-border-t-secondary {
+  @apply border-t-1;
+  @apply border-solid;
+  @apply border-t-secondary-900;
+}

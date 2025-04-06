@@ -1,14 +1,22 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-/* @import './layouts/guest.css';
+@import './utilities/_assets.css';
+@import './utilities/_layouts.css';
 
-@import './utilities/anchor.css';
-@import './utilities/avatar.css';
-@import './utilities/base.css';
-@import './utilities/profile.css';
-@import './utilities/space.css';
+* {
+  box-sizing: border-box;
+}
 
-@import './components/footer.css';
-@import './components/navbar.css';
-@import './components/sidebar.css'; */
+html {
+  @apply h-screen;
+  @apply w-screen;
+}
+
+body {
+  @apply h-screen;
+  @apply w-screen;
+  @apply overflow-x-hidden;
+  @apply overflow-y-auto;
+  @apply app-asset-primary;
+}

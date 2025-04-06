@@ -1,0 +1,12 @@
+@utility app-guest-layout {
+  @apply mx-auto h-full w-full sm:max-w-2xl;
+  @apply px-2 md:px-0;
+  @apply flex flex-col gap-2;
+  @apply duration-300;
+
+  > .content {
+    @apply overflow-x-hidden;
+    @apply sm:overflow-y-auto;
+    @apply sm:flex-1;
+  }
+}

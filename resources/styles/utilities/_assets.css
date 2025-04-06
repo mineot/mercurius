@@ -1,0 +1,9 @@
+@utility app-asset-primary {
+  @apply bg-primary-950;
+  @apply text-primary-200;
+}
+
+@utility app-asset-secondary {
+  @apply bg-secondary-950;
+  @apply text-secondary-200;
+}

@@ -1,0 +1,18 @@
+@utility app-anchor {
+  @apply cursor-pointer font-light;
+  @apply duration-300;
+}
+
+@utility app-anchor-large {
+  @apply text-2xl;
+}
+
+@utility app-anchor-primary {
+  @apply app-anchor;
+  @apply text-primary-500 hover:text-primary-300;
+}
+
+@utility app-anchor-secondary {
+  @apply app-anchor;
+  @apply text-secondary-500 hover:text-secondary-300;
+}

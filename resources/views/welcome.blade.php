@@ -7,9 +7,9 @@
             <div>Brand</div>
             <nav class="app-navbar-nav">
                 <ul class="app-navbar-list">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                    <li class="app-navbar-item">Item 1</li>
+                    <li class="app-navbar-item">Item 2</li>
+                    <li class="app-navbar-item">Item 3</li>
                 </ul>
             </nav>
             <div class="app-navbar-toogle" onclick="alert('toogle')">

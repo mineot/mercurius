@@ -10,11 +10,17 @@
 
       > .app-navbar-list {
         @apply flex justify-between gap-2;
+
+        > .app-navbar-item {
+          @apply app-anchor-secondary;
+        }
       }
     }
 
     > .app-navbar-toogle {
-      @apply flex md:hidden;
+      @apply app-anchor-secondary app-anchor-large;
+      @apply px-1 flex md:hidden;
+      @apply rounded-sm;
     }
   }
 }

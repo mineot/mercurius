@@ -4,6 +4,7 @@
 @import './utilities/_assets.css';
 @import './utilities/_helpers.css';
 @import './utilities/_layouts.css';
+@import './utilities/anchors.css';
 @import './utilities/navbar.css';
 
 * {

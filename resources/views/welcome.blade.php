@@ -1,14 +1,10 @@
 @extends("main")
 
 @section("content")
-<section class="app-guest-layout">
+<section class="app-layout">
     <x-navbar />
-
     <main class="content app-helper-space-content">Welcome</main>
-
-    <footer class="footer app-helper-space-content">
-        <section class="content">Footer</section>
-    </footer>
+    <x-footer />
 </section>
 {{-- <x-header :profile="$profile" toogleClick="window.sidebar()" />
 <div class="app-space-x">Profissional</div>

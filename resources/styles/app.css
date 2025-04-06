@@ -5,6 +5,7 @@
 @import './utilities/_helpers.css';
 @import './utilities/_layouts.css';
 @import './utilities/anchors.css';
+@import './utilities/footer.css';
 @import './utilities/navbar.css';
 
 * {
@@ -19,7 +20,6 @@ html {
 body {
   @apply h-screen;
   @apply w-screen;
-  @apply overflow-x-hidden;
-  @apply overflow-y-auto;
+  @apply overflow-hidden;
   @apply app-asset-primary;
 }

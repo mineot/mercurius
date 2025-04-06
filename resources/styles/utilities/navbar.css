@@ -1,48 +1,20 @@
 @utility app-navbar {
   @apply w-full app-helper-space;
-  @apply flex;
   @apply app-asset-secondary;
-}
 
-/* .navbar {
-  @apply flex justify-between items-center gap-2;
-  @apply border-botton secondary-assent;
-  @apply app-space;
-}
+  > .app-navbar-content {
+    @apply flex justify-between items-center gap-4;
 
-.navbar-brand {
-  @apply flex gap-2 items-center;
-}
+    > .app-navbar-nav {
+      @apply hidden md:flex;
 
-.navbar-menu {
-  @apply flex;
-}
+      > .app-navbar-list {
+        @apply flex justify-between gap-2;
+      }
+    }
 
-.navbar-links {
-  @apply hidden md:flex gap-3;
-  @apply duration-300;
+    > .app-navbar-toogle {
+      @apply flex md:hidden;
+    }
+  }
 }
-
-.navbar-link {
-  @apply app-link;
-}
-
-.navbar-toggle {
-  @apply app-toogle-link;
-}
-
-.navbar-avatar {
-  @apply app-avatar-sm;
-}
-
-.navbar-profile {
-  @apply app-profile-sm;
-}
-
-.navbar-name {
-  @apply app-profile-name-sm;
-}
-
-.navbar-summary {
-  @apply app-profile-summary-sm;
-} */

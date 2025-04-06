@@ -3,7 +3,19 @@
 @section("content")
 <section class="app-guest-layout">
     <header class="header app-navbar">
-        <section class="content">Header</section>
+        <section class="content app-navbar-content">
+            <div>Brand</div>
+            <nav class="app-navbar-nav">
+                <ul class="app-navbar-list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </nav>
+            <div class="app-navbar-toogle" onclick="alert('toogle')">
+                <i class="bi bi-list"></i>
+            </div>
+        </section>
     </header>
 
     <main class="content app-helper-space-content">Welcome</main>

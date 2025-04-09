@@ -1,5 +1,5 @@
 @utility app-navbar {
-  @apply w-full app-helper-space;
+  @apply w-full app-space;
   @apply app-asset-secondary;
   @apply app-border-b-secondary;
 

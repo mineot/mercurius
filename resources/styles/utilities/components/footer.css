@@ -1,5 +1,5 @@
 @utility app-footer {
-  @apply w-full app-helper-space;
+  @apply w-full app-space;
   @apply app-asset-secondary;
   @apply app-border-t-secondary;
 }

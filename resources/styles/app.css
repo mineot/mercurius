@@ -1,16 +1,17 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-@import './utilities/_assets.css';
-@import './utilities/_helpers.css';
-@import './utilities/_layouts.css';
 @import './utilities/anchors.css';
+@import './utilities/assets.css';
 @import './utilities/buttons.css';
-@import './utilities/footer.css';
-@import './utilities/glass.css';
-@import './utilities/navbar.css';
-@import './utilities/profile.css';
-@import './utilities/sidebar.css';
+@import './utilities/helpers.css';
+@import './utilities/layouts.css';
+
+@import './utilities/components/footer.css';
+@import './utilities/components/glass.css';
+@import './utilities/components/navbar.css';
+@import './utilities/components/profile.css';
+@import './utilities/components/sidebar.css';
 
 * {
   box-sizing: border-box;

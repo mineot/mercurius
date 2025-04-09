@@ -1,8 +1,0 @@
-.footer {
-  @apply bg-secondary-950;
-  @apply text-secondary-100;
-
-  @apply border-t-1;
-  @apply border-solid;
-  @apply border-t-secondary-900;
-}

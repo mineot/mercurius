@@ -1,7 +1,0 @@
-.avatar {
-  @apply w-32;
-  @apply h-32;
-  @apply rounded-md;
-  @apply p-1;
-  @apply border-1 border-solid border-primary-50;
-}

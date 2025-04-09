@@ -1,1 +1,1 @@
-<main class="content app-helper-space-content">Welcome</main>
+<main class="content app-space-content">Welcome</main>

@@ -1,5 +1,6 @@
 @utility app-anchor {
   @apply flex gap-1 items-center;
+  @apply text-nowrap;
   @apply cursor-pointer font-light;
   @apply duration-300;
 }

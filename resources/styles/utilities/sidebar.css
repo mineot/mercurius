@@ -1,8 +1,6 @@
 @utility app-sidebar {
-  @apply overflow-x-hidden overflow-y-auto;
   @apply absolute top-0 left-0 h-screen p-2 z-20;
   @apply min-w-min max-w-1/2;
-  @apply flex flex-col gap-2;
   @apply app-asset-secondary;
 
   @apply -translate-x-full;
@@ -10,7 +8,15 @@
   @apply duration-300;
   @apply ease-in-out;
 
+  @apply overflow-x-hidden overflow-y-auto;
+  @apply flex flex-col gap-2;
+
   &.show {
     @apply translate-x-0;
+  }
+
+  > .app-sidebar-close {
+    @apply absolute top-2 right-2 text-lg z-30 rounded-md px-2;
+    @apply app-btn-close;
   }
 }

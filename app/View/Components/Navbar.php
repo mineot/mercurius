@@ -12,7 +12,7 @@ class Navbar extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public $brand = "Brand",
+        public $brand = 'Brand',
         public $toogleClick = "alert('Toogle Click!')"
     ) {}
 

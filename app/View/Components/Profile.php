@@ -17,8 +17,9 @@ class Profile extends Component
         public bool $isSidebar = false,
     ) {}
 
-    public function sidebar() {
-        return  $this->isSidebar ? " sidebar" : "";
+    public function sidebar()
+    {
+        return $this->isSidebar ? ' sidebar' : '';
     }
 
     /**

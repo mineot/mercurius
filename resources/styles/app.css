@@ -6,6 +6,7 @@
 
 @import './components/layout.css';
 @import './components/profile-header.css';
+@import './components/profile-sidebar.css';
 
 * {
   box-sizing: border-box;

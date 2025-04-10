@@ -1,23 +1,29 @@
-@utility app-border-b-primary {
-  @apply border-b-1;
-  @apply border-solid;
-  @apply border-b-primary-900;
+@utility app-border-primary {
+  @apply border-1 border-solid;
+  @apply border-primary-900;
 }
 
-@utility app-border-b-secondary {
-  @apply border-b-1;
-  @apply border-solid;
-  @apply border-b-secondary-900;
+@utility app-border-primary-top {
+  @apply border-t-1 border-solid;
+  @apply border-primary-900;
 }
 
-@utility app-border-t-primary {
-  @apply border-t-1;
-  @apply border-solid;
-  @apply border-t-primary-900;
+@utility app-border-primary-bottom {
+  @apply border-b-1 border-solid;
+  @apply border-primary-900;
 }
 
-@utility app-border-t-secondary {
-  @apply border-t-1;
-  @apply border-solid;
-  @apply border-t-secondary-900;
+@utility app-border-secondary {
+  @apply border-1 border-solid;
+  @apply border-secondary-900;
+}
+
+@utility app-border-secondary-top {
+  @apply border-t-1 border-solid;
+  @apply border-secondary-900;
+}
+
+@utility app-border-secondary-bottom {
+  @apply border-b-1 border-solid;
+  @apply border-secondary-900;
 }

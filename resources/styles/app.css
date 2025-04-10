@@ -1,18 +1,9 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-@import './utilities/anchors.css';
-@import './utilities/assets.css';
+@import './utilities/core.css';
 @import './utilities/borders.css';
-@import './utilities/buttons.css';
-@import './utilities/layouts.css';
-@import './utilities/spaces.css';
-
-@import './utilities/components/footer.css';
-@import './utilities/components/glass.css';
-@import './utilities/components/navbar.css';
-@import './utilities/components/profile.css';
-@import './utilities/components/sidebar.css';
+@import './components/layout.css';
 
 * {
   box-sizing: border-box;
@@ -27,5 +18,5 @@ body {
   @apply h-screen;
   @apply w-screen;
   @apply overflow-hidden;
-  @apply app-asset-primary;
+  @apply app-primary;
 }

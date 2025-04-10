@@ -2,17 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Language;
+use App\Models\Profile;
 
 class WelcomeController extends Controller
 {
     public function index()
     {
-        $lang = Language::getCurrentLanguage();
-
         return view('welcome', [
-            'profile' => $lang->profiles()->first(),
-            'language' => $lang,
+            'profile' => Profile::first(),
         ]);
     }
 }

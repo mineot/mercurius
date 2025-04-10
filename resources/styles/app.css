@@ -1,9 +1,11 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-@import './utilities/core.css';
 @import './utilities/borders.css';
+@import './utilities/core.css';
+
 @import './components/layout.css';
+@import './components/profile-header.css';
 
 * {
   box-sizing: border-box;

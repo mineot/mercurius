@@ -1,0 +1,26 @@
+.profile-header {
+  @apply flex gap-3 items-center;
+
+  > img {
+    @apply w-12 md:w-22;
+    @apply h-12 md:h-22;
+    @apply rounded-full;
+    @apply duration-300;
+  }
+
+  > .content {
+    @apply flex flex-col;
+
+    > h1 {
+      @apply text-lg md:text-2xl;
+      @apply font-bold;
+      @apply duration-300;
+    }
+
+    > h2 {
+      @apply text-xs;
+      @apply text-secondary-500;
+      @apply hidden md:block;
+    }
+  }
+}

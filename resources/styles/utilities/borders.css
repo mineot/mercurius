@@ -1,14 +1,3 @@
-@utility app-space {
-  @apply px-2 md:px-0;
-  @apply py-2 md:py-4;
-  @apply duration-300;
-}
-
-@utility app-space-content {
-  @apply px-2 md:px-0;
-  @apply duration-300;
-}
-
 @utility app-border-b-primary {
   @apply border-b-1;
   @apply border-solid;

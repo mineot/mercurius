@@ -96,6 +96,14 @@
 
     > .content {
       @apply flex flex-col gap-2 p-2;
+
+      > .social-media {
+        @apply flex;
+      }
+
+      > nav {
+        @apply flex;
+      }
     }
   }
 

@@ -6,9 +6,9 @@
         <x-profile-header :profile="$profile" />
     </x-slot:brand>
 
-    <x-slot:sidebarBrand>
+    <x-slot:sidebarHead>
         <x-profile-sidebar :profile="$profile" />
-    </x-slot:sidebarBrand>
+    </x-slot:sidebarHead>
 
     <x-slot:nav>
         <a href="#" class="nav-link">
@@ -17,15 +17,13 @@
         </a>
         <a href="#" class="nav-link">
             <i class="bi bi-person-fill"></i>
-            <span>Sobre Mim</span>
+            <span>About Me</span>
         </a>
         <a href="#" class="nav-link">
             <i class="bi bi-book"></i>
-            <span>Artigos</span>
+            <span>Articles</span>
         </a>
     </x-slot:nav>
-
-    <x-slot:sidebarContent></x-slot:sidebarContent>
 
     <x-slot:footer>Footer</x-slot:footer>
 

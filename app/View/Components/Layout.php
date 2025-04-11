@@ -16,8 +16,10 @@ class Layout extends Component
         public $brand = "Brand",
         public $nav = "Nav",
         public $footer = "Footer",
-        public $sidebarBrand = "Aside Brand",
-        public $sidebarContent = "Aside Content",
+        public $sidebarHead = "Sidebar Head",
+        public $sidebarSocialMedia = "Sidebar Social Media",
+        public $sidebarNav = "Sidebar Nav",
+        public $sidebarContent = "Sidebar Content",
     ) {}
 
     /**

@@ -23,10 +23,16 @@
 
     <aside>
         <section class="head">
-            <div class="brand">{{ $sidebarBrand }}</div>
+            <div class="brand">{{ $sidebarHead }}</div>
             <i class="bi bi-x-lg close-sidebar" onclick="window.sidebar()"></i>
         </section>
         <section class="content">
+            <div class="social-media">
+                {{ $sidebarSocialMedia }}
+            </div>
+            <nav>
+                {{ $sidebarNav }}
+            </nav>
             {{ $sidebarContent }}
         </section>
     </aside>

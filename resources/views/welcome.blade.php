@@ -10,9 +10,13 @@
         <x-profile-sidebar :profile="$profile" />
     </x-slot:sidebarBrand>
 
-    <x-slot:nav></x-slot:nav>
+    <x-slot:nav>
+        Navigation
+    </x-slot:nav>
+
     <x-slot:sidebarContent></x-slot:sidebarContent>
-    <x-slot:footer></x-slot:footer>
+
+    <x-slot:footer>Footer</x-slot:footer>
 
     <h1>Welcome</h1>
 </x-layout>

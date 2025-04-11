@@ -2,8 +2,12 @@
     <header >
         <section class="content">
             <div>{{ $brand }}</div>
-            <nav>{{ $nav }}</nav>
-            <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
+            <nav>
+                <div class="links">
+                    {{ $nav }}
+                </div>
+                <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
+            </nav>
         </section>
     </header>
 

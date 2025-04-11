@@ -3,7 +3,7 @@
   @apply flex flex-col gap-2;
 
   > header {
-    @apply app-secondary app-border-secondary-bottom;
+    @apply app-secondary app-secondary-border-bottom;
 
     > .content {
       @apply mx-auto w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl;
@@ -47,7 +47,7 @@
   }
 
   > footer {
-    @apply app-secondary app-border-secondary-top;
+    @apply app-secondary app-secondary-border-top;
 
     > .content {
       @apply flex flex-nowrap justify-between;
@@ -79,7 +79,7 @@
     > .head {
       @apply p-2;
       @apply flex gap-2 items-start;
-      @apply app-border-secondary-bottom;
+      @apply app-secondary-border-bottom;
 
       > i.close-sidebar {
         @apply app-secondary-link;

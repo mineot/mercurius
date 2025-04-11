@@ -1,29 +1,29 @@
-@utility app-border-primary {
+@utility app-primary-border {
   @apply border-1 border-solid;
   @apply border-primary-900;
 }
 
-@utility app-border-primary-top {
+@utility app-primary-border-top {
   @apply border-t-1 border-solid;
   @apply border-primary-900;
 }
 
-@utility app-border-primary-bottom {
+@utility app-primary-border-bottom {
   @apply border-b-1 border-solid;
   @apply border-primary-900;
 }
 
-@utility app-border-secondary {
+@utility app-secondary-border {
   @apply border-1 border-solid;
   @apply border-secondary-900;
 }
 
-@utility app-border-secondary-top {
+@utility app-secondary-border-top {
   @apply border-t-1 border-solid;
   @apply border-secondary-900;
 }
 
-@utility app-border-secondary-bottom {
+@utility app-secondary-border-bottom {
   @apply border-b-1 border-solid;
   @apply border-secondary-900;
 }

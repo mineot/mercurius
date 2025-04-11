@@ -3,9 +3,11 @@
         <section class="content">
             <div>{{ $brand }}</div>
             <nav>
+                @isset($nav)
                 <div class="links">
                     {{ $nav }}
                 </div>
+                @endisset
                 <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
             </nav>
         </section>
@@ -15,11 +17,13 @@
         {{ $slot }}
     </main>
 
+    @isset($footer)
     <footer>
         <section class="content">
             {{ $footer }}
         </section>
     </footer>
+    @endisset
 
     <aside>
         <section class="head">
@@ -27,12 +31,16 @@
             <i class="bi bi-x-lg close-sidebar" onclick="window.sidebar()"></i>
         </section>
         <section class="content">
+            @isset($sidebarSocialMedia)
             <div class="social-media">
                 {{ $sidebarSocialMedia }}
             </div>
+            @endisset
+            @isset($sidebarNav)
             <nav>
                 {{ $sidebarNav }}
             </nav>
+            @endisset
             {{ $sidebarContent }}
         </section>
     </aside>

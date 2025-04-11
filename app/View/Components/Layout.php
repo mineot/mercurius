@@ -14,12 +14,12 @@ class Layout extends Component
     public function __construct
     (
         public $brand = "Brand",
-        public $nav = "Nav",
-        public $footer = "Footer",
+        public $nav = null,
+        public $footer = null,
         public $sidebarHead = "Sidebar Head",
-        public $sidebarSocialMedia = "Sidebar Social Media",
-        public $sidebarNav = "Sidebar Nav",
-        public $sidebarContent = "Sidebar Content",
+        public $sidebarSocialMedia = null,
+        public $sidebarNav = null,
+        public $sidebarContent = "",
     ) {}
 
     /**

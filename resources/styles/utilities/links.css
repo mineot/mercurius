@@ -1,0 +1,15 @@
+@utility app-secondary-link {
+  @apply text-secondary-500 hover:text-secondary-400 active:text-secondary-100;
+  @apply cursor-pointer;
+  @apply duration-300;
+}
+
+@utility app-secondary-link-lg {
+  @apply app-secondary-link;
+  @apply text-2xl;
+}
+
+@utility app-secondary-link-sm {
+  @apply app-secondary-link;
+  @apply text-sm font-thin;
+}

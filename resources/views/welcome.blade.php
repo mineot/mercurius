@@ -11,15 +11,15 @@
     </x-slot:sidebarHead>
 
     <x-slot:nav>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link" title="Home">
             <i class="bi bi-house-fill icon"></i>
             <span class="label">Home</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link" title="About Me">
             <i class="bi bi-person-fill icon"></i>
             <span class="label">About Me</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link" title="Articles">
             <i class="bi bi-book icon"></i>
             <span class="label">Articles</span>
         </a>

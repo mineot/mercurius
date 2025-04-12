@@ -1,11 +1,11 @@
 <section class="layout">
     <header >
         <section class="content">
-            <div>{{ $brand }}</div>
+            <div>{{ $headerBrand }}</div>
             <nav>
-                @isset($nav)
+                @isset($headerNav)
                 <div class="links">
-                    {{ $nav }}
+                    {{ $headerNav }}
                 </div>
                 @endisset
                 <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
@@ -31,9 +31,9 @@
             <i class="bi bi-x-lg close-sidebar" onclick="window.sidebar()"></i>
         </section>
         <section class="content">
-            @isset($sidebarSocialMedia)
+            @isset($sidebarSocials)
             <div class="social-media">
-                {{ $sidebarSocialMedia }}
+                {{ $sidebarSocials }}
             </div>
             @endisset
             @isset($sidebarNav)

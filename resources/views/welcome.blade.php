@@ -2,15 +2,11 @@
 
 @section("content")
 <x-layout>
-    <x-slot:brand>
+    <x-slot:headerBrand>
         <x-layout-profile :profile="$profile" style="header-brand" />
-    </x-slot:brand>
+    </x-slot:headerBrand>
 
-    <x-slot:sidebarHead>
-        <x-layout-profile :profile="$profile" style="sidebar-head" />
-    </x-slot:sidebarHead>
-
-    <x-slot:nav>
+    <x-slot:headerNav>
         <a href="#" class="nav-link" title="Home">
             <i class="bi bi-house-fill icon"></i>
             <span class="label">Home</span>
@@ -23,11 +19,15 @@
             <i class="bi bi-book icon"></i>
             <span class="label">Articles</span>
         </a>
-    </x-slot:nav>
+    </x-slot:headerNav>
 
-    <x-slot:sidebarSocialMedia>
+    <x-slot:sidebarHead>
+        <x-layout-profile :profile="$profile" style="sidebar-head" />
+    </x-slot:sidebarHead>
+
+    <x-slot:sidebarSocials>
         Social Medias
-    </x-slot:sidebarSocialMedia>
+    </x-slot:sidebarSocials>
 
     <x-slot:sidebarNav>
         Navigation

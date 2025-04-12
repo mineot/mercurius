@@ -11,14 +11,13 @@ class Layout extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct
-    (
-        public $headerBrand = "Brand",
+    public function __construct(
+        public $headerBrand = 'Brand',
         public $headerNav = null,
-        public $sidebarHead = "Sidebar Head",
+        public $sidebarHead = 'Sidebar Head',
         public $sidebarSocials = null,
         public $sidebarNav = null,
-        public $sidebarContent = "",
+        public $sidebarContent = '',
         public $footer = null,
     ) {}
 

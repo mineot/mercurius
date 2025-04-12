@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     use HasFactory, HasUuids;
+
     protected $keyType = 'string';
+
     protected $fillable = ['name', 'avatar', 'summary'];
 }

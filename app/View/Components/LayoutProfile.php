@@ -13,7 +13,7 @@ class LayoutProfile extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public String $style,
+        public string $style,
         public Profile $profile,
     ) {}
 

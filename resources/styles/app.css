@@ -5,6 +5,7 @@
 @import './utilities/core.css';
 @import './utilities/links.css';
 
+@import './components/layout-center.css';
 @import './components/layout-profile.css';
 @import './components/layout.css';
 

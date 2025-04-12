@@ -1,11 +1,15 @@
 @utility primary-btn {
-  @apply primary-bg-action;
-  @apply primary-text;
+  @apply bg-primary-700 text-primary-100;
+  @apply hover:bg-primary-600;
+  @apply active:bg-primary-500;
+  @apply cursor-pointer main-duration;
   @apply rounded-sm px-2 py-1;
 }
 
-@utility secondary-btn {
-  @apply secondary-bg-action;
-  @apply secondary-text;
+@utility secondary-bg-action {
+  @apply bg-secondary-500 text-secondary-100;
+  @apply hover:text-secondary-500;
+  @apply active:text-secondary-200;
+  @apply cursor-pointer main-duration;
   @apply rounded-sm px-2 py-1;
 }

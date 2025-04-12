@@ -1,32 +1,34 @@
 /* PRIMARY LINKS */
 
 @utility primary-link {
-  @apply primary-text-action;
+  @apply text-primary-500;
+  @apply hover:text-primary-400;
+  @apply active:text-primary-300;
+  @apply cursor-pointer main-duration;
 }
 
 @utility primary-link-lg {
-  @apply primary-text-action;
-  @apply text-2xl;
+  @apply primary-link text-2xl;
 }
 
 @utility primary-link-sm {
-  @apply primary-text-action;
-  @apply text-sm font-thin;
+  @apply primary-link text-sm font-thin;
 }
 
 /* SECONDARY LINKS */
 
 @utility secondary-link {
-  @apply secondary-text-action;
+  @apply text-secondary-500;
+  @apply hover:text-secondary-400;
+  @apply active:text-secondary-300;
   @apply cursor-pointer;
+  @apply main-duration;
 }
 
 @utility secondary-link-lg {
-  @apply secondary-text-action;
-  @apply text-2xl;
+  @apply secondary-link text-2xl;
 }
 
 @utility secondary-link-sm {
-  @apply secondary-text-action;
-  @apply text-sm font-thin;
+  @apply secondary-link text-sm font-thin;
 }

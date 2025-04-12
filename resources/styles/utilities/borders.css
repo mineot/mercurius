@@ -1,51 +1,73 @@
-/* PRIMARY BORDERS */
+/* GENERAL */
+
+@utility border-full {
+  @apply border-1 border-solid;
+}
+
+@utility border-top {
+  @apply border-t-1 border-solid;
+}
+
+@utility border-right {
+  @apply border-r-1 border-solid;
+}
+
+@utility border-bottom {
+  @apply border-b-1 border-solid;
+}
+
+@utility border-left {
+  @apply border-l-1 border-solid;
+}
 
 @utility primary-border {
-  @apply border-primary-900;
+  @apply border-primary-800;
 }
 
-@utility primary-border-f {
-  @apply border-1 border-solid;
-  @apply primary-border;
+@utility secondary-border {
+  @apply border-secondary-800;
 }
 
-@utility primary-border-t {
-  @apply border-t-1 border-solid;
-  @apply primary-border;
+/* PRIMARY BORDERS */
+
+@utility primary-border-full {
+  @apply border-full primary-border;
 }
 
-@utility primary-border-r {
-  @apply border-r-1 border-solid;
-  @apply primary-border;
+@utility primary-border-top {
+  @apply border-top primary-border;
 }
 
-@utility primary-border-b {
-  @apply border-b-1 border-solid;
-  @apply primary-border;
+@utility primary-border-right {
+  @apply border-right primary-border;
+}
+
+@utility primary-border-bottom {
+  @apply border-bottom primary-border;
+}
+
+@utility primary-border-top {
+  @apply border-top primary-border;
 }
 
 /* SECONDARY BORDERS */
 
-@utility secondary-border {
-  @apply border-secondary-900;
+@utility secondary-border-full {
+  @apply border-full secondary-border;
 }
 
-@utility secondary-border-f {
-  @apply border-1 border-solid;
-  @apply secondary-border;
+@utility secondary-border-top {
+  @apply border-top secondary-border;
 }
 
-@utility secondary-border-t {
-  @apply border-t-1 border-solid;
-  @apply secondary-border;
+@utility secondary-border-right {
+  @apply border-right secondary-border;
 }
 
-@utility secondary-border-r {
-  @apply border-r-1 border-solid;
-  @apply secondary-border;
+@utility secondary-border-bottom {
+  @apply border-bottom secondary-border;
 }
 
-@utility secondary-border-b {
-  @apply border-b-1 border-solid;
-  @apply secondary-border;
+@utility secondary-border-left {
+  @apply border-left secondary-border;
 }

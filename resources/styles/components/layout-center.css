@@ -12,7 +12,7 @@
     }
 
     &.border {
-      @apply primary-border-f;
+      @apply primary-border-full;
       @apply rounded-lg p-2;
     }
   }

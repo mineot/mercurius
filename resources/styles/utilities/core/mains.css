@@ -23,12 +23,12 @@
 }
 
 @utility btn {
-  @apply flex flex-row flex-nowrap gap-1;
+  @apply flex flex-row flex-nowrap gap-1 items-center;
   @apply cursor-pointer main-duration;
   @apply rounded-sm px-2 py-1;
 }
 
 @utility link {
-  @apply flex flex-row flex-nowrap gap-1;
+  @apply flex flex-row flex-nowrap gap-1 items-center;
   @apply cursor-pointer main-duration;
 }

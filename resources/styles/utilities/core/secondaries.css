@@ -1,0 +1,33 @@
+/* BACKGROUNDS */
+
+@utility secondary-bg {
+  @apply bg-secondary-900;
+}
+
+@utility secondary-bg-light {
+  @apply bg-secondary-800;
+}
+
+@utility secondary-bg-dark {
+  @apply bg-secondary-950;
+}
+
+/* TEXTS */
+
+@utility secondary-text {
+  @apply text-secondary-200;
+}
+
+@utility secondary-text-light {
+  @apply text-secondary-100;
+}
+
+@utility secondary-text-dark {
+  @apply text-secondary-500;
+}
+
+/* BORDERS */
+
+@utility secondary-border {
+  @apply border-secondary-800;
+}

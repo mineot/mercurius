@@ -1,3 +1,7 @@
+@utility main-duration {
+  @apply duration-300;
+}
+
 @utility border-full {
   @apply border-1 border-solid;
 }
@@ -16,4 +20,15 @@
 
 @utility border-left {
   @apply border-l-1 border-solid;
+}
+
+@utility btn {
+  @apply flex flex-row flex-nowrap gap-1;
+  @apply cursor-pointer main-duration;
+  @apply rounded-sm px-2 py-1;
+}
+
+@utility link {
+  @apply flex flex-row flex-nowrap gap-1;
+  @apply cursor-pointer main-duration;
 }

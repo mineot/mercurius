@@ -7,6 +7,6 @@
 
   > .form-action {
     @apply flex flex-col gap-2;
-    @apply primary-btn;
+    @apply secondary-btn;
   }
 }

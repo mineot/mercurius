@@ -1,0 +1,33 @@
+/* BACKGROUND */
+
+@utility primary-bg {
+  @apply bg-primary-900;
+}
+
+@utility primary-bg-light {
+  @apply bg-primary-800;
+}
+
+@utility primary-bg-dark {
+  @apply bg-primary-950;
+}
+
+/* TEXTS */
+
+@utility primary-text {
+  @apply text-primary-200;
+}
+
+@utility primary-text-light {
+  @apply text-primary-100;
+}
+
+@utility primary-text-dark {
+  @apply text-primary-500;
+}
+
+/* BORDERS */
+
+@utility primary-border {
+  @apply border-primary-800;
+}

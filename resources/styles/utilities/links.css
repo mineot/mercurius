@@ -3,8 +3,8 @@
 @utility primary-link {
   @apply text-primary-500;
   @apply hover:text-primary-400;
-  @apply active:text-primary-300;
-  @apply cursor-pointer main-duration;
+  @apply active:text-primary-200;
+  @apply link;
 }
 
 @utility primary-link-lg {
@@ -20,9 +20,8 @@
 @utility secondary-link {
   @apply text-secondary-500;
   @apply hover:text-secondary-400;
-  @apply active:text-secondary-300;
-  @apply cursor-pointer;
-  @apply main-duration;
+  @apply active:text-secondary-200;
+  @apply link;
 }
 
 @utility secondary-link-lg {

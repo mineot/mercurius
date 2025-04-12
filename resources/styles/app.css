@@ -1,9 +1,11 @@
 @import 'tailwindcss';
 @import './theme.css';
 
-@import './utilities/borders.css';
+@import './utilities/core/mains.css';
+@import './utilities/core/primaries.css';
+@import './utilities/core/secondaries.css';
+
 @import './utilities/buttons.css';
-@import './utilities/core.css';
 @import './utilities/links.css';
 
 @import './components/form-group.css';

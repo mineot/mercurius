@@ -1,15 +1,32 @@
-@utility app-secondary-link {
-  @apply text-secondary-500 hover:text-secondary-400 active:text-secondary-100;
-  @apply cursor-pointer;
-  @apply duration-300;
+/* PRIMARY LINKS */
+
+@utility primary-link {
+  @apply primary-text-action;
 }
 
-@utility app-secondary-link-lg {
-  @apply app-secondary-link;
+@utility primary-link-lg {
+  @apply primary-text-action;
   @apply text-2xl;
 }
 
-@utility app-secondary-link-sm {
-  @apply app-secondary-link;
+@utility primary-link-sm {
+  @apply primary-text-action;
+  @apply text-sm font-thin;
+}
+
+/* SECONDARY LINKS */
+
+@utility secondary-link {
+  @apply secondary-text-action;
+  @apply cursor-pointer;
+}
+
+@utility secondary-link-lg {
+  @apply secondary-text-action;
+  @apply text-2xl;
+}
+
+@utility secondary-link-sm {
+  @apply secondary-text-action;
   @apply text-sm font-thin;
 }

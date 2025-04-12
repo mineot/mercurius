@@ -3,7 +3,8 @@
   @apply flex flex-col gap-2;
 
   > header {
-    @apply app-secondary app-secondary-border-bottom;
+    @apply secondary-bg secondary-text;
+    @apply secondary-border-b;
 
     > .content {
       @apply mx-auto w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl;
@@ -20,7 +21,7 @@
 
           > .nav-link {
             @apply flex gap-1 items-center;
-            @apply app-secondary-link-sm;
+            @apply secondary-link-sm;
 
             > .icon {
               @apply text-lg lg:text-sm;
@@ -33,7 +34,7 @@
         }
 
         > i.toogle-menu {
-          @apply app-secondary-link-lg;
+          @apply secondary-link-lg;
         }
       }
     }
@@ -47,7 +48,8 @@
   }
 
   > footer {
-    @apply app-secondary app-secondary-border-top;
+    @apply secondary-bg secondary-text;
+    @apply secondary-border-t;
 
     > .content {
       @apply flex flex-nowrap justify-between;
@@ -59,7 +61,7 @@
   }
 
   > aside {
-    @apply app-secondary;
+    @apply primary-bg primary-text;
     @apply overflow-x-hidden overflow-y-auto;
 
     @apply absolute top-0 left-0 h-screen max-w-full z-20;
@@ -79,10 +81,10 @@
     > .head {
       @apply p-2;
       @apply flex gap-2 items-start;
-      @apply app-secondary-border-bottom;
+      @apply secondary-border-b;
 
       > i.close-sidebar {
-        @apply app-secondary-link;
+        @apply secondary-link;
       }
     }
 

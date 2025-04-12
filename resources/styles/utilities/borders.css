@@ -1,29 +1,41 @@
-@utility app-primary-border {
+/* PRIMARY BORDERS */
+
+@utility primary-border {
+  @apply border-primary-900;
+}
+
+@utility primary-border-f {
   @apply border-1 border-solid;
-  @apply border-primary-900;
+  @apply primary-border;
 }
 
-@utility app-primary-border-top {
+@utility primary-border-t {
   @apply border-t-1 border-solid;
-  @apply border-primary-900;
+  @apply primary-border;
 }
 
-@utility app-primary-border-bottom {
+@utility primary-border-b {
   @apply border-b-1 border-solid;
-  @apply border-primary-900;
+  @apply primary-border;
 }
 
-@utility app-secondary-border {
+/* SECONDARY BORDERS */
+
+@utility secondary-border {
+  @apply border-secondary-900;
+}
+
+@utility secondary-border-f {
   @apply border-1 border-solid;
-  @apply border-secondary-900;
+  @apply secondary-border;
 }
 
-@utility app-secondary-border-top {
+@utility secondary-border-t {
   @apply border-t-1 border-solid;
-  @apply border-secondary-900;
+  @apply secondary-border;
 }
 
-@utility app-secondary-border-bottom {
+@utility secondary-border-b {
   @apply border-b-1 border-solid;
-  @apply border-secondary-900;
+  @apply secondary-border;
 }

@@ -1,9 +1,57 @@
-@utility app-primary {
+/* CORE */
+
+@utility main-duration {
+  @apply duration-300;
+}
+
+/* PRIMARY */
+
+@utility primary-bg {
   @apply bg-primary-950;
+}
+
+@utility primary-bg-action {
+  @apply bg-primary-600;
+  @apply hover:bg-primary-500;
+  @apply active:bg-primary-200;
+  @apply cursor-pointer;
+  @apply main-duration;
+}
+
+@utility primary-text {
   @apply text-primary-200;
 }
 
-@utility app-secondary {
+@utility primary-text-action {
+  @apply text-primary-500;
+  @apply hover:text-primary-400;
+  @apply active:text-primary-100;
+  @apply cursor-pointer;
+  @apply main-duration;
+}
+
+/* SECONDARY */
+
+@utility secondary-bg {
   @apply bg-secondary-950;
+}
+
+@utility secondary-bg-action {
+  @apply text-secondary-600;
+  @apply hover:text-secondary-500;
+  @apply active:text-secondary-200;
+  @apply cursor-pointer;
+  @apply main-duration;
+}
+
+@utility secondary-text {
   @apply text-secondary-200;
+}
+
+@utility secondary-text-action {
+  @apply text-secondary-500;
+  @apply hover:text-secondary-400;
+  @apply active:text-secondary-100;
+  @apply cursor-pointer;
+  @apply main-duration;
 }

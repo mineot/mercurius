@@ -1,0 +1,19 @@
+.layout-center {
+  @apply h-full w-full;
+  @apply flex justify-center items-center;
+
+  > .content {
+    @apply flex;
+
+    &.size-sm {
+      @apply mx-2 sm:mx-0;
+      @apply w-full sm:max-w-96;
+      @apply main-duration;
+    }
+
+    &.border {
+      @apply primary-border-f;
+      @apply rounded-lg p-2;
+    }
+  }
+}

@@ -1,20 +1,27 @@
 @extends("core/main")
 
 @section("content")
-<form class="layout-form-center">
-    <h1>Login</h1>
-    <div class="groups">
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" />
-        </div>
-        <div class="form-group">
-            <label for="email">Password</label>
-            <input id="password" type="password" />
-        </div>
+<div class="layout-center">
+    <div class="content border size-sm">
+
+        <form class="form-layout">
+            <h1 class="form-title">Login</h1>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" />
+                <div>Message</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Password</label>
+                <input id="password" type="password" />
+                <div>Message</div>
+            </div>
+            <button type="button" class="form-action">Button</button>
+        </form>
+
     </div>
-    <button>Button</button>
-</form>
+</div>
+
 {{-- <div class="auth-index">
     <h1 class="title text-center">Login</h1>
 

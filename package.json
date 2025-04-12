@@ -7,7 +7,7 @@
     "format": "composer format && prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.1",
     "axios": "^1.8.4",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",

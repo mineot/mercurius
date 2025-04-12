@@ -1,0 +1,11 @@
+@utility primary-btn {
+  @apply primary-bg-action;
+  @apply primary-text;
+  @apply rounded-sm px-2 py-1;
+}
+
+@utility secondary-btn {
+  @apply secondary-bg-action;
+  @apply secondary-text;
+  @apply rounded-sm px-2 py-1;
+}

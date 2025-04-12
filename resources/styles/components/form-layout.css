@@ -1,0 +1,12 @@
+.form-layout {
+  @apply flex flex-col gap-4 w-full;
+
+  > .form-title {
+    @apply text-2xl font-bold text-center;
+  }
+
+  > .form-action {
+    @apply flex flex-col gap-2;
+    @apply primary-btn;
+  }
+}

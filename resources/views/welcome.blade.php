@@ -26,16 +26,36 @@
     </x-slot:sidebarHead>
 
     <x-slot:sidebarSocials>
-        Social Medias
+        <a href="#" title="GitHub" class="item">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="#" title="WhatsApp" class="item">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="#" title="YouTube" class="item">
+            <i class="bi bi-youtube"></i>
+        </a>
+        <a href="#" title="Email" class="item">
+            <i class="bi bi-envelope-fill"></i>
+        </a>
     </x-slot:sidebarSocials>
 
     <x-slot:sidebarNav>
-        Navigation
+        <a href="#" class="nav-link" title="Home">
+            <i class="bi bi-house-fill"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-link" title="About Me">
+            <i class="bi bi-person-fill"></i>
+            <span>About Me</span>
+        </a>
+        <a href="#" class="nav-link" title="Articles">
+            <i class="bi bi-book"></i>
+            <span>Articles</span>
+        </a>
     </x-slot:sidebarNav>
 
-    <x-slot:sidebarContent>
-        Content
-    </x-slot:sidebarContent>
+    <x-slot:sidebarContent></x-slot:sidebarContent>
 
     <x-slot:footer>Footer</x-slot:footer>
 

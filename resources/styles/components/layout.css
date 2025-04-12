@@ -61,7 +61,7 @@
   }
 
   > aside {
-    @apply primary-bg primary-text;
+    @apply secondary-bg secondary-text secondary-border-r;
     @apply overflow-x-hidden overflow-y-auto;
 
     @apply absolute top-0 left-0 h-screen max-w-full z-20;
@@ -89,14 +89,23 @@
     }
 
     > .content {
-      @apply flex flex-col gap-2 p-2;
+      @apply flex flex-col gap-6 p-2;
 
       > .social-media {
-        @apply flex;
+        @apply flex flex-wrap gap-6;
+
+        > .item {
+          @apply secondary-link-lg;
+        }
       }
 
       > nav {
-        @apply flex;
+        @apply flex flex-col gap-1;
+
+        > .nav-link {
+          @apply flex flex-nowrap gap-3 items-center text-nowrap;
+          @apply secondary-link;
+        }
       }
     }
   }

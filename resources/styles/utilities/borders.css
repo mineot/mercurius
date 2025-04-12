@@ -14,6 +14,11 @@
   @apply primary-border;
 }
 
+@utility primary-border-r {
+  @apply border-r-1 border-solid;
+  @apply primary-border;
+}
+
 @utility primary-border-b {
   @apply border-b-1 border-solid;
   @apply primary-border;
@@ -32,6 +37,11 @@
 
 @utility secondary-border-t {
   @apply border-t-1 border-solid;
+  @apply secondary-border;
+}
+
+@utility secondary-border-r {
+  @apply border-r-1 border-solid;
   @apply secondary-border;
 }
 

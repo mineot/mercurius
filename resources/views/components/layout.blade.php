@@ -8,6 +8,7 @@
                     {{ $headerNav }}
                 </div>
                 @endisset
+
                 <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
             </nav>
         </section>
@@ -36,11 +37,13 @@
                 {{ $sidebarSocials }}
             </div>
             @endisset
+
             @isset($sidebarNav)
             <nav>
                 {{ $sidebarNav }}
             </nav>
             @endisset
+
             {{ $sidebarContent }}
         </section>
     </aside>

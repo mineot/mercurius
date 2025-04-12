@@ -1,5 +1,3 @@
-/* GENERAL */
-
 @utility border-full {
   @apply border-1 border-solid;
 }
@@ -18,56 +16,4 @@
 
 @utility border-left {
   @apply border-l-1 border-solid;
-}
-
-@utility primary-border {
-  @apply border-primary-800;
-}
-
-@utility secondary-border {
-  @apply border-secondary-800;
-}
-
-/* PRIMARY BORDERS */
-
-@utility primary-border-full {
-  @apply border-full primary-border;
-}
-
-@utility primary-border-top {
-  @apply border-top primary-border;
-}
-
-@utility primary-border-right {
-  @apply border-right primary-border;
-}
-
-@utility primary-border-bottom {
-  @apply border-bottom primary-border;
-}
-
-@utility primary-border-top {
-  @apply border-top primary-border;
-}
-
-/* SECONDARY BORDERS */
-
-@utility secondary-border-full {
-  @apply border-full secondary-border;
-}
-
-@utility secondary-border-top {
-  @apply border-top secondary-border;
-}
-
-@utility secondary-border-right {
-  @apply border-right secondary-border;
-}
-
-@utility secondary-border-bottom {
-  @apply border-bottom secondary-border;
-}
-
-@utility secondary-border-left {
-  @apply border-left secondary-border;
 }

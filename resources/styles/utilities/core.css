@@ -30,6 +30,10 @@
   @apply text-primary-500;
 }
 
+@utility primary-border {
+  @apply border-primary-800;
+}
+
 /* SECONDARY */
 
 @utility secondary-bg-light {
@@ -54,4 +58,8 @@
 
 @utility secondary-text-dark {
   @apply text-secondary-500;
+}
+
+@utility secondary-border {
+  @apply border-secondary-800;
 }

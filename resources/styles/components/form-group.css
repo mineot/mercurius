@@ -7,8 +7,8 @@
 
   > input {
     @apply w-full p-2;
-    @apply bg-primary-800;
-    @apply secondary-border-full outline-0;
+    @apply bg-primary-700 hover:bg-primary-800 focus:bg-primary-800;
+    @apply border-full secondary-border outline-0;
     @apply rounded-sm;
   }
 }

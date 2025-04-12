@@ -5,9 +5,8 @@
 @import './utilities/core.css';
 @import './utilities/links.css';
 
+@import './components/layout-profile.css';
 @import './components/layout.css';
-@import './components/profile-header.css';
-@import './components/profile-sidebar.css';
 
 * {
   box-sizing: border-box;

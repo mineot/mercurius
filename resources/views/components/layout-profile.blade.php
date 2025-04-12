@@ -1,4 +1,4 @@
-<div class="profile-header">
+<div class="layout-profile {{ $style }}">
     <img src="{{ $profile->avatar }}" alt="{{ $profile->name }}">
     <div class="content">
         <h1>{{ $profile->name }}</h1>

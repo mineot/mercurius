@@ -3,11 +3,11 @@
 @section("content")
 <x-layout>
     <x-slot:brand>
-        <x-profile-header :profile="$profile" />
+        <x-layout-profile :profile="$profile" style="header-brand" />
     </x-slot:brand>
 
     <x-slot:sidebarHead>
-        <x-profile-sidebar :profile="$profile" />
+        <x-layout-profile :profile="$profile" style="sidebar-head" />
     </x-slot:sidebarHead>
 
     <x-slot:nav>

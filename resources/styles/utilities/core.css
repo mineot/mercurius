@@ -22,6 +22,10 @@
   @apply text-primary-200;
 }
 
+@utility primary-text-dark {
+  @apply text-primary-500;
+}
+
 @utility primary-text-action {
   @apply text-primary-500;
   @apply hover:text-primary-400;
@@ -46,6 +50,10 @@
 
 @utility secondary-text {
   @apply text-secondary-200;
+}
+
+@utility secondary-text-dark {
+  @apply text-secondary-500;
 }
 
 @utility secondary-text-action {

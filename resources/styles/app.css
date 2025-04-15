@@ -11,11 +11,11 @@
 
 @import './components/layout.css';
 @import './components/layout-profile.css';
+@import './components/layout-center.css';
 
 /*
 @import './components/form-group.css';
 @import './components/form-layout.css';
-@import './components/layout-center.css';
 */
 
 * {

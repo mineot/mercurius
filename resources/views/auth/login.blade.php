@@ -2,9 +2,10 @@
 
 @section("content")
 <div class="layout-center">
-    <div class="content border size-sm">
+    <div class="layout-center-content">
 
-        <form class="form-layout">
+        <h1>Layout Center</h1>
+        {{-- <form class="form-layout">
             <h1 class="form-title">Login</h1>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -17,7 +18,7 @@
                 <div class="message">Message</div>
             </div>
             <button type="button" class="form-action">Button</button>
-        </form>
+        </form> --}}
 
     </div>
 </div>

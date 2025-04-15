@@ -2,18 +2,14 @@
   @apply h-full w-full;
   @apply flex justify-center items-center;
 
-  > .content {
-    @apply flex;
+  > .layout-center-content {
+    @apply secondary;
+    @apply border-full secondary-border;
+    @apply rounded-lg;
 
-    &.size-sm {
-      @apply mx-2 sm:mx-0;
-      @apply w-full sm:max-w-96;
-      @apply main-duration;
-    }
+    @apply p-2 m-2;
+    @apply w-full sm:max-w-96;
 
-    &.border {
-      @apply border-full primary-border;
-      @apply rounded-lg p-2;
-    }
+    @apply duration-default;
   }
 }

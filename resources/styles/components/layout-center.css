@@ -2,7 +2,7 @@
   @apply h-full w-full;
   @apply flex justify-center items-center;
 
-  > .layout-center-content {
+  > .content {
     @apply secondary;
     @apply border-full secondary-border;
     @apply rounded-lg;

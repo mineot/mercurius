@@ -6,6 +6,7 @@
 @import './utilities/core/secondaries.css';
 
 @import './utilities/buttons.css';
+@import './utilities/inputs.css';
 @import './utilities/links.css';
 
 @import './components/form-group.css';

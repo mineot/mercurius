@@ -2,13 +2,18 @@
   @apply flex flex-col w-full;
 
   > label {
-    @apply primary-text-dark;
+    @apply primary-text-destak;
   }
 
   > input {
-    @apply w-full p-2;
-    @apply bg-primary-700 hover:bg-primary-800 focus:bg-primary-800;
-    @apply border-full secondary-border outline-0;
-    @apply rounded-sm;
+    @apply w-full p-2 outline-0 rounded-sm;
+    @apply border-full secondary-border;
+    @apply bg-primary-700;
+    @apply hover:bg-primary-800;
+    @apply focus:bg-primary-800;
+  }
+
+  > .message {
+    @apply primary-text-destak;
   }
 }

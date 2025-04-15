@@ -32,3 +32,8 @@
   @apply flex flex-row flex-nowrap gap-1 items-center;
   @apply cursor-pointer main-duration;
 }
+
+@utility input {
+  @apply w-full p-2 outline-0 rounded-sm border-full;
+  @apply main-duration;
+}

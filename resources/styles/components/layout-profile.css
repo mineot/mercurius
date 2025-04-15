@@ -20,7 +20,7 @@
 
       > h2 {
         @apply text-xs;
-        @apply secondary-text;
+        @apply secondary-text-destak;
         @apply hidden md:block;
       }
     }
@@ -42,7 +42,7 @@
       }
 
       > h2 {
-        @apply text-xs secondary-text-dark;
+        @apply text-xs secondary-text-destak;
       }
     }
   }

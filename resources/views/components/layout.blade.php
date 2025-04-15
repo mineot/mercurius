@@ -14,7 +14,7 @@
         </section>
     </header>
 
-    <main class="content">
+    <main class="main-content">
         {{ $slot }}
     </main>
 

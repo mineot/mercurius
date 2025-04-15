@@ -6,21 +6,22 @@
       @apply w-12 md:w-22;
       @apply h-12 md:h-22;
       @apply rounded-full;
-      @apply duration-300;
+      @apply duration-default;
     }
 
     > .content {
       @apply flex flex-col;
 
       > h1 {
+        @apply secondary-title;
         @apply text-lg md:text-2xl;
         @apply font-bold;
-        @apply main-duration;
+        @apply duration-default;
       }
 
       > h2 {
+        @apply secondary-subtitle;
         @apply text-xs;
-        @apply secondary-text-destak;
         @apply hidden md:block;
       }
     }
@@ -38,11 +39,12 @@
       @apply flex flex-col gap-1;
 
       > h1 {
+        @apply secondary-title;
         @apply text-2xl font-bold;
       }
 
       > h2 {
-        @apply text-xs secondary-text-destak;
+        @apply text-xs secondary-subtitle;
       }
     }
   }

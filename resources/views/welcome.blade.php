@@ -3,58 +3,30 @@
 @section("content")
 <x-layout>
     <x-slot:headerBrand>
-        Header
-        {{-- <x-layout-profile :profile="$profile" style="header-brand" /> --}}
+        <x-layout-profile :profile="$profile" style="header-brand" />
     </x-slot:headerBrand>
 
     <x-slot:headerNav>
-        <a href="#" class="nav-link" title="Home">
-            <i class="bi bi-house-fill nav-link-icon"></i>
-            <span class="nav-link-label">Home</span>
-        </a>
-        <a href="#" class="nav-link" title="About Me">
-            <i class="bi bi-person-fill nav-link-icon"></i>
-            <span class="nav-link-label">About Me</span>
-        </a>
-        <a href="#" class="nav-link" title="Articles">
-            <i class="bi bi-book nav-link-icon"></i>
-            <span class="nav-link-label">Articles</span>
-        </a>
+        <x-nav-link href="#" icon="bi bi-house-fill" label="Home" />
+        <x-nav-link href="#" icon="bi bi-person-fill" label="About" />
+        <x-nav-link href="#" icon="bi bi-book" label="Articles" />
     </x-slot:headerNav>
 
     <x-slot:sidebarHead>
-        Head
-        {{-- <x-layout-profile :profile="$profile" style="sidebar-head" /> --}}
+        <x-layout-profile :profile="$profile" style="sidebar-head" />
     </x-slot:sidebarHead>
 
     <x-slot:sidebarSocials>
-        <a href="#" title="GitHub" class="item">
-            <i class="bi bi-github"></i>
-        </a>
-        <a href="#" title="WhatsApp" class="item">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="#" title="YouTube" class="item">
-            <i class="bi bi-youtube"></i>
-        </a>
-        <a href="#" title="Email" class="item">
-            <i class="bi bi-envelope-fill"></i>
-        </a>
+        <x-nav-link href="#" icon="bi bi-github" title="GitHub" />
+        <x-nav-link href="#" icon="bi bi-whatsapp" title="WhatsApp" />
+        <x-nav-link href="#" icon="bi bi-youtube" title="YouTube" />
+        <x-nav-link href="#" icon="bi bi-envelope-fill" title="Email" />
     </x-slot:sidebarSocials>
 
     <x-slot:sidebarNav>
-        <a href="#" class="nav-link" title="Home">
-            <i class="bi bi-house-fill"></i>
-            <span>Home</span>
-        </a>
-        <a href="#" class="nav-link" title="About Me">
-            <i class="bi bi-person-fill"></i>
-            <span>About Me</span>
-        </a>
-        <a href="#" class="nav-link" title="Articles">
-            <i class="bi bi-book"></i>
-            <span>Articles</span>
-        </a>
+        <x-nav-link href="#" icon="bi bi-house-fill" label="Home" />
+        <x-nav-link href="#" icon="bi bi-person-fill" label="About" />
+        <x-nav-link href="#" icon="bi bi-book" label="Articles" />
     </x-slot:sidebarNav>
 
     <x-slot:sidebarContent>

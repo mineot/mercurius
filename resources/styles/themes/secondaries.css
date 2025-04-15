@@ -3,11 +3,19 @@
 }
 
 @utility secondary-text {
-  @apply text-secondary-200;
+  @apply text-secondary-300;
 }
 
 @utility secondary-text-destak {
   @apply text-secondary-500;
+}
+
+@utility secondary-title {
+  @apply text-secondary-400;
+}
+
+@utility secondary-subtitle {
+  @apply secondary-text-destak;
 }
 
 @utility secondary {

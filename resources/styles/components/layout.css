@@ -91,13 +91,14 @@
     }
 
     > .content {
-      @apply flex flex-col gap-4 p-2;
+      @apply flex flex-col gap-4;
+      @apply pl-2 pr-6 py-2;
 
       > .social-media {
         @apply flex flex-wrap gap-6;
 
-        > .item {
-          @apply link;
+        > .nav-link {
+          @apply link md:link-lg;
         }
       }
 

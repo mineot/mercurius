@@ -1,0 +1,12 @@
+@utility primary-bg {
+  @apply bg-primary-950;
+}
+
+@utility primary-text {
+  @apply text-primary-200;
+}
+
+@utility primary {
+  @apply primary-bg;
+  @apply primary-text;
+}

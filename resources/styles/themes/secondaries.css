@@ -1,0 +1,47 @@
+@utility secondary-bg {
+  @apply bg-secondary-950;
+}
+
+@utility secondary-text {
+  @apply text-secondary-200;
+}
+
+@utility secondary-text-destak {
+  @apply text-secondary-500;
+}
+
+@utility secondary {
+  @apply secondary-bg;
+  @apply secondary-text;
+}
+
+@utility secondary-border {
+  @apply border-secondary-800;
+}
+
+@utility secondary-link {
+  @apply text-secondary-500;
+  @apply hover:text-secondary-400;
+  @apply active:text-secondary-200;
+}
+
+@utility secondary-btn {
+  @apply text-secondary-200;
+  @apply bg-secondary-500;
+  @apply hover:bg-secondary-600;
+  @apply active:bg-secondary-700;
+}
+
+@utility secondary-input {
+  @apply bg-primary-700;
+  @apply text-secondary-300;
+  @apply border-secondary-500;
+
+  @apply hover:bg-primary-800;
+  @apply hover:text-secondary-200;
+  @apply hover:border-secondary-600;
+
+  @apply focus:bg-primary-800;
+  @apply focus:text-secondary-200;
+  @apply focus:border-secondary-600;
+}

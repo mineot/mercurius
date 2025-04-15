@@ -1,19 +1,21 @@
 @import 'tailwindcss';
-@import './theme.css';
 
-@import './utilities/core/mains.css';
-@import './utilities/core/primaries.css';
-@import './utilities/core/secondaries.css';
+@import './themes/colors.css';
+@import './themes/core.css';
+@import './themes/primaries.css';
+@import './themes/secondaries.css';
 
 @import './utilities/buttons.css';
 @import './utilities/inputs.css';
 @import './utilities/links.css';
 
+/*
 @import './components/form-group.css';
 @import './components/form-layout.css';
 @import './components/layout-center.css';
 @import './components/layout-profile.css';
 @import './components/layout.css';
+*/
 
 * {
   box-sizing: border-box;
@@ -28,6 +30,5 @@ body {
   @apply h-screen;
   @apply w-screen;
   @apply overflow-hidden;
-  @apply primary-bg;
-  @apply primary-text;
+  @apply primary;
 }

@@ -1,13 +1,4 @@
-@utility primary-btn {
-  @apply bg-primary-500 text-primary-100;
-  @apply hover:bg-primary-400;
-  @apply active:bg-primary-300;
-  @apply btn;
-}
-
-@utility secondary-btn {
-  @apply bg-secondary-500 text-secondary-100;
-  @apply hover:text-secondary-400;
-  @apply active:text-secondary-300;
-  @apply btn;
+@utility btn {
+  @apply btn-core;
+  @apply secondary-btn;
 }

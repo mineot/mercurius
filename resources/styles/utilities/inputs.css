@@ -1,9 +1,4 @@
-@utility primary-input {
-  @apply input secondary-border;
-  @apply bg-primary-700;
-  @apply hover:bg-primary-800;
-  @apply focus:bg-primary-800;
-}
-
-@utility secondary-input {
+@utility input {
+  @apply input-core;
+  @apply secondary-input;
 }

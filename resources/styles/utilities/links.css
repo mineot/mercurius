@@ -1,33 +1,15 @@
-/* PRIMARY LINKS */
+@utility link {
+  @apply link-core;
+  @apply secondary-link;
+}
 
-@utility primary-link {
-  @apply text-primary-500;
-  @apply hover:text-primary-400;
-  @apply active:text-primary-200;
+@utility link-lg {
   @apply link;
+  @apply text-2xl;
 }
 
-@utility primary-link-lg {
-  @apply primary-link text-2xl;
-}
-
-@utility primary-link-sm {
-  @apply primary-link text-sm font-thin;
-}
-
-/* SECONDARY LINKS */
-
-@utility secondary-link {
-  @apply text-secondary-500;
-  @apply hover:text-secondary-400;
-  @apply active:text-secondary-200;
+@utility link-sm {
   @apply link;
-}
-
-@utility secondary-link-lg {
-  @apply secondary-link text-2xl;
-}
-
-@utility secondary-link-sm {
-  @apply secondary-link text-sm font-thin;
+  @apply text-sm;
+  @apply font-thin;
 }

@@ -1,7 +1,22 @@
 @extends("core/main")
 
 @section("content")
-<x-layout>
+<div class="flex flex-col gap-2 m-2">
+    <h1>Welcome</h1>
+    <div class="p-2 secondary border-full secondary-border flex flex-col gap-2">
+        <span>Secondary</span>
+        <a href="#" class="link">Link</a>
+        <a href="#" class="link-lg">Link Large</a>
+        <a href="#" class="link-sm">Link Small</a>
+        <div>
+            <button class="btn">Button</button>
+        </div>
+        <div>
+            <input type="text" class="input">
+        </div>
+    </div>
+</div>
+{{-- <x-layout>
     <x-slot:headerBrand>
         <x-layout-profile :profile="$profile" style="header-brand" />
     </x-slot:headerBrand>
@@ -60,5 +75,5 @@
     <x-slot:footer>Footer</x-slot:footer>
 
     <h1>Welcome</h1>
-</x-layout>
+</x-layout> --}}
 @endsection

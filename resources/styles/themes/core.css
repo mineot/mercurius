@@ -39,6 +39,7 @@
   @apply flex-nowrap;
   @apply gap-1;
   @apply items-center;
+  @apply justify-center;
 
   @apply cursor-pointer;
   @apply duration-default;

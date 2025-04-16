@@ -1,3 +1,14 @@
+@utility link-core {
+  @apply flex;
+  @apply flex-row;
+  @apply flex-nowrap;
+  @apply gap-1;
+  @apply items-center;
+
+  @apply cursor-pointer;
+  @apply duration-default;
+}
+
 @utility link {
   @apply link-core;
   @apply secondary-link;

@@ -1,0 +1,19 @@
+@utility border-full {
+  @apply border-1 border-solid;
+}
+
+@utility border-top {
+  @apply border-t-1 border-solid;
+}
+
+@utility border-right {
+  @apply border-r-1 border-solid;
+}
+
+@utility border-bottom {
+  @apply border-b-1 border-solid;
+}
+
+@utility border-left {
+  @apply border-l-1 border-solid;
+}

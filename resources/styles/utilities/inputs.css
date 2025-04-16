@@ -1,3 +1,15 @@
+@utility input-core {
+  @apply w-full;
+  @apply p-2;
+  @apply text-sm;
+
+  @apply outline-0;
+  @apply rounded-sm;
+  @apply border-full;
+
+  @apply duration-default;
+}
+
 @utility input {
   @apply input-core;
   @apply secondary-input;

@@ -1,3 +1,19 @@
+@utility btn-core {
+  @apply flex;
+  @apply flex-row;
+  @apply flex-nowrap;
+  @apply gap-1;
+  @apply items-center;
+  @apply justify-center;
+
+  @apply cursor-pointer;
+  @apply duration-default;
+
+  @apply rounded-sm;
+  @apply px-2;
+  @apply py-1;
+}
+
 @utility btn {
   @apply btn-core;
   @apply secondary-btn;

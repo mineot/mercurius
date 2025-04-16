@@ -1,10 +1,11 @@
 @import 'tailwindcss';
 
 @import './themes/colors.css';
-@import './themes/core.css';
 @import './themes/primaries.css';
 @import './themes/secondaries.css';
 
+@import './utilities/core.css';
+@import './utilities/borders.css';
 @import './utilities/buttons.css';
 @import './utilities/inputs.css';
 @import './utilities/links.css';

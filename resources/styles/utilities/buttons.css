@@ -1,4 +1,6 @@
-@utility btn-core {
+@utility btn {
+  @apply secondary-btn;
+
   @apply flex;
   @apply flex-row;
   @apply flex-nowrap;
@@ -10,11 +12,5 @@
   @apply duration-default;
 
   @apply rounded-sm;
-  @apply px-2;
-  @apply py-1;
-}
-
-@utility btn {
-  @apply btn-core;
-  @apply secondary-btn;
+  @apply px-3 py-1;
 }

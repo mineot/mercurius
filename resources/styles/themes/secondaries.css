@@ -34,22 +34,13 @@
 }
 
 @utility secondary-btn {
-  @apply text-secondary-200;
-  @apply bg-secondary-500;
-  @apply hover:bg-secondary-600;
-  @apply active:bg-secondary-700;
+  @apply text-secondary-100 bg-secondary-800;
+  @apply hover:text-secondary-200 hover:bg-secondary-700;
+  @apply active:text-secondary-300 active:bg-secondary-600;
 }
 
 @utility secondary-input {
-  @apply bg-primary-700;
-  @apply text-secondary-300;
-  @apply border-secondary-500;
-
-  @apply hover:bg-primary-800;
-  @apply hover:text-secondary-200;
-  @apply hover:border-secondary-600;
-
-  @apply focus:bg-primary-800;
-  @apply focus:text-secondary-200;
-  @apply focus:border-secondary-600;
+  @apply text-secondary-400 bg-primary-900 border-secondary-500;
+  @apply hover:text-secondary-300 hover:bg-primary-800 hover:border-secondary-300;
+  @apply focus:text-secondary-300 focus:bg-primary-800 focus:border-secondary-300;
 }

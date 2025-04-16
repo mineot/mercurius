@@ -1,4 +1,6 @@
-@utility link-core {
+@utility link {
+  @apply secondary-link;
+
   @apply flex;
   @apply flex-row;
   @apply flex-nowrap;
@@ -7,11 +9,6 @@
 
   @apply cursor-pointer;
   @apply duration-default;
-}
-
-@utility link {
-  @apply link-core;
-  @apply secondary-link;
 }
 
 @utility link-lg {

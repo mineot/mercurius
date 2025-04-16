@@ -1,6 +1,8 @@
-@utility input-core {
+@utility input {
+  @apply secondary-input;
+
   @apply w-full;
-  @apply p-2;
+  @apply px-3 py-2;
   @apply text-sm;
 
   @apply outline-0;
@@ -8,9 +10,4 @@
   @apply border-full;
 
   @apply duration-default;
-}
-
-@utility input {
-  @apply input-core;
-  @apply secondary-input;
 }

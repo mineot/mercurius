@@ -17,10 +17,14 @@ class DetectBrowserLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $supportedLocales = Config::get('app.supported_locales'); // ← aqui!
+        $supportedLocales = Config::get('app.supported_locales');
+
         $preferred = $request->getPreferredLanguage($supportedLocales);
+
         $locale = $preferred ?? 'en';
+
         App::setLocale($locale);
+
         return $next($request);
     }
 }

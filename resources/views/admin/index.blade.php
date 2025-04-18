@@ -1,4 +1,4 @@
-@extends("layouts/guest")
+@extends("core/main")
 
 @section("content")
 Admin

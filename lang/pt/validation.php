@@ -110,5 +110,9 @@ return [
         ],
     ],
 
-    'attributes' => [],
+    'attributes' => [
+        "login" => "Login",
+        "email" => "E-mail",
+        "password" => "Senha",
+    ],
 ];

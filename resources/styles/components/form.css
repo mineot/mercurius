@@ -1,0 +1,35 @@
+.form {
+  @apply flex;
+  @apply flex-col;
+  @apply gap-6;
+  @apply w-full;
+
+  > .title {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply text-center;
+    @apply secondary-text;
+  }
+
+  .control {
+    @apply flex flex-col gap-1;
+
+    > label {
+      @apply secondary-text-destak;
+      @apply text-sm;
+    }
+
+    > input {
+      @apply input;
+    }
+
+    > .msg {
+      @apply text-amber-300;
+      @apply text-xs;
+    }
+  }
+
+  > .action {
+    @apply btn;
+  }
+}

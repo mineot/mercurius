@@ -11,12 +11,11 @@ class NavLink extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct
-    (
+    public function __construct(
         public string $href = '#',
-        public string|null $title = null,
-        public string|null $label = null,
-        public string|null $icon = null,
+        public ?string $title = null,
+        public ?string $label = null,
+        public ?string $icon = null,
     ) {}
 
     /**

@@ -11,14 +11,13 @@ class FormControl extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct
-    (
+    public function __construct(
         public string $id = 'id',
         public string $name = 'name',
         public string $type = 'text',
         public string $label = 'Label',
         public string $value = '',
-        public string|null $message = null,
+        public ?string $message = null,
     ) {}
 
     /**

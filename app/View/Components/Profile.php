@@ -2,10 +2,10 @@
 
 namespace App\View\Components;
 
+use App\Models\Profile as ProfileModel;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use App\Models\Profile as ProfileModel;
 
 class Profile extends Component
 {

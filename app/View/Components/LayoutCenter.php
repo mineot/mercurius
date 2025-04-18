@@ -11,9 +11,8 @@ class LayoutCenter extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct
-    (
-        public string $title = "Title",
+    public function __construct(
+        public string $title = 'Title',
     ) {}
 
     /**

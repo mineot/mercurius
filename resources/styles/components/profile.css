@@ -1,4 +1,4 @@
-.layout-profile {
+.profile {
   &.header-brand {
     @apply flex gap-3 items-center;
 

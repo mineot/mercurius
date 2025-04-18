@@ -2,19 +2,19 @@
 
 namespace App\View\Components;
 
-use App\Models\Profile;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use App\Models\Profile as ProfileModel;
 
-class LayoutProfile extends Component
+class Profile extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
         public string $style,
-        public Profile $profile,
+        public ProfileModel $profile,
     ) {}
 
     /**
@@ -22,6 +22,6 @@ class LayoutProfile extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layout-profile');
+        return view('components.profile');
     }
 }

@@ -3,7 +3,7 @@
 @section("content")
 <x-layout>
     <x-slot:headerBrand>
-        <x-layout-profile :profile="$profile" style="header-brand" />
+        <x-profile :profile="$profile" style="header-brand" />
     </x-slot:headerBrand>
 
     <x-slot:headerNav>
@@ -13,7 +13,7 @@
     </x-slot:headerNav>
 
     <x-slot:sidebarHead>
-        <x-layout-profile :profile="$profile" style="sidebar-head" />
+        <x-profile :profile="$profile" style="sidebar-head" />
     </x-slot:sidebarHead>
 
     <x-slot:sidebarSocials>

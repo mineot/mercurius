@@ -10,10 +10,10 @@
 @import './utilities/inputs.css';
 @import './utilities/links.css';
 
-@import './components/layout.css';
-@import './components/layout-profile.css';
-@import './components/layout-center.css';
 @import './components/form.css';
+@import './components/layout-center.css';
+@import './components/layout.css';
+@import './components/profile.css';
 
 * {
   box-sizing: border-box;

@@ -1,5 +1,9 @@
 @extends("core/main")
 
 @section("content")
-Admin
+<h1>Admin</h1>
+<form action="/signout" method="POST">
+    @csrf
+    <button type="submit" class="btn">Logout</button>
+</form>
 @endsection

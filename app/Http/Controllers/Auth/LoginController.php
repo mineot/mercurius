@@ -23,7 +23,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->route('admin');
+            return redirect()->route('admin.index');
         }
 
         return back()
@@ -37,6 +37,6 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('auth/login')->with('success', 'success_signout');
+        return redirect()->route('auth.index');
     }
 }

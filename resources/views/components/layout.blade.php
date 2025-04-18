@@ -21,7 +21,15 @@
     @isset($footer)
     <footer>
         <section class="content">
+            <div class="copyright">
+                &copy;
+                {{ __("terms.all_rights_reserved", ["owner" => env("VITE_APP_OWNER"), "year" => env("VITE_APP_YEAR")]) }}
+            </div>
             {{ $footer }}
+            <a href="/contact" class="link-sm">
+                <i class="bi bi-envelope-fill"></i>
+                <span>{{ __("terms.contact_me") }}</span>
+            </a>
         </section>
     </footer>
     @endisset

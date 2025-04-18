@@ -33,7 +33,7 @@
         Others Contents
     </x-slot:sidebarContent>
 
-    <x-slot:footer>Footer</x-slot:footer>
+    <x-slot:footer></x-slot:footer>
 
     <h1>Welcome</h1>
 </x-layout>

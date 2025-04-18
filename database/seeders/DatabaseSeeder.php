@@ -28,6 +28,14 @@ class DatabaseSeeder extends Seeder
             'name' => 'Joe Doe',
             'avatar' => 'https://i.pravatar.cc/1024',
             'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+            'lang' => 'en',
+        ]);
+
+        Profile::create([
+            'name' => 'João Ninguém',
+            'avatar' => 'https://i.pravatar.cc/1024',
+            'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+            'lang' => 'pt',
         ]);
     }
 }

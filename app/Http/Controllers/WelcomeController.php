@@ -9,7 +9,7 @@ class WelcomeController extends Controller
     public function index()
     {
         return view('welcome', [
-            'profile' => Profile::first(),
+            'profile' => Profile::where('lang', app()->getLocale())->first(),
         ]);
     }
 }

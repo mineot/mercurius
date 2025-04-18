@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('avatar');
             $table->string('name');
             $table->string('summary');
+            $table->string('lang');
             $table->timestamps();
         });
     }

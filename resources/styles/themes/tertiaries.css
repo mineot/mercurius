@@ -1,0 +1,16 @@
+@utility tertiary-bg {
+  @apply bg-tertiary-950;
+}
+
+@utility tertiary-text {
+  @apply text-tertiary-200;
+}
+
+@utility tertiary {
+  @apply tertiary-bg;
+  @apply tertiary-text;
+}
+
+@utility tertiary-message {
+  @apply text-tertiary-600;
+}

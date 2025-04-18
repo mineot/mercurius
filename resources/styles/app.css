@@ -3,6 +3,7 @@
 @import './themes/colors.css';
 @import './themes/primaries.css';
 @import './themes/secondaries.css';
+@import './themes/tertiaries.css';
 
 @import './utilities/core.css';
 @import './utilities/borders.css';
@@ -10,7 +11,7 @@
 @import './utilities/inputs.css';
 @import './utilities/links.css';
 
-@import './components/form.css';
+@import './components/form-control.css';
 @import './components/layout-center.css';
 @import './components/layout.css';
 @import './components/profile.css';

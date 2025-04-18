@@ -1,0 +1,17 @@
+.form-control {
+  @apply flex flex-col flex-nowrap gap-1;
+
+  > label {
+    @apply secondary-text;
+    @apply text-sm;
+  }
+
+  > input {
+    @apply input;
+  }
+
+  > .message {
+    @apply tertiary-message;
+    @apply text-xs;
+  }
+}

@@ -2,14 +2,24 @@
   @apply h-full w-full;
   @apply flex justify-center items-center;
 
-  > .content {
+  > .centered {
     @apply secondary;
     @apply border-full secondary-border;
-    @apply rounded-lg;
+    @apply rounded-lg m-2;
 
-    @apply p-2 m-2;
     @apply w-full sm:max-w-96;
 
     @apply duration-default;
+
+    > .title {
+      @apply p-1;
+      @apply text-2xl font-bold text-center;
+      @apply border-bottom secondary-border;
+    }
+
+    > .content {
+      @apply p-2;
+      @apply flex flex-col gap-2;
+    }
   }
 }

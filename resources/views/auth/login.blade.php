@@ -1,8 +1,9 @@
 @extends("core/main")
 
 @section("content")
-<x-layout-center>
-    <form action="#" class="form">
+<x-layout-center title="Login">
+    Layout Center
+    {{-- <form action="#" class="form">
         <h1 class="title">Login</h1>
 
         <div class="control">
@@ -12,6 +13,6 @@
         </div>
 
         <button class="action">Login</button>
-    </form>
+    </form> --}}
 </x-layout-center>
 @endsection

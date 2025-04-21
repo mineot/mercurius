@@ -40,7 +40,7 @@
                 &copy;
                 {{ __("terms.all_rights_reserved", ["owner" => env("VITE_APP_OWNER"), "year" => env("VITE_APP_YEAR")]) }}
             </div>
-            <a href="/contact" class="link-sm">
+            <a href="#" class="link-sm">
                 <i class="bi bi-envelope-fill"></i>
                 <span>{{ __("terms.contact_me") }}</span>
             </a>

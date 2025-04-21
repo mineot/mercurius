@@ -7,7 +7,7 @@
         </div>
 
         <footer>
-            <form action="/signout" method="POST" class="w-full">
+            <form action="/signout" method="POST" onsubmit="window.disableSubmit(this)" class="w-full">
                 @csrf
                 <button type="submit" class="link w-full">
                     <i class="fa-solid fa-power-off"></i>

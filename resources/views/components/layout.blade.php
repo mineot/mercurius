@@ -11,20 +11,13 @@
 
             <nav>
                 <div class="links">
-                    <a href="#" class="nav-link" title="Home">
-                        <i class="bi bi-house-door-fill nav-link-icon"></i>
-                        <span class="nav-link-label">Home</span>
+                    @foreach ($headerNavLinks as $link)
+                    <a :href="$link['href']" class="nav-link" :title="$link['label']">
+                        <i class="{{ $link['icon'] }} nav-link-icon"></i>
+                        <span class="nav-link-label">{{ $link['label'] }}</span>
                     </a>
-                    <a href="#" class="nav-link" title="About Me">
-                        <i class="bi bi-person-fill nav-link-icon"></i>
-                        <span class="nav-link-label">About Me</span>
-                    </a>
-                    <a href="#" class="nav-link" title="Articles">
-                        <i class="bi bi-book nav-link-icon"></i>
-                        <span class="nav-link-label">Articles</span>
-                    </a>
+                    @endforeach
                 </div>
-
                 <i class="bi bi-list toogle-menu" onclick="window.sidebar()"></i>
             </nav>
         </section>
@@ -64,33 +57,20 @@
 
         <section class="content">
             <div class="social-media">
-                <a href="#" class="nav-link" title="GitHub">
-                    <i class="bi bi-github"></i>
+                @foreach ($socialMedia as $link)
+                <a :href="$link['href']" class="nav-link" :title="$link['label']">
+                    <i class="{{ $link['icon'] }}"></i>
                 </a>
-                <a href="#" class="nav-link" title="WhatsApp">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-                <a href="#" class="nav-link" title="YouTube">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a href="#" class="nav-link" title="Email">
-                    <i class="bi bi-envelope-fill"></i>
-                </a>
+                @endforeach
             </div>
 
             <nav>
-                <a href="#" class="nav-link">
-                    <i class="bi bi-house-fill"></i>
-                    <span>Home</span>
+                @foreach ($sidebarNavLinks as $link)
+                <a :href="$link['href']" class="nav-link" :title="$link['label']">
+                    <i class="{{ $link['icon'] }}"></i>
+                    <span>{{ $link['label'] }}</span>
                 </a>
-                <a href="#" class="nav-link">
-                    <i class="bi bi-person-fill"></i>
-                    <span>About Me</span>
-                </a>
-                <a href="#" class="nav-link">
-                    <i class="bi bi-book"></i>
-                    <span>Articles</span>
-                </a>
+                @endforeach
             </nav>
         </section>
     </aside>

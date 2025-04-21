@@ -14,6 +14,9 @@ class Layout extends Component
      */
     public function __construct(
         public Profile $profile,
+        public $headerNavLinks = [],
+        public $sidebarNavLinks = [],
+        public $socialMedia = [],
     ) {}
 
     /**

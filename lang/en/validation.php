@@ -190,9 +190,9 @@ return [
     */
 
     'attributes' => [
-        "login" => "Login",
-        "email" => "Email",
-        "password" => "Password",
+        'login' => 'Login',
+        'email' => 'Email',
+        'password' => 'Password',
     ],
 
 ];

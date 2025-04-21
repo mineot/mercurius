@@ -1,0 +1,27 @@
+.layout-admin {
+  @apply w-screen h-screen overflow-hidden;
+  @apply flex gap-1;
+
+  > aside {
+    @apply min-w-min overflow-hidden;
+    @apply secondary border-right secondary-border;
+    @apply flex flex-col gap-1;
+
+    > header {
+      @apply p-2 border-bottom secondary-border;
+    }
+
+    > footer {
+      @apply p-2 border-top secondary-border;
+    }
+
+    > .content {
+      @apply flex-1 px-2;
+    }
+  }
+
+  > main {
+    @apply flex-1 px-2 py-1;
+    @apply overflow-x-hidden overflow-y-auto;
+  }
+}

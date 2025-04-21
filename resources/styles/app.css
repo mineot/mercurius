@@ -12,6 +12,7 @@
 @import './utilities/links.css';
 
 @import './components/form-control.css';
+@import './components/layout-admin.css';
 @import './components/layout-center.css';
 @import './components/layout.css';
 @import './components/profile.css';

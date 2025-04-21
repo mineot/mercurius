@@ -111,8 +111,8 @@ return [
     ],
 
     'attributes' => [
-        "login" => "Login",
-        "email" => "E-mail",
-        "password" => "Senha",
+        'login' => 'Login',
+        'email' => 'E-mail',
+        'password' => 'Senha',
     ],
 ];

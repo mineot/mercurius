@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Profile;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -12,9 +13,8 @@ class Layout extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public $headerBrand = 'Brand',
+        public Profile $profile,
         public $headerNav = null,
-        public $sidebarHead = 'Sidebar Head',
         public $sidebarSocials = null,
         public $sidebarNav = null,
         public $sidebarContent = '',

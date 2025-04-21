@@ -1,7 +1,14 @@
 <section class="layout">
-    <header >
+    <header>
         <section class="content">
-            <div>{{ $headerBrand }}</div>
+            <div class="profile header-brand">
+                <img src="{{ $profile->avatar }}" alt="{{ $profile->name }}">
+                <div class="content">
+                    <h1>{{ $profile->name }}</h1>
+                    <h2>{{ $profile->summary }}</h2>
+                </div>
+            </div>
+
             <nav>
                 @isset($headerNav)
                 <div class="links">
@@ -36,9 +43,19 @@
 
     <aside>
         <section class="head">
-            <div class="brand">{{ $sidebarHead }}</div>
+            <div class="brand">
+                <div class="profile sidebar-head">
+                    <img src="{{ $profile->avatar }}" alt="{{ $profile->name }}">
+                    <div class="content">
+                        <h1>{{ $profile->name }}</h1>
+                        <h2>{{ $profile->summary }}</h2>
+                    </div>
+                </div>
+            </div>
+
             <i class="bi bi-x-lg close-sidebar" onclick="window.sidebar()"></i>
         </section>
+
         <section class="content">
             @isset($sidebarSocials)
             <div class="social-media">

@@ -1,20 +1,12 @@
 @extends("core/main")
 
 @section("content")
-<x-layout>
-    <x-slot:headerBrand>
-        <x-profile :profile="$profile" style="header-brand" />
-    </x-slot:headerBrand>
-
+<x-layout :profile="$profile">
     <x-slot:headerNav>
         <x-nav-link href="#" icon="bi bi-house-fill" label="Home" />
         <x-nav-link href="#" icon="bi bi-person-fill" label="About" />
         <x-nav-link href="#" icon="bi bi-book" label="Articles" />
     </x-slot:headerNav>
-
-    <x-slot:sidebarHead>
-        <x-profile :profile="$profile" style="sidebar-head" />
-    </x-slot:sidebarHead>
 
     <x-slot:sidebarSocials>
         <x-nav-link href="#" icon="bi bi-github" title="GitHub" />

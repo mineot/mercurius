@@ -13,4 +13,5 @@
 
 @utility tertiary-message {
   @apply text-tertiary-600;
+  @apply text-xs;
 }

@@ -12,6 +12,5 @@
 
   > .message {
     @apply tertiary-message;
-    @apply text-xs;
   }
 }

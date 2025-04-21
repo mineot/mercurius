@@ -27,7 +27,7 @@ class LoginController extends Controller
         }
 
         return back()
-            ->withErrors(['message-failed' => 'auth.failed'])
+            ->withErrors(['login-failed' => 'auth.failed'])
             ->withInput($request->only('email'));
     }
 

@@ -6,7 +6,9 @@
         @csrf
         <x-form-control id="email" name="email" type="email" :label="__('terms.email')" value="{{ old('email') }}" />
         <x-form-control id="password" name="password" type="password" :label="__('terms.password')" />
-        <x-message-failed />
+        @error("login-failed")
+        <div class="tertiary-message">{{ __($message) }}</div>
+        @enderror
         <button type="submit" class="btn">{{ __('terms.login') }}</button>
     </form>
 </x-layout-center>

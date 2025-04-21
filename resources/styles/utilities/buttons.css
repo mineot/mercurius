@@ -13,4 +13,9 @@
 
   @apply rounded-sm;
   @apply px-3 py-1;
+
+  &:disabled {
+    @apply opacity-50;
+    @apply pointer-events-none;
+  }
 }

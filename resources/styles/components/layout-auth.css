@@ -1,4 +1,4 @@
-.layout-center {
+.layout-auth {
   @apply h-full w-full;
   @apply flex justify-center items-center;
 

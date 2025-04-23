@@ -1,4 +1,4 @@
-.layout {
+.layout-public {
   @apply h-full w-full;
   @apply flex flex-col gap-2;
 

@@ -13,8 +13,8 @@
 
 @import './components/form-control.css';
 @import './components/layout-admin.css';
-@import './components/layout-center.css';
-@import './components/layout.css';
+@import './components/layout-auth.css';
+@import './components/layout-public.css';
 
 * {
   box-sizing: border-box;

@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class LayoutCenter extends Component
+class LayoutAuth extends Component
 {
     /**
      * Create a new component instance.
@@ -20,6 +20,6 @@ class LayoutCenter extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layout-center');
+        return view('components.layout-auth');
     }
 }

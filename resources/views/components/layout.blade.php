@@ -1,4 +1,4 @@
-<section class="layout">
+<section class="layout-public">
     <header>
         <section class="content">
             <div class="profile header-brand">

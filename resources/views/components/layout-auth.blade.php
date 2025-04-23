@@ -1,4 +1,4 @@
-<div class="layout-center">
+<div class="layout-auth">
     <div class="centered">
         <h1 class="title">{{ $title }}</h1>
         <div class="content">

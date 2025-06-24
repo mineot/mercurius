@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.title {
+  @apply text-6xl;
+}

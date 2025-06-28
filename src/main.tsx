@@ -1,12 +1,12 @@
-import "./styles/main.css";
+import './styles/main.css';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createRoot } from "react-dom/client";
-import { StrictMode } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
 
-import { Welcome } from "./components/Welcome.tsx";
+import { Welcome } from '@page/Welcome.tsx';
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
@@ -14,5 +14,5 @@ createRoot(document.getElementById("root")!).render(
         {/* <Route path="/sobre" element={<About />} /> */}
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

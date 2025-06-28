@@ -1,7 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* THEME */
-@import "./themes/ancap.css";
+@import './themes/ancap.css';
 
 * {
   box-sizing: border-box;

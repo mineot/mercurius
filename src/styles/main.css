@@ -1,7 +1,8 @@
 @import 'tailwindcss';
+@import './semantics/typography.css';
 
 /* THEME */
-@import './themes/ancap.css';
+@import './themes/ancap.theme.css';
 
 * {
   box-sizing: border-box;

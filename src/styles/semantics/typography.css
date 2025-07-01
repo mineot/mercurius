@@ -22,15 +22,18 @@ h6 {
   @apply text-sm;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-primary-500);
-}
-
 @utility emphasis-text {
   color: var(--color-text-emphasis);
+}
+
+@utility primary-text {
+  color: var(--color-text-primary);
+}
+
+@utility secondary-text {
+  color: var(--color-text-secondary);
+}
+
+@utility asset-text {
+  color: var(--color-text-asset);
 }

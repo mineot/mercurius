@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 @import './semantics/typography.css';
 
 /* THEME */
@@ -9,8 +10,8 @@
 }
 
 body {
-  @apply w-screen h-screen;
   @apply m-0 p-0;
-  background-color: var(--color-background);
+  @apply w-screen h-screen;
   color: var(--color-text);
+  background-color: var(--color-background);
 }

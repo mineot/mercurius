@@ -25,9 +25,9 @@ export function Examples() {
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
             <div>Regular text</div>
-            <div className="emphasis-text">Emphasis text</div>
           </div>
           <div>
+            <div className="emphasis-text">Emphasis text</div>
             <div className="primary-text">Primary text</div>
             <div className="secondary-text">Secondary text</div>
             <div className="asset-text">Asset text</div>

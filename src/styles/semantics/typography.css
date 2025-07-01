@@ -23,17 +23,17 @@ h6 {
 }
 
 @utility emphasis-text {
-  color: var(--color-text-emphasis);
+  @apply text-[var(--color-text-emphasis)];
 }
 
 @utility primary-text {
-  color: var(--color-text-primary);
+  @apply text-[var(--color-text-primary)];
 }
 
 @utility secondary-text {
-  color: var(--color-text-secondary);
+  @apply text-[var(--color-text-secondary)];
 }
 
 @utility asset-text {
-  color: var(--color-text-asset);
+  @apply text-[var(--color-text-asset)];
 }

@@ -4,6 +4,8 @@ import { createRoot } from 'react-dom/client';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div>Welcome to Mercurius</div>
+    <header>Header</header>
+    <main>Main Content</main>
+    <footer>Footer</footer>
   </StrictMode>,
 );

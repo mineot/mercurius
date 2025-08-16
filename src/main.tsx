@@ -2,10 +2,14 @@ import './main.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
+import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
+import { MainContent } from './components/main-content/main-content';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <header>Header</header>
-    <main>Main Content</main>
-    <footer>Footer</footer>
+    <Header />
+    <MainContent />
+    <Footer />
   </StrictMode>,
 );

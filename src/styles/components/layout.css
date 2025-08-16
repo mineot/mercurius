@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply m-0 p-0 h-screen w-screen overflow-hidden;
+  @apply app-primary;
+
+  > #root {
+    @apply w-full h-full;
+    @apply flex flex-col flex-nowrap gap-[var(--app-gap)];
+
+    > header {
+      @apply bg-blue-500;
+    }
+
+    > main {
+      @apply flex-1 flex flex-col flex-nowrap gap-[var(--app-gap)];
+      @apply overflow-x-hidden overflow-y-auto;
+      @apply max-w-4xl mx-auto;
+
+      > #content {
+        @apply bg-yellow-500;
+      }
+
+      > footer {
+        @apply bg-green-500;
+      }
+    }
+  }
+}

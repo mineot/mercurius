@@ -9,8 +9,8 @@ body {
   @apply app-primary;
 
   > #root {
-    @apply w-full h-full;
     @apply flex flex-col flex-nowrap gap-[var(--app-gap)];
+    @apply w-full h-full;
 
     > header {
       @apply bg-blue-500;

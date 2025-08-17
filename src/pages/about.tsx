@@ -1,3 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 export default function About() {
-  return <h1>📄 About Me!</h1>;
+  const { t } = useTranslation();
+
+  return <h1>📄 {t('about')}</h1>;
 }

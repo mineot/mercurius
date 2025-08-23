@@ -1,7 +1,5 @@
-import { useTranslation } from 'react-i18next';
+import { Layout } from '@/components/layout';
 
 export default function Welcome() {
-  const { t } = useTranslation();
-
-  return <h1>🏠 {t('welcome')}</h1>;
+  return <Layout></Layout>;
 }

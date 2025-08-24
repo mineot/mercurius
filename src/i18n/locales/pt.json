@@ -1,5 +1,9 @@
 {
   "about": "Sobre mim",
   "page_not_found": "404 – Página não encontrada",
-  "welcome": "Bem-vindo ao Mercurius!"
+  "welcome": "Bem-vindo ao Mercurius!",
+  "articles": "Artigos",
+  "blog": "Blog",
+  "contact": "Contato",
+  "projects": "Projetos"
 }

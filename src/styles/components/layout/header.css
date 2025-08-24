@@ -1,0 +1,54 @@
+.component-layout-header {
+  @apply flex flex-row justify-between items-center;
+  @apply p-[var(--app-gap-lg)];
+  @apply app-primary-dark;
+
+  > .clh-sc1 {
+    @apply flex flex-row items-center gap-[var(--app-gap-lg)];
+
+    > .clh-sc1-img1 {
+      @apply w-8 h-8;
+      @apply rounded-full;
+    }
+
+    > .clh-sc1-a1 {
+      @apply text-2xl;
+    }
+  }
+
+  > .clh-nav1 {
+    > ul {
+      @apply hidden md:flex flex-row gap-[var(--app-gap-lg)];
+      @apply text-sm;
+
+      > li > a {
+        @apply app-primary-link;
+      }
+    }
+
+    > .clh-nav1-list1 {
+      @apply flex md:hidden;
+      @apply text-2xl;
+      @apply app-primary-link;
+      @apply cursor-pointer;
+    }
+  }
+}
+
+.component-layout-header-sidebar-overlay {
+  @apply app-primary-overlay;
+}
+
+.component-layout-header-sidebar {
+  @apply app-primary-sidebar;
+  @apply md:hidden;
+
+  > ul {
+    @apply flex flex-col gap-[var(--app-gap-lg)];
+    @apply p-[var(--app-gap-lg)];
+
+    > li > a {
+      @apply app-primary-link;
+    }
+  }
+}

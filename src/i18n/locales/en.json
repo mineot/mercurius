@@ -1,5 +1,9 @@
 {
   "about": "About Me",
   "page_not_found": "404 – Page not found",
-  "welcome": "Welcome to Mercurius!"
+  "welcome": "Welcome to Mercurius!",
+  "articles": "Articles",
+  "blog": "Blog",
+  "contact": "Contact",
+  "projects": "Projects"
 }

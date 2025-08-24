@@ -1,0 +1,33 @@
+@utility app-primary {
+  @apply bg-primary-900 text-primary-100;
+}
+
+@utility app-primary-dark {
+  @apply bg-primary-950 text-primary-300;
+}
+
+@utility app-primary-link {
+  @apply text-primary-400 hover:text-primary-200;
+  @apply duration-300 ease-in-out;
+}
+
+@utility app-primary-sidebar {
+  @apply fixed top-0 right-0 h-full w-fit shadow-lg z-50;
+  @apply transform transition-transform duration-300 ease-in-out;
+  @apply app-primary-dark;
+  @apply translate-x-full;
+
+  &.open {
+    @apply translate-x-0;
+  }
+}
+
+@utility app-primary-overlay {
+  @apply absolute top-0 left-0 h-full w-full z-40;
+  @apply bg-primary-950 opacity-60;
+  @apply hidden;
+
+  &.open {
+    @apply block;
+  }
+}

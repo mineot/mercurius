@@ -1,7 +1,7 @@
 .component-layout-header {
   @apply flex flex-row justify-between items-center;
   @apply p-[var(--app-gap-lg)];
-  @apply app-primary-dark;
+  @apply app-main-dark;
 
   > .clh-sc1 {
     @apply flex flex-row items-center gap-[var(--app-gap-lg)];
@@ -13,6 +13,7 @@
 
     > .clh-sc1-a1 {
       @apply text-2xl;
+      @apply app-emphasis;
     }
   }
 
@@ -22,25 +23,25 @@
       @apply text-sm;
 
       > li > a {
-        @apply app-primary-link;
+        @apply app-link;
       }
     }
 
     > .clh-nav1-list1 {
       @apply flex md:hidden;
       @apply text-2xl;
-      @apply app-primary-link;
+      @apply app-link;
       @apply cursor-pointer;
     }
   }
 }
 
 .component-layout-header-sidebar-overlay {
-  @apply app-primary-overlay;
+  @apply app-sidebar-overlay;
 }
 
 .component-layout-header-sidebar {
-  @apply app-primary-sidebar;
+  @apply app-sidebar;
   @apply md:hidden;
 
   > ul {
@@ -48,7 +49,7 @@
     @apply p-[var(--app-gap-lg)];
 
     > li > a {
-      @apply app-primary-link;
+      @apply app-link;
     }
   }
 }

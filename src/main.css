@@ -3,8 +3,8 @@
 @import 'tailwindcss';
 
 /* APP CUSTOM */
-@import './styles/themes/ocean.css';
-@import './styles/themes/utilities.css';
+@import './styles/themes/royal.css';
+@import './styles/themes/royal.utilities.css';
 
 /* COMPONENTS */
 @import './styles/components/layout/index.css';

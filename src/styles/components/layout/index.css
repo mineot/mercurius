@@ -8,7 +8,7 @@ body {
   @apply m-0 p-0;
   @apply h-screen w-screen;
   @apply overflow-hidden;
-  @apply app-primary;
+  @apply app-main;
 
   > #root {
     @apply flex flex-col flex-nowrap gap-[var(--app-gap)];

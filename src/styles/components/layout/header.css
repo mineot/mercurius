@@ -23,6 +23,7 @@
       @apply text-sm;
 
       > li > a {
+        @apply flex flex-row flex-nowrap gap-1 items-center;
         @apply app-link;
       }
     }
@@ -31,7 +32,6 @@
       @apply flex md:hidden;
       @apply text-2xl;
       @apply app-link;
-      @apply cursor-pointer;
     }
   }
 }
@@ -49,6 +49,8 @@
     @apply p-[var(--app-gap-lg)];
 
     > li > a {
+      @apply flex flex-col flex-nowrap gap-1 items-center;
+      @apply text-lg;
       @apply app-link;
     }
   }

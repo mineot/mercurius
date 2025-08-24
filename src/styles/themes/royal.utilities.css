@@ -13,6 +13,7 @@
 @utility app-link {
   @apply text-primary-400 hover:text-primary-200;
   @apply duration-300 ease-in-out;
+  @apply cursor-pointer;
 }
 
 @utility app-sidebar {

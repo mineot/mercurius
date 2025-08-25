@@ -17,7 +17,7 @@ body {
     > main {
       @apply flex-1 flex flex-col flex-nowrap gap-[var(--app-gap)];
       @apply overflow-x-hidden overflow-y-auto;
-      @apply max-w-4xl mx-auto;
+      @apply max-w-2xl mx-auto;
 
       > #content {
         @apply bg-yellow-500;

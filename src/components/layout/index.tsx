@@ -1,11 +1,15 @@
 import { Header } from './header';
 
-export function Layout() {
+type LayoutProps = {
+  children?: React.ReactNode;
+};
+
+export function Layout(props: LayoutProps) {
   return (
     <>
       <Header />
-      <main>
-        <section id="content">Main</section>
+      <main className="l-main">
+        <section>{props.children}</section>
         <footer>Footer</footer>
       </main>
     </>

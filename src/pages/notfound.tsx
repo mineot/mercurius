@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import { Layout } from '@/components/layout';
 
 export default function NotFound() {
   const { t } = useTranslation();
 
-  return <h1>{t('page_not_found')}</h1>;
+  return (
+    <Layout>
+      <span className="text-3xl">🤚🏻 {t('page_not_found')}</span>
+    </Layout>
+  );
 }

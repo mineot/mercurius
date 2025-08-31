@@ -9,3 +9,4 @@
 /* COMPONENTS */
 @import './styles/components/layout/index.css';
 @import './styles/components/layout/header.css';
+@import './styles/components/layout/footer.css';
